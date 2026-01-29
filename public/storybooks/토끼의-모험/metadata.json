@@ -1,0 +1,82 @@
+{
+  "title": "토끼의 모험",
+  "duration": 1,
+  "targetAge": "5",
+  "theme": "모험과 우정",
+  "generatedAt": "2026-01-29T07:24:52.881Z",
+  "sceneCount": 6,
+  "scenes": [
+    {
+      "sceneNumber": 1,
+      "duration": 10,
+      "narration": "이것은 1번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+      "backgroundDescription": "Scene 1: peaceful forest with sunshine",
+      "characters": [
+        "cute animal friend"
+      ],
+      "actions": [
+        "exploring"
+      ]
+    },
+    {
+      "sceneNumber": 2,
+      "duration": 10,
+      "narration": "이것은 2번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+      "backgroundDescription": "Scene 2: peaceful forest with sunshine",
+      "characters": [
+        "cute animal friend"
+      ],
+      "actions": [
+        "exploring"
+      ]
+    },
+    {
+      "sceneNumber": 3,
+      "duration": 10,
+      "narration": "이것은 3번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+      "backgroundDescription": "Scene 3: peaceful forest with sunshine",
+      "characters": [
+        "cute animal friend"
+      ],
+      "actions": [
+        "exploring"
+      ]
+    },
+    {
+      "sceneNumber": 4,
+      "duration": 10,
+      "narration": "이것은 4번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+      "backgroundDescription": "Scene 4: peaceful forest with sunshine",
+      "characters": [
+        "cute animal friend"
+      ],
+      "actions": [
+        "exploring"
+      ]
+    },
+    {
+      "sceneNumber": 5,
+      "duration": 10,
+      "narration": "이것은 5번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+      "backgroundDescription": "Scene 5: peaceful forest with sunshine",
+      "characters": [
+        "cute animal friend"
+      ],
+      "actions": [
+        "exploring"
+      ]
+    },
+    {
+      "sceneNumber": 6,
+      "duration": 10,
+      "narration": "이것은 6번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+      "backgroundDescription": "Scene 6: peaceful forest with sunshine",
+      "characters": [
+        "cute animal friend"
+      ],
+      "actions": [
+        "exploring"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개선된 동화책 - 사진 스토리북</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Noto Sans KR', Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .header {
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      margin-bottom: 30px;
+      text-align: center;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    }
+
+    .header h1 {
+      font-size: 3em;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      font-size: 1.2em;
+      color: #666;
+    }
+
+    .controls {
+      background: white;
+      border-radius: 20px;
+      padding: 20px;
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    .controls button {
+      background: #667eea;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 10px;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .controls button:hover {
+      background: #764ba2;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .scene-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+
+    .scene-card {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .scene-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .scene-number {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 15px;
+      font-size: 1.3em;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .scene-image {
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+      background: #f0f0f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .scene-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .scene-narration {
+      padding: 30px;
+      font-size: 1.2em;
+      line-height: 1.8;
+      color: #333;
+      min-height: 150px;
+    }
+
+    .scene-controls {
+      padding: 20px;
+      border-top: 2px solid #f0f0f0;
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .scene-controls button {
+      background: #667eea;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: all 0.2s;
+    }
+
+    .scene-controls button:hover {
+      background: #764ba2;
+    }
+
+    .footer {
+      background: white;
+      border-radius: 20px;
+      padding: 30px;
+      text-align: center;
+      color: #666;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    .playing {
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.7; }
+    }
+
+    @media (max-width: 768px) {
+      .scene-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .header h1 {
+        font-size: 2em;
+      }
+
+      .controls {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>개선된 동화책</h1>
+      <p>총 6개 장면 · 1분 · 5세</p>
+    </div>
+
+    <div class="controls">
+      <button onclick="playAll()">▶️ 전체 재생</button>
+      <button onclick="stopAll()">⏹️ 모두 정지</button>
+      <button onclick="downloadStory()">💾 스토리 다운로드</button>
+    </div>
+
+    <div class="scene-grid">
+      
+        <div class="scene-card" id="scene-1">
+          <div class="scene-number">장면 1</div>
+          <div class="scene-image">
+            <img src="scene1.png"
+                 onerror="this.onerror=null; this.src='scene1.svg';"
+                 alt="장면 1">
+          </div>
+          <div class="scene-narration">
+            <p>옛날 아주 먼 옛날, 평화로운 숲속 마을에 호기심 많은 아기 토끼가 살고 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-1" src="scene1.mp3"></audio>
+            <button onclick="playAudio(1)">🔊 들어보기</button>
+            <button onclick="stopAudio(1)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-2">
+          <div class="scene-number">장면 2</div>
+          <div class="scene-image">
+            <img src="scene2.png"
+                 onerror="this.onerror=null; this.src='scene2.svg';"
+                 alt="장면 2">
+          </div>
+          <div class="scene-narration">
+            <p>어느 화창한 날, 토끼는 숲 너머 미지의 세계로 모험을 떠나기로 결심했답니다.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-2" src="scene2.mp3"></audio>
+            <button onclick="playAudio(2)">🔊 들어보기</button>
+            <button onclick="stopAudio(2)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-3">
+          <div class="scene-number">장면 3</div>
+          <div class="scene-image">
+            <img src="scene3.png"
+                 onerror="this.onerror=null; this.src='scene3.svg';"
+                 alt="장면 3">
+          </div>
+          <div class="scene-narration">
+            <p>길을 걷다 토끼는 반짝이는 신비한 나비를 만났어요. '안녕? 나랑 같이 놀래?'</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-3" src="scene3.mp3"></audio>
+            <button onclick="playAudio(3)">🔊 들어보기</button>
+            <button onclick="stopAudio(3)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-4">
+          <div class="scene-number">장면 4</div>
+          <div class="scene-image">
+            <img src="scene4.png"
+                 onerror="this.onerror=null; this.src='scene4.svg';"
+                 alt="장면 4">
+          </div>
+          <div class="scene-narration">
+            <p>나비를 따라 도착한 곳에는 무지개색 폭포가 흐르고 있었어요. 정말 아름다운 풍경이었죠.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-4" src="scene4.mp3"></audio>
+            <button onclick="playAudio(4)">🔊 들어보기</button>
+            <button onclick="stopAudio(4)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-5">
+          <div class="scene-number">장면 5</div>
+          <div class="scene-image">
+            <img src="scene5.png"
+                 onerror="this.onerror=null; this.src='scene5.svg';"
+                 alt="장면 5">
+          </div>
+          <div class="scene-narration">
+            <p>갑자기 작은 새가 나타나서 말했어요. '여기는 마법의 숲이란다. 조심해야 해!'</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-5" src="scene5.mp3"></audio>
+            <button onclick="playAudio(5)">🔊 들어보기</button>
+            <button onclick="stopAudio(5)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-6">
+          <div class="scene-number">장면 6</div>
+          <div class="scene-image">
+            <img src="scene6.png"
+                 onerror="this.onerror=null; this.src='scene6.svg';"
+                 alt="장면 6">
+          </div>
+          <div class="scene-narration">
+            <p>토끼는 새 친구와 함께 숲속 깊은 곳으로 들어갔어요. 모험이 계속되었죠.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-6" src="scene6.mp3"></audio>
+            <button onclick="playAudio(6)">🔊 들어보기</button>
+            <button onclick="stopAudio(6)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+    </div>
+
+    <div class="footer">
+      <p>🎨 Google AI + Hugging Face로 생성된 스토리북</p>
+      <p>생성 시간: 2026. 1. 29. 오후 4:37:33</p>
+    </div>
+  </div>
+
+  <script>
+    let currentScene = 0;
+    let isPlayingAll = false;
+
+    function playAudio(sceneNumber) {
+      const audio = document.getElementById('audio-' + sceneNumber);
+      const card = document.getElementById('scene-' + sceneNumber);
+
+      stopAll();
+
+      // 자동 스크롤 (부드럽게)
+      card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+      audio.play();
+      card.classList.add('playing');
+
+      audio.onended = () => {
+        card.classList.remove('playing');
+        if (isPlayingAll && sceneNumber < 6) {
+          setTimeout(() => playAudio(sceneNumber + 1), 500);
+        } else {
+          isPlayingAll = false;
+        }
+      };
+    }
+
+    function stopAudio(sceneNumber) {
+      const audio = document.getElementById('audio-' + sceneNumber);
+      const card = document.getElementById('scene-' + sceneNumber);
+
+      audio.pause();
+      audio.currentTime = 0;
+      card.classList.remove('playing');
+    }
+
+    function playAll() {
+      isPlayingAll = true;
+      playAudio(1);
+    }
+
+    function stopAll() {
+      isPlayingAll = false;
+      for (let i = 1; i <= 6; i++) {
+        stopAudio(i);
+      }
+    }
+
+    function downloadStory() {
+      const metadata = {
+        title: "개선된 동화책",
+        duration: 1,
+        targetAge: "5",
+        theme: "모험과 우정",
+        scenes: [
+  {
+    "sceneNumber": 1,
+    "duration": 10,
+    "narration": "옛날 아주 먼 옛날, 평화로운 숲속 마을에 호기심 많은 아기 토끼가 살고 있었어요.",
+    "backgroundDescription": "peaceful forest village with houses, sunny day, green trees",
+    "characters": [
+      "cute white rabbit"
+    ],
+    "actions": [
+      "looking around curiously"
+    ]
+  },
+  {
+    "sceneNumber": 2,
+    "duration": 10,
+    "narration": "어느 화창한 날, 토끼는 숲 너머 미지의 세계로 모험을 떠나기로 결심했답니다.",
+    "backgroundDescription": "forest path leading to adventure, blue sky, butterflies",
+    "characters": [
+      "white rabbit with backpack"
+    ],
+    "actions": [
+      "walking with determination"
+    ]
+  },
+  {
+    "sceneNumber": 3,
+    "duration": 10,
+    "narration": "길을 걷다 토끼는 반짝이는 신비한 나비를 만났어요. '안녕? 나랑 같이 놀래?'",
+    "backgroundDescription": "magical forest path with glowing elements",
+    "characters": [
+      "white rabbit",
+      "glowing butterfly"
+    ],
+    "actions": [
+      "chasing playfully"
+    ]
+  },
+  {
+    "sceneNumber": 4,
+    "duration": 10,
+    "narration": "나비를 따라 도착한 곳에는 무지개색 폭포가 흐르고 있었어요. 정말 아름다운 풍경이었죠.",
+    "backgroundDescription": "rainbow waterfall with magical flowers",
+    "characters": [
+      "white rabbit"
+    ],
+    "actions": [
+      "looking amazed"
+    ]
+  },
+  {
+    "sceneNumber": 5,
+    "duration": 10,
+    "narration": "갑자기 작은 새가 나타나서 말했어요. '여기는 마법의 숲이란다. 조심해야 해!'",
+    "backgroundDescription": "enchanted forest with mysterious atmosphere",
+    "characters": [
+      "white rabbit",
+      "wise little bird"
+    ],
+    "actions": [
+      "talking together"
+    ]
+  },
+  {
+    "sceneNumber": 6,
+    "duration": 10,
+    "narration": "토끼는 새 친구와 함께 숲속 깊은 곳으로 들어갔어요. 모험이 계속되었죠.",
+    "backgroundDescription": "deep forest with tall trees and shadows",
+    "characters": [
+      "white rabbit",
+      "little bird"
+    ],
+    "actions": [
+      "exploring together"
+    ]
+  }
+]
+      };
+
+      const blob = new Blob([JSON.stringify(metadata, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = '개선된-동화책-metadata.json';
+      a.click();
+    }
+
+    // 키보드 단축키
+    document.addEventListener('keydown', (e) => {
+      if (e.code === 'Space') {
+        e.preventDefault();
+        if (isPlayingAll) {
+          stopAll();
+        } else {
+          playAll();
+        }
+      }
+    });
+  </script>
+</body>
+</html>

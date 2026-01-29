@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run create:*)",
+      "Bash(explorer \"output\\\\토끼와-거북이의-모험.mp4\")",
+      "WebSearch",
+      "Bash(npm install:*)",
+      "Bash(npm run test-setup:*)",
+      "Bash(npm run photo:*)",
+      "Bash(dir:*)",
+      "Bash(node check-models.js:*)",
+      "Bash(npm run preview:*)"
+    ]
+  }
+}

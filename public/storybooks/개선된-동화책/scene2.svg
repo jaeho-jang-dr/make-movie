@@ -1,0 +1,156 @@
+<svg width="1024" height="768" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 768">
+
+      <defs>
+        <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" style="stop-color:#E8A87C;stop-opacity:1" />
+          <stop offset="100%" style="stop-color:#fff5c9;stop-opacity:1" />
+        </linearGradient>
+        <linearGradient id="groundGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" style="stop-color:#C38D5B;stop-opacity:1" />
+          <stop offset="100%" style="stop-color:#905a28;stop-opacity:1" />
+        </linearGradient>
+      </defs>
+    <rect x="0" y="0" width="1024" height="500" fill="url(#skyGradient)"/>
+<circle cx="850" cy="150" r="70" fill="#F4A460" opacity="0.8"/>
+<circle cx="850" cy="150" r="60" fill="#ffd793"/>
+<rect x="0" y="500" width="1024" height="268" fill="url(#groundGradient)"/>
+
+          <!-- 둥근 나무 -->
+          <rect x="134" y="420" width="35" height="120" fill="#654321" rx="8"/>
+          <rect x="139" y="430" width="25" height="100" fill="#8b6947" rx="6"/>
+          <circle cx="152" cy="395" r="65" fill="#8B4513" opacity="0.9"/>
+          <circle cx="119" cy="430" r="55" fill="#712b00" opacity="0.8"/>
+          <circle cx="184" cy="430" r="55" fill="#712b00" opacity="0.8"/>
+          <circle cx="152" cy="410" r="50" fill="#be7846" opacity="0.7"/>
+        
+          <!-- 침엽수 -->
+          <rect x="394" y="450" width="25" height="110" fill="#8B4513" rx="5"/>
+          <path d="M 406 380 L 354 430 L 459 430 Z" fill="#8B4513"/>
+          <path d="M 406 410 L 364 450 L 449 450 Z" fill="#712b00"/>
+          <path d="M 406 440 L 374 470 L 439 470 Z" fill="#651f00"/>
+        
+          <!-- 넓은 나무 -->
+          <rect x="634" y="440" width="40" height="120" fill="#6B4423" rx="10"/>
+          <ellipse cx="654" cy="400" rx="80" ry="60" fill="#8B4513" opacity="0.85"/>
+          <ellipse cx="609" cy="435" rx="50" ry="45" fill="#651f00" opacity="0.75"/>
+          <ellipse cx="699" cy="435" rx="50" ry="45" fill="#651f00" opacity="0.75"/>
+          <ellipse cx="654" cy="425" rx="60" ry="50" fill="#a55f2d" opacity="0.7"/>
+        
+          <!-- 둥근 나무 -->
+          <rect x="884" y="420" width="35" height="120" fill="#654321" rx="8"/>
+          <rect x="889" y="430" width="25" height="100" fill="#8b6947" rx="6"/>
+          <circle cx="902" cy="395" r="65" fill="#8B4513" opacity="0.9"/>
+          <circle cx="869" cy="430" r="55" fill="#712b00" opacity="0.8"/>
+          <circle cx="934" cy="430" r="55" fill="#712b00" opacity="0.8"/>
+          <circle cx="902" cy="410" r="50" fill="#be7846" opacity="0.7"/>
+        
+          <!-- 침엽수 -->
+          <rect x="1144" y="450" width="25" height="110" fill="#8B4513" rx="5"/>
+          <path d="M 1156 380 L 1104 430 L 1209 430 Z" fill="#8B4513"/>
+          <path d="M 1156 410 L 1114 450 L 1199 450 Z" fill="#712b00"/>
+          <path d="M 1156 440 L 1124 470 L 1189 470 Z" fill="#651f00"/>
+        <circle cx="91" cy="650" r="8" fill="#E85D75"/>
+<circle cx="80.63525491562422" cy="664.2658477444273" r="8" fill="#E85D75"/>
+<circle cx="63.86474508437579" cy="658.8167787843871" r="8" fill="#E85D75"/>
+<circle cx="63.864745084375784" cy="641.1832212156129" r="8" fill="#E85D75"/>
+<circle cx="80.6352549156242" cy="635.7341522555727" r="8" fill="#E85D75"/>
+<circle cx="76" cy="650" r="6" fill="#c1712d"/>
+<circle cx="271" cy="664" r="8" fill="#E85D75"/>
+<circle cx="260.6352549156242" cy="678.2658477444273" r="8" fill="#E85D75"/>
+<circle cx="243.86474508437578" cy="672.8167787843871" r="8" fill="#E85D75"/>
+<circle cx="243.86474508437578" cy="655.1832212156129" r="8" fill="#E85D75"/>
+<circle cx="260.6352549156242" cy="649.7341522555727" r="8" fill="#E85D75"/>
+<circle cx="256" cy="664" r="6" fill="#c1712d"/>
+<circle cx="451" cy="678" r="8" fill="#E85D75"/>
+<circle cx="440.6352549156242" cy="692.2658477444273" r="8" fill="#E85D75"/>
+<circle cx="423.8647450843758" cy="686.8167787843871" r="8" fill="#E85D75"/>
+<circle cx="423.8647450843758" cy="669.1832212156129" r="8" fill="#E85D75"/>
+<circle cx="440.6352549156242" cy="663.7341522555727" r="8" fill="#E85D75"/>
+<circle cx="436" cy="678" r="6" fill="#c1712d"/>
+<circle cx="631" cy="692" r="8" fill="#E85D75"/>
+<circle cx="620.6352549156242" cy="706.2658477444273" r="8" fill="#E85D75"/>
+<circle cx="603.8647450843758" cy="700.8167787843871" r="8" fill="#E85D75"/>
+<circle cx="603.8647450843758" cy="683.1832212156129" r="8" fill="#E85D75"/>
+<circle cx="620.6352549156242" cy="677.7341522555727" r="8" fill="#E85D75"/>
+<circle cx="616" cy="692" r="6" fill="#c1712d"/>
+<circle cx="811" cy="656" r="8" fill="#E85D75"/>
+<circle cx="800.6352549156242" cy="670.2658477444273" r="8" fill="#E85D75"/>
+<circle cx="783.8647450843758" cy="664.8167787843871" r="8" fill="#E85D75"/>
+<circle cx="783.8647450843758" cy="647.1832212156129" r="8" fill="#E85D75"/>
+<circle cx="800.6352549156242" cy="641.7341522555727" r="8" fill="#E85D75"/>
+<circle cx="796" cy="656" r="6" fill="#c1712d"/>
+<circle cx="991" cy="670" r="8" fill="#E85D75"/>
+<circle cx="980.6352549156242" cy="684.2658477444273" r="8" fill="#E85D75"/>
+<circle cx="963.8647450843758" cy="678.8167787843871" r="8" fill="#E85D75"/>
+<circle cx="963.8647450843758" cy="661.1832212156129" r="8" fill="#E85D75"/>
+<circle cx="980.6352549156242" cy="655.7341522555727" r="8" fill="#E85D75"/>
+<circle cx="976" cy="670" r="6" fill="#c1712d"/>
+<circle cx="1171" cy="684" r="8" fill="#E85D75"/>
+<circle cx="1160.6352549156243" cy="698.2658477444273" r="8" fill="#E85D75"/>
+<circle cx="1143.8647450843757" cy="692.8167787843871" r="8" fill="#E85D75"/>
+<circle cx="1143.8647450843757" cy="675.1832212156129" r="8" fill="#E85D75"/>
+<circle cx="1160.6352549156243" cy="669.7341522555727" r="8" fill="#E85D75"/>
+<circle cx="1156" cy="684" r="6" fill="#c1712d"/>
+
+      <!-- 토끼 2 -->
+      <g id="rabbit-2">
+        <!-- 그림자 -->
+        <ellipse cx="200" cy="610" rx="45" ry="10" fill="rgba(0,0,0,0.2)"/>
+
+        <!-- 몸통 -->
+        <ellipse cx="200" cy="500" rx="55" ry="75" fill="#E85D75"/>
+        <ellipse cx="200" cy="510" rx="40" ry="55" fill="#ffaac2"/>
+
+        <!-- 머리 -->
+        <circle cx="200" cy="430" r="50" fill="#E85D75"/>
+        <ellipse cx="200" cy="445" rx="35" ry="40" fill="#ffaac2"/>
+
+        <!-- 긴 귀 -->
+        <ellipse cx="172" cy="385" rx="18" ry="45" fill="#E85D75"/>
+        <ellipse cx="172" cy="390" rx="12" ry="35" fill="#FFB6C1"/>
+        <ellipse cx="228" cy="385" rx="18" ry="45" fill="#E85D75"/>
+        <ellipse cx="228" cy="390" rx="12" ry="35" fill="#FFB6C1"/>
+
+        <!-- 눈 -->
+        <circle cx="182" cy="425" r="6" fill="#000"/>
+        <circle cx="184" cy="423" r="2" fill="#FFF"/>
+        <circle cx="218" cy="425" r="6" fill="#000"/>
+        <circle cx="220" cy="423" r="2" fill="#FFF"/>
+
+        <!-- 코 -->
+        <ellipse cx="200" cy="440" rx="5" ry="4" fill="#FF69B4"/>
+
+        <!-- 입 -->
+        <path d="M 192 442 Q 200 448 208 442"
+              stroke="#000" stroke-width="2" fill="none"/>
+
+        <!-- 볼 -->
+        <circle cx="175" cy="440" r="8" fill="#FFB6C1" opacity="0.5"/>
+        <circle cx="225" cy="440" r="8" fill="#FFB6C1" opacity="0.5"/>
+
+        <!-- 팔 -->
+        <ellipse cx="140" cy="510" rx="15" ry="45" fill="#E85D75" transform="rotate(-25 140 510)"/>
+        <ellipse cx="260" cy="510" rx="15" ry="45" fill="#E85D75" transform="rotate(25 260 510)"/>
+
+        <!-- 다리 -->
+        <ellipse cx="172" cy="580" rx="18" ry="50" fill="#E85D75"/>
+        <ellipse cx="228" cy="580" rx="18" ry="50" fill="#E85D75"/>
+
+        <!-- 발 -->
+        <ellipse cx="172" cy="615" rx="22" ry="15" fill="#E85D75"/>
+        <ellipse cx="228" cy="615" rx="22" ry="15" fill="#E85D75"/>
+
+        <!-- 꼬리 -->
+        <circle cx="200" cy="565" r="18" fill="#ffaac2"/>
+      </g>
+    <ellipse cx="0" cy="760" rx="40" ry="15" fill="#905a28" opacity="0.6"/>
+<ellipse cx="123" cy="760" rx="40" ry="15" fill="#905a28" opacity="0.6"/>
+<ellipse cx="246" cy="760" rx="40" ry="15" fill="#905a28" opacity="0.6"/>
+<ellipse cx="319" cy="760" rx="40" ry="15" fill="#905a28" opacity="0.6"/>
+<ellipse cx="442" cy="760" rx="40" ry="15" fill="#905a28" opacity="0.6"/>
+<ellipse cx="515" cy="760" rx="40" ry="15" fill="#905a28" opacity="0.6"/>
+<ellipse cx="638" cy="760" rx="40" ry="15" fill="#905a28" opacity="0.6"/>
+<ellipse cx="711" cy="760" rx="40" ry="15" fill="#905a28" opacity="0.6"/>
+<ellipse cx="834" cy="760" rx="40" ry="15" fill="#905a28" opacity="0.6"/>
+<ellipse cx="907" cy="760" rx="40" ry="15" fill="#905a28" opacity="0.6"/>
+</svg>

@@ -1,0 +1,85 @@
+{
+  "title": "토끼의 모험 이야기",
+  "duration": 1,
+  "targetAge": "5",
+  "theme": "모험과 우정",
+  "generatedAt": "2026-01-29T07:30:10.041Z",
+  "sceneCount": 6,
+  "scenes": [
+    {
+      "sceneNumber": 1,
+      "duration": 10,
+      "narration": "옛날 아주 먼 옛날, 평화로운 숲속 마을에 호기심 많은 아기 토끼가 살고 있었어요.",
+      "backgroundDescription": "peaceful forest village with houses, sunny day, green trees",
+      "characters": [
+        "cute white rabbit"
+      ],
+      "actions": [
+        "looking around curiously"
+      ]
+    },
+    {
+      "sceneNumber": 2,
+      "duration": 10,
+      "narration": "어느 화창한 날, 토끼는 숲 너머 미지의 세계로 모험을 떠나기로 결심했답니다.",
+      "backgroundDescription": "forest path leading to adventure, blue sky, butterflies",
+      "characters": [
+        "white rabbit with backpack"
+      ],
+      "actions": [
+        "walking with determination"
+      ]
+    },
+    {
+      "sceneNumber": 3,
+      "duration": 10,
+      "narration": "길을 걷다 토끼는 반짝이는 신비한 나비를 만났어요. '안녕? 나랑 같이 놀래?'",
+      "backgroundDescription": "magical forest path with glowing elements",
+      "characters": [
+        "white rabbit",
+        "glowing butterfly"
+      ],
+      "actions": [
+        "chasing playfully"
+      ]
+    },
+    {
+      "sceneNumber": 4,
+      "duration": 10,
+      "narration": "나비를 따라 도착한 곳에는 무지개색 폭포가 흐르고 있었어요. 정말 아름다운 풍경이었죠.",
+      "backgroundDescription": "rainbow waterfall with magical flowers",
+      "characters": [
+        "white rabbit"
+      ],
+      "actions": [
+        "looking amazed"
+      ]
+    },
+    {
+      "sceneNumber": 5,
+      "duration": 10,
+      "narration": "갑자기 작은 새가 나타나서 말했어요. '여기는 마법의 숲이란다. 조심해야 해!'",
+      "backgroundDescription": "enchanted forest with mysterious atmosphere",
+      "characters": [
+        "white rabbit",
+        "wise little bird"
+      ],
+      "actions": [
+        "talking together"
+      ]
+    },
+    {
+      "sceneNumber": 6,
+      "duration": 10,
+      "narration": "토끼는 새 친구와 함께 숲속 깊은 곳으로 들어갔어요. 모험이 계속되었죠.",
+      "backgroundDescription": "deep forest with tall trees and shadows",
+      "characters": [
+        "white rabbit",
+        "little bird"
+      ],
+      "actions": [
+        "exploring together"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,344 @@
+# 🎬 Google AI 어린이 동영상 자동 생성 시스템
+## 완전 자동화 패키지 v1.0
+
+---
+
+## 📋 목차
+1. [시스템 개요](#시스템-개요)
+2. [필수 요구사항](#필수-요구사항)
+3. [설치 방법](#설치-방법)
+4. [사용 방법](#사용-방법)
+5. [파일 구조](#파일-구조)
+6. [문제 해결](#문제-해결)
+
+---
+
+## 🎯 시스템 개요
+
+이 시스템은 **Google AI (Gemini 2.0 + Imagen 3 + TTS)**와 **Remotion**을 사용하여
+10분짜리 어린이 이야기 동영상을 **완전 자동으로** 생성합니다.
+
+### 특징
+- ✅ 명령어 한 줄로 전체 프로세스 자동화
+- ✅ Google Ultra 구독으로 거의 무료 사용
+- ✅ AI가 스토리, 이미지, 음성 모두 생성
+- ✅ 전문가 수준의 동영상 품질
+
+### 처리 과정
+```
+입력 (제목, 주제) 
+    → Gemini로 스토리 생성 
+    → Imagen으로 이미지 생성 
+    → TTS로 음성 생성 
+    → Remotion 컴포넌트 자동 생성 
+    → 최종 MP4 렌더링
+```
+
+---
+
+## 💻 필수 요구사항
+
+### 1. Google 계정
+- **Google One AI Premium** 구독 (월 $19.99)
+  - Gemini Advanced 무제한
+  - Imagen 3 월 500장
+  - Cloud TTS 월 100만 자
+
+### 2. API 키 발급
+- **Google AI Studio API Key**
+  - https://aistudio.google.com/app/apikey
+  - "Create API Key" 클릭
+  - 생성된 키 복사 (나중에 사용)
+
+### 3. Google Cloud 프로젝트
+- https://console.cloud.google.com
+- 새 프로젝트 생성 (예: story-video-maker)
+- Text-to-Speech API 활성화
+- 서비스 계정 키 생성 (JSON 다운로드)
+
+### 4. 개발 환경
+- Node.js 18 이상
+- npm 또는 yarn
+- 8GB 이상 RAM 권장
+
+---
+
+## 🚀 설치 방법
+
+### 방법 1: Google IDX (Project IDX) - 권장
+
+```bash
+# 1. IDX에서 새 프로젝트 생성
+# https://idx.google.com
+
+# 2. 터미널에서 실행
+git clone [이 패키지 위치]
+cd google-story-video
+
+# 3. 패키지 설치
+npm install
+
+# 4. 환경 변수 설정
+cp .env.example .env
+# .env 파일을 열어서 API 키 입력
+
+# 5. Google Cloud 인증
+gcloud auth application-default login
+
+# 완료!
+```
+
+### 방법 2: 로컬 컴퓨터
+
+```bash
+# 1. 저장소 복제
+git clone [이 패키지 위치]
+cd google-story-video
+
+# 2. Node.js 설치 확인
+node --version  # v18 이상이어야 함
+
+# 3. 패키지 설치
+npm install
+
+# 4. Google Cloud SDK 설치
+# Mac: brew install google-cloud-sdk
+# Windows: https://cloud.google.com/sdk/docs/install
+
+# 5. 인증
+gcloud auth application-default login
+
+# 6. 환경 변수 설정
+cp .env.example .env
+# .env 파일 수정하여 API 키 입력
+```
+
+---
+
+## 🎬 사용 방법
+
+### 기본 사용법
+
+```bash
+# 10분짜리 동영상 생성
+npm run create -- \
+  --title "용감한 토끼의 모험" \
+  --duration 10 \
+  --age "5-7세" \
+  --theme "용기와 우정"
+```
+
+### 간단한 사용법
+
+```bash
+# 제목만 지정 (나머지는 기본값)
+npm run create -- -t "마법의 숲"
+
+# 길이 지정
+npm run create -- -t "공룡 친구들" -d 5
+```
+
+### 여러 개 한 번에 생성
+
+```bash
+# stories.json 파일 생성 후
+npm run batch -- -f stories.json
+```
+
+### 미리보기
+
+```bash
+# 생성된 동영상 미리보기
+npm run preview
+```
+
+---
+
+## 📁 파일 구조
+
+```
+google-story-video/
+├── 📄 README.md                    # 이 파일
+├── 📄 package.json                 # npm 설정
+├── 📄 tsconfig.json               # TypeScript 설정
+├── 📄 .env.example                # 환경 변수 예시
+├── 📄 .env                        # 실제 환경 변수 (직접 생성)
+│
+├── 📂 src/
+│   ├── 📄 index.ts               # Remotion 엔트리
+│   ├── 📄 Root.tsx               # 자동 생성됨
+│   ├── 📄 StoryVideo.tsx         # 자동 생성됨
+│   │
+│   ├── 📂 automation/
+│   │   ├── 📄 GoogleStoryGenerator.ts  # 핵심 생성 엔진
+│   │   ├── 📄 cli.ts                   # CLI 스크립트
+│   │   └── 📄 types.ts                 # TypeScript 타입
+│   │
+│   └── 📂 Story/                 # 자동 생성됨
+│       ├── 📄 Scene1.tsx
+│       ├── 📄 Scene2.tsx
+│       └── ...
+│
+├── 📂 public/
+│   ├── 📂 images/                # 생성된 이미지
+│   └── 📂 audio/                 # 생성된 음성
+│
+└── 📂 output/                    # 최종 동영상
+    └── 📄 [제목].mp4
+```
+
+---
+
+## ⚙️ 설정 파일 상세
+
+### .env 파일
+```bash
+# Google AI Studio API Key
+GOOGLE_AI_API_KEY=YOUR_API_KEY
+
+# Google Cloud 서비스 계정 키 경로
+GOOGLE_APPLICATION_CREDENTIALS=./service-account-key.json
+```
+
+### package.json 주요 스크립트
+```json
+{
+  "scripts": {
+    "create": "ts-node src/automation/cli.ts create",
+    "preview": "remotion preview",
+    "render": "remotion render src/index.ts StoryVideo output/video.mp4",
+    "batch": "ts-node src/automation/cli.ts batch"
+  }
+}
+```
+
+---
+
+## 🐛 문제 해결
+
+### 1. API 키 오류
+```bash
+Error: API key not valid
+
+# 해결:
+# 1. .env 파일 확인
+# 2. API 키 재발급
+# 3. 따옴표 없이 입력했는지 확인
+```
+
+### 2. 이미지 생성 실패
+```bash
+Error: Imagen API error
+
+# 해결:
+# 1. Google Ultra 구독 확인
+# 2. 월 500장 한도 확인
+# 3. 프롬프트가 너무 길지 않은지 확인
+```
+
+### 3. TTS 권한 오류
+```bash
+Error: Permission denied
+
+# 해결:
+gcloud auth application-default login
+gcloud services enable texttospeech.googleapis.com
+```
+
+### 4. 메모리 부족
+```bash
+JavaScript heap out of memory
+
+# 해결:
+export NODE_OPTIONS="--max-old-space-size=8192"
+npm run create -- -t "테스트" -d 5
+```
+
+### 5. 렌더링 느림
+```bash
+# 병렬 처리 증가
+npx remotion render src/index.ts StoryVideo output/video.mp4 --concurrency 8
+
+# 또는 화질 낮추기
+npx remotion render src/index.ts StoryVideo output/video.mp4 --crf 28
+```
+
+---
+
+## 💰 비용 계산
+
+### Google One AI Premium ($19.99/월)
+- ✅ Gemini: 무제한
+- ✅ Imagen 3: 월 500장
+- ✅ TTS: 월 100만 자
+
+### 10분 동영상 1개당
+- 스토리: 무료 (Gemini)
+- 이미지 6-8장: 무료 (500장 한도 내)
+- 음성 1500자: 무료 (100만 자 한도 내)
+- **총: $0**
+
+### 월 제작 가능량
+- 약 60-80개 동영상 (이미지 한도 기준)
+- 또는 약 650개 (TTS 한도 기준)
+
+---
+
+## 🎓 고급 사용법
+
+### 커스텀 캐릭터 사용
+```typescript
+// src/automation/custom-characters.ts
+const customCharacters = {
+  "토끼": "white fluffy bunny with big blue eyes",
+  "곰": "friendly brown bear with a red scarf"
+};
+```
+
+### 배경 음악 추가
+```bash
+# public/audio/background-music.mp3 파일 추가
+# StoryVideo.tsx에서 자동으로 사용됨
+```
+
+### 다국어 지원
+```typescript
+// .env에 추가
+TTS_LANGUAGE_CODE=en-US  # 영어
+TTS_VOICE_NAME=en-US-Neural2-C
+```
+
+---
+
+## 📞 지원
+
+문제가 있으시면:
+1. 이 문서의 "문제 해결" 섹션 확인
+2. GitHub Issues 등록
+3. 커뮤니티 포럼 질문
+
+---
+
+## 📝 라이선스
+
+MIT License
+
+---
+
+## 🙏 감사의 말
+
+이 프로젝트는 다음 기술을 사용합니다:
+- Google Gemini 2.0
+- Google Imagen 3
+- Google Cloud Text-to-Speech
+- Remotion
+- React
+- TypeScript
+
+---
+
+**이제 시작하세요! 🚀**
+
+```bash
+npm run create -- -t "나의 첫 동영상" -d 10
+```

@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Environment variables (보안 필수)
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+# .env는 템플릿으로 올리지만, 실제 키가 든 건 올리지 않음
+
+# Secrets
+service-account.json
+
+# Remotion & Build Output
+output/
+dist/
+.cache/
+
+# Debugging
+debug-*.js
+verify-key.ts
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Generated Assets
+public/images/
+public/audio/
+!public/images/.keep
+!public/audio/.keep
+
+# OS generated files
+.DS_Store
+Thumbs.db

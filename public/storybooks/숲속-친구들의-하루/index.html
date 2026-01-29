@@ -1,0 +1,2079 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>숲속 친구들의 하루 - 사진 스토리북</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Noto Sans KR', Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .header {
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      margin-bottom: 30px;
+      text-align: center;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    }
+
+    .header h1 {
+      font-size: 3em;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      font-size: 1.2em;
+      color: #666;
+    }
+
+    .controls {
+      background: white;
+      border-radius: 20px;
+      padding: 20px;
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    .controls button {
+      background: #667eea;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 10px;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .controls button:hover {
+      background: #764ba2;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .scene-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+
+    .scene-card {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .scene-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .scene-number {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 15px;
+      font-size: 1.3em;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .scene-image {
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+      background: #f0f0f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .scene-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .scene-narration {
+      padding: 30px;
+      font-size: 1.2em;
+      line-height: 1.8;
+      color: #333;
+      min-height: 150px;
+    }
+
+    .scene-controls {
+      padding: 20px;
+      border-top: 2px solid #f0f0f0;
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .scene-controls button {
+      background: #667eea;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: all 0.2s;
+    }
+
+    .scene-controls button:hover {
+      background: #764ba2;
+    }
+
+    .footer {
+      background: white;
+      border-radius: 20px;
+      padding: 30px;
+      text-align: center;
+      color: #666;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    .playing {
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.7; }
+    }
+
+    @media (max-width: 768px) {
+      .scene-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .header h1 {
+        font-size: 2em;
+      }
+
+      .controls {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>숲속 친구들의 하루</h1>
+      <p>총 60개 장면 · 10분 · 5세</p>
+    </div>
+
+    <div class="controls">
+      <button onclick="playAll()">▶️ 전체 재생</button>
+      <button onclick="stopAll()">⏹️ 모두 정지</button>
+      <button onclick="downloadStory()">💾 스토리 다운로드</button>
+    </div>
+
+    <div class="scene-grid">
+      
+        <div class="scene-card" id="scene-1">
+          <div class="scene-number">장면 1</div>
+          <div class="scene-image">
+            <img src="scene1.png"
+                 onerror="this.onerror=null; this.src='scene1.svg';"
+                 alt="장면 1">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 1번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-1" src="scene1.mp3"></audio>
+            <button onclick="playAudio(1)">🔊 들어보기</button>
+            <button onclick="stopAudio(1)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-2">
+          <div class="scene-number">장면 2</div>
+          <div class="scene-image">
+            <img src="scene2.png"
+                 onerror="this.onerror=null; this.src='scene2.svg';"
+                 alt="장면 2">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 2번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-2" src="scene2.mp3"></audio>
+            <button onclick="playAudio(2)">🔊 들어보기</button>
+            <button onclick="stopAudio(2)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-3">
+          <div class="scene-number">장면 3</div>
+          <div class="scene-image">
+            <img src="scene3.png"
+                 onerror="this.onerror=null; this.src='scene3.svg';"
+                 alt="장면 3">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 3번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-3" src="scene3.mp3"></audio>
+            <button onclick="playAudio(3)">🔊 들어보기</button>
+            <button onclick="stopAudio(3)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-4">
+          <div class="scene-number">장면 4</div>
+          <div class="scene-image">
+            <img src="scene4.png"
+                 onerror="this.onerror=null; this.src='scene4.svg';"
+                 alt="장면 4">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 4번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-4" src="scene4.mp3"></audio>
+            <button onclick="playAudio(4)">🔊 들어보기</button>
+            <button onclick="stopAudio(4)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-5">
+          <div class="scene-number">장면 5</div>
+          <div class="scene-image">
+            <img src="scene5.png"
+                 onerror="this.onerror=null; this.src='scene5.svg';"
+                 alt="장면 5">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 5번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-5" src="scene5.mp3"></audio>
+            <button onclick="playAudio(5)">🔊 들어보기</button>
+            <button onclick="stopAudio(5)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-6">
+          <div class="scene-number">장면 6</div>
+          <div class="scene-image">
+            <img src="scene6.png"
+                 onerror="this.onerror=null; this.src='scene6.svg';"
+                 alt="장면 6">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 6번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-6" src="scene6.mp3"></audio>
+            <button onclick="playAudio(6)">🔊 들어보기</button>
+            <button onclick="stopAudio(6)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-7">
+          <div class="scene-number">장면 7</div>
+          <div class="scene-image">
+            <img src="scene7.png"
+                 onerror="this.onerror=null; this.src='scene7.svg';"
+                 alt="장면 7">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 7번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-7" src="scene7.mp3"></audio>
+            <button onclick="playAudio(7)">🔊 들어보기</button>
+            <button onclick="stopAudio(7)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-8">
+          <div class="scene-number">장면 8</div>
+          <div class="scene-image">
+            <img src="scene8.png"
+                 onerror="this.onerror=null; this.src='scene8.svg';"
+                 alt="장면 8">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 8번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-8" src="scene8.mp3"></audio>
+            <button onclick="playAudio(8)">🔊 들어보기</button>
+            <button onclick="stopAudio(8)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-9">
+          <div class="scene-number">장면 9</div>
+          <div class="scene-image">
+            <img src="scene9.png"
+                 onerror="this.onerror=null; this.src='scene9.svg';"
+                 alt="장면 9">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 9번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-9" src="scene9.mp3"></audio>
+            <button onclick="playAudio(9)">🔊 들어보기</button>
+            <button onclick="stopAudio(9)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-10">
+          <div class="scene-number">장면 10</div>
+          <div class="scene-image">
+            <img src="scene10.png"
+                 onerror="this.onerror=null; this.src='scene10.svg';"
+                 alt="장면 10">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 10번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-10" src="scene10.mp3"></audio>
+            <button onclick="playAudio(10)">🔊 들어보기</button>
+            <button onclick="stopAudio(10)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-11">
+          <div class="scene-number">장면 11</div>
+          <div class="scene-image">
+            <img src="scene11.png"
+                 onerror="this.onerror=null; this.src='scene11.svg';"
+                 alt="장면 11">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 11번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-11" src="scene11.mp3"></audio>
+            <button onclick="playAudio(11)">🔊 들어보기</button>
+            <button onclick="stopAudio(11)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-12">
+          <div class="scene-number">장면 12</div>
+          <div class="scene-image">
+            <img src="scene12.png"
+                 onerror="this.onerror=null; this.src='scene12.svg';"
+                 alt="장면 12">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 12번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-12" src="scene12.mp3"></audio>
+            <button onclick="playAudio(12)">🔊 들어보기</button>
+            <button onclick="stopAudio(12)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-13">
+          <div class="scene-number">장면 13</div>
+          <div class="scene-image">
+            <img src="scene13.png"
+                 onerror="this.onerror=null; this.src='scene13.svg';"
+                 alt="장면 13">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 13번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-13" src="scene13.mp3"></audio>
+            <button onclick="playAudio(13)">🔊 들어보기</button>
+            <button onclick="stopAudio(13)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-14">
+          <div class="scene-number">장면 14</div>
+          <div class="scene-image">
+            <img src="scene14.png"
+                 onerror="this.onerror=null; this.src='scene14.svg';"
+                 alt="장면 14">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 14번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-14" src="scene14.mp3"></audio>
+            <button onclick="playAudio(14)">🔊 들어보기</button>
+            <button onclick="stopAudio(14)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-15">
+          <div class="scene-number">장면 15</div>
+          <div class="scene-image">
+            <img src="scene15.png"
+                 onerror="this.onerror=null; this.src='scene15.svg';"
+                 alt="장면 15">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 15번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-15" src="scene15.mp3"></audio>
+            <button onclick="playAudio(15)">🔊 들어보기</button>
+            <button onclick="stopAudio(15)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-16">
+          <div class="scene-number">장면 16</div>
+          <div class="scene-image">
+            <img src="scene16.png"
+                 onerror="this.onerror=null; this.src='scene16.svg';"
+                 alt="장면 16">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 16번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-16" src="scene16.mp3"></audio>
+            <button onclick="playAudio(16)">🔊 들어보기</button>
+            <button onclick="stopAudio(16)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-17">
+          <div class="scene-number">장면 17</div>
+          <div class="scene-image">
+            <img src="scene17.png"
+                 onerror="this.onerror=null; this.src='scene17.svg';"
+                 alt="장면 17">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 17번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-17" src="scene17.mp3"></audio>
+            <button onclick="playAudio(17)">🔊 들어보기</button>
+            <button onclick="stopAudio(17)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-18">
+          <div class="scene-number">장면 18</div>
+          <div class="scene-image">
+            <img src="scene18.png"
+                 onerror="this.onerror=null; this.src='scene18.svg';"
+                 alt="장면 18">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 18번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-18" src="scene18.mp3"></audio>
+            <button onclick="playAudio(18)">🔊 들어보기</button>
+            <button onclick="stopAudio(18)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-19">
+          <div class="scene-number">장면 19</div>
+          <div class="scene-image">
+            <img src="scene19.png"
+                 onerror="this.onerror=null; this.src='scene19.svg';"
+                 alt="장면 19">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 19번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-19" src="scene19.mp3"></audio>
+            <button onclick="playAudio(19)">🔊 들어보기</button>
+            <button onclick="stopAudio(19)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-20">
+          <div class="scene-number">장면 20</div>
+          <div class="scene-image">
+            <img src="scene20.png"
+                 onerror="this.onerror=null; this.src='scene20.svg';"
+                 alt="장면 20">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 20번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-20" src="scene20.mp3"></audio>
+            <button onclick="playAudio(20)">🔊 들어보기</button>
+            <button onclick="stopAudio(20)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-21">
+          <div class="scene-number">장면 21</div>
+          <div class="scene-image">
+            <img src="scene21.png"
+                 onerror="this.onerror=null; this.src='scene21.svg';"
+                 alt="장면 21">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 21번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-21" src="scene21.mp3"></audio>
+            <button onclick="playAudio(21)">🔊 들어보기</button>
+            <button onclick="stopAudio(21)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-22">
+          <div class="scene-number">장면 22</div>
+          <div class="scene-image">
+            <img src="scene22.png"
+                 onerror="this.onerror=null; this.src='scene22.svg';"
+                 alt="장면 22">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 22번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-22" src="scene22.mp3"></audio>
+            <button onclick="playAudio(22)">🔊 들어보기</button>
+            <button onclick="stopAudio(22)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-23">
+          <div class="scene-number">장면 23</div>
+          <div class="scene-image">
+            <img src="scene23.png"
+                 onerror="this.onerror=null; this.src='scene23.svg';"
+                 alt="장면 23">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 23번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-23" src="scene23.mp3"></audio>
+            <button onclick="playAudio(23)">🔊 들어보기</button>
+            <button onclick="stopAudio(23)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-24">
+          <div class="scene-number">장면 24</div>
+          <div class="scene-image">
+            <img src="scene24.png"
+                 onerror="this.onerror=null; this.src='scene24.svg';"
+                 alt="장면 24">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 24번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-24" src="scene24.mp3"></audio>
+            <button onclick="playAudio(24)">🔊 들어보기</button>
+            <button onclick="stopAudio(24)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-25">
+          <div class="scene-number">장면 25</div>
+          <div class="scene-image">
+            <img src="scene25.png"
+                 onerror="this.onerror=null; this.src='scene25.svg';"
+                 alt="장면 25">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 25번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-25" src="scene25.mp3"></audio>
+            <button onclick="playAudio(25)">🔊 들어보기</button>
+            <button onclick="stopAudio(25)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-26">
+          <div class="scene-number">장면 26</div>
+          <div class="scene-image">
+            <img src="scene26.png"
+                 onerror="this.onerror=null; this.src='scene26.svg';"
+                 alt="장면 26">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 26번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-26" src="scene26.mp3"></audio>
+            <button onclick="playAudio(26)">🔊 들어보기</button>
+            <button onclick="stopAudio(26)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-27">
+          <div class="scene-number">장면 27</div>
+          <div class="scene-image">
+            <img src="scene27.png"
+                 onerror="this.onerror=null; this.src='scene27.svg';"
+                 alt="장면 27">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 27번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-27" src="scene27.mp3"></audio>
+            <button onclick="playAudio(27)">🔊 들어보기</button>
+            <button onclick="stopAudio(27)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-28">
+          <div class="scene-number">장면 28</div>
+          <div class="scene-image">
+            <img src="scene28.png"
+                 onerror="this.onerror=null; this.src='scene28.svg';"
+                 alt="장면 28">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 28번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-28" src="scene28.mp3"></audio>
+            <button onclick="playAudio(28)">🔊 들어보기</button>
+            <button onclick="stopAudio(28)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-29">
+          <div class="scene-number">장면 29</div>
+          <div class="scene-image">
+            <img src="scene29.png"
+                 onerror="this.onerror=null; this.src='scene29.svg';"
+                 alt="장면 29">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 29번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-29" src="scene29.mp3"></audio>
+            <button onclick="playAudio(29)">🔊 들어보기</button>
+            <button onclick="stopAudio(29)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-30">
+          <div class="scene-number">장면 30</div>
+          <div class="scene-image">
+            <img src="scene30.png"
+                 onerror="this.onerror=null; this.src='scene30.svg';"
+                 alt="장면 30">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 30번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-30" src="scene30.mp3"></audio>
+            <button onclick="playAudio(30)">🔊 들어보기</button>
+            <button onclick="stopAudio(30)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-31">
+          <div class="scene-number">장면 31</div>
+          <div class="scene-image">
+            <img src="scene31.png"
+                 onerror="this.onerror=null; this.src='scene31.svg';"
+                 alt="장면 31">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 31번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-31" src="scene31.mp3"></audio>
+            <button onclick="playAudio(31)">🔊 들어보기</button>
+            <button onclick="stopAudio(31)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-32">
+          <div class="scene-number">장면 32</div>
+          <div class="scene-image">
+            <img src="scene32.png"
+                 onerror="this.onerror=null; this.src='scene32.svg';"
+                 alt="장면 32">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 32번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-32" src="scene32.mp3"></audio>
+            <button onclick="playAudio(32)">🔊 들어보기</button>
+            <button onclick="stopAudio(32)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-33">
+          <div class="scene-number">장면 33</div>
+          <div class="scene-image">
+            <img src="scene33.png"
+                 onerror="this.onerror=null; this.src='scene33.svg';"
+                 alt="장면 33">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 33번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-33" src="scene33.mp3"></audio>
+            <button onclick="playAudio(33)">🔊 들어보기</button>
+            <button onclick="stopAudio(33)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-34">
+          <div class="scene-number">장면 34</div>
+          <div class="scene-image">
+            <img src="scene34.png"
+                 onerror="this.onerror=null; this.src='scene34.svg';"
+                 alt="장면 34">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 34번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-34" src="scene34.mp3"></audio>
+            <button onclick="playAudio(34)">🔊 들어보기</button>
+            <button onclick="stopAudio(34)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-35">
+          <div class="scene-number">장면 35</div>
+          <div class="scene-image">
+            <img src="scene35.png"
+                 onerror="this.onerror=null; this.src='scene35.svg';"
+                 alt="장면 35">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 35번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-35" src="scene35.mp3"></audio>
+            <button onclick="playAudio(35)">🔊 들어보기</button>
+            <button onclick="stopAudio(35)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-36">
+          <div class="scene-number">장면 36</div>
+          <div class="scene-image">
+            <img src="scene36.png"
+                 onerror="this.onerror=null; this.src='scene36.svg';"
+                 alt="장면 36">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 36번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-36" src="scene36.mp3"></audio>
+            <button onclick="playAudio(36)">🔊 들어보기</button>
+            <button onclick="stopAudio(36)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-37">
+          <div class="scene-number">장면 37</div>
+          <div class="scene-image">
+            <img src="scene37.png"
+                 onerror="this.onerror=null; this.src='scene37.svg';"
+                 alt="장면 37">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 37번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-37" src="scene37.mp3"></audio>
+            <button onclick="playAudio(37)">🔊 들어보기</button>
+            <button onclick="stopAudio(37)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-38">
+          <div class="scene-number">장면 38</div>
+          <div class="scene-image">
+            <img src="scene38.png"
+                 onerror="this.onerror=null; this.src='scene38.svg';"
+                 alt="장면 38">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 38번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-38" src="scene38.mp3"></audio>
+            <button onclick="playAudio(38)">🔊 들어보기</button>
+            <button onclick="stopAudio(38)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-39">
+          <div class="scene-number">장면 39</div>
+          <div class="scene-image">
+            <img src="scene39.png"
+                 onerror="this.onerror=null; this.src='scene39.svg';"
+                 alt="장면 39">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 39번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-39" src="scene39.mp3"></audio>
+            <button onclick="playAudio(39)">🔊 들어보기</button>
+            <button onclick="stopAudio(39)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-40">
+          <div class="scene-number">장면 40</div>
+          <div class="scene-image">
+            <img src="scene40.png"
+                 onerror="this.onerror=null; this.src='scene40.svg';"
+                 alt="장면 40">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 40번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-40" src="scene40.mp3"></audio>
+            <button onclick="playAudio(40)">🔊 들어보기</button>
+            <button onclick="stopAudio(40)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-41">
+          <div class="scene-number">장면 41</div>
+          <div class="scene-image">
+            <img src="scene41.png"
+                 onerror="this.onerror=null; this.src='scene41.svg';"
+                 alt="장면 41">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 41번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-41" src="scene41.mp3"></audio>
+            <button onclick="playAudio(41)">🔊 들어보기</button>
+            <button onclick="stopAudio(41)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-42">
+          <div class="scene-number">장면 42</div>
+          <div class="scene-image">
+            <img src="scene42.png"
+                 onerror="this.onerror=null; this.src='scene42.svg';"
+                 alt="장면 42">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 42번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-42" src="scene42.mp3"></audio>
+            <button onclick="playAudio(42)">🔊 들어보기</button>
+            <button onclick="stopAudio(42)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-43">
+          <div class="scene-number">장면 43</div>
+          <div class="scene-image">
+            <img src="scene43.png"
+                 onerror="this.onerror=null; this.src='scene43.svg';"
+                 alt="장면 43">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 43번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-43" src="scene43.mp3"></audio>
+            <button onclick="playAudio(43)">🔊 들어보기</button>
+            <button onclick="stopAudio(43)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-44">
+          <div class="scene-number">장면 44</div>
+          <div class="scene-image">
+            <img src="scene44.png"
+                 onerror="this.onerror=null; this.src='scene44.svg';"
+                 alt="장면 44">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 44번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-44" src="scene44.mp3"></audio>
+            <button onclick="playAudio(44)">🔊 들어보기</button>
+            <button onclick="stopAudio(44)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-45">
+          <div class="scene-number">장면 45</div>
+          <div class="scene-image">
+            <img src="scene45.png"
+                 onerror="this.onerror=null; this.src='scene45.svg';"
+                 alt="장면 45">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 45번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-45" src="scene45.mp3"></audio>
+            <button onclick="playAudio(45)">🔊 들어보기</button>
+            <button onclick="stopAudio(45)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-46">
+          <div class="scene-number">장면 46</div>
+          <div class="scene-image">
+            <img src="scene46.png"
+                 onerror="this.onerror=null; this.src='scene46.svg';"
+                 alt="장면 46">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 46번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-46" src="scene46.mp3"></audio>
+            <button onclick="playAudio(46)">🔊 들어보기</button>
+            <button onclick="stopAudio(46)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-47">
+          <div class="scene-number">장면 47</div>
+          <div class="scene-image">
+            <img src="scene47.png"
+                 onerror="this.onerror=null; this.src='scene47.svg';"
+                 alt="장면 47">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 47번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-47" src="scene47.mp3"></audio>
+            <button onclick="playAudio(47)">🔊 들어보기</button>
+            <button onclick="stopAudio(47)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-48">
+          <div class="scene-number">장면 48</div>
+          <div class="scene-image">
+            <img src="scene48.png"
+                 onerror="this.onerror=null; this.src='scene48.svg';"
+                 alt="장면 48">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 48번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-48" src="scene48.mp3"></audio>
+            <button onclick="playAudio(48)">🔊 들어보기</button>
+            <button onclick="stopAudio(48)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-49">
+          <div class="scene-number">장면 49</div>
+          <div class="scene-image">
+            <img src="scene49.png"
+                 onerror="this.onerror=null; this.src='scene49.svg';"
+                 alt="장면 49">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 49번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-49" src="scene49.mp3"></audio>
+            <button onclick="playAudio(49)">🔊 들어보기</button>
+            <button onclick="stopAudio(49)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-50">
+          <div class="scene-number">장면 50</div>
+          <div class="scene-image">
+            <img src="scene50.png"
+                 onerror="this.onerror=null; this.src='scene50.svg';"
+                 alt="장면 50">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 50번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-50" src="scene50.mp3"></audio>
+            <button onclick="playAudio(50)">🔊 들어보기</button>
+            <button onclick="stopAudio(50)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-51">
+          <div class="scene-number">장면 51</div>
+          <div class="scene-image">
+            <img src="scene51.png"
+                 onerror="this.onerror=null; this.src='scene51.svg';"
+                 alt="장면 51">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 51번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-51" src="scene51.mp3"></audio>
+            <button onclick="playAudio(51)">🔊 들어보기</button>
+            <button onclick="stopAudio(51)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-52">
+          <div class="scene-number">장면 52</div>
+          <div class="scene-image">
+            <img src="scene52.png"
+                 onerror="this.onerror=null; this.src='scene52.svg';"
+                 alt="장면 52">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 52번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-52" src="scene52.mp3"></audio>
+            <button onclick="playAudio(52)">🔊 들어보기</button>
+            <button onclick="stopAudio(52)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-53">
+          <div class="scene-number">장면 53</div>
+          <div class="scene-image">
+            <img src="scene53.png"
+                 onerror="this.onerror=null; this.src='scene53.svg';"
+                 alt="장면 53">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 53번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-53" src="scene53.mp3"></audio>
+            <button onclick="playAudio(53)">🔊 들어보기</button>
+            <button onclick="stopAudio(53)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-54">
+          <div class="scene-number">장면 54</div>
+          <div class="scene-image">
+            <img src="scene54.png"
+                 onerror="this.onerror=null; this.src='scene54.svg';"
+                 alt="장면 54">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 54번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-54" src="scene54.mp3"></audio>
+            <button onclick="playAudio(54)">🔊 들어보기</button>
+            <button onclick="stopAudio(54)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-55">
+          <div class="scene-number">장면 55</div>
+          <div class="scene-image">
+            <img src="scene55.png"
+                 onerror="this.onerror=null; this.src='scene55.svg';"
+                 alt="장면 55">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 55번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-55" src="scene55.mp3"></audio>
+            <button onclick="playAudio(55)">🔊 들어보기</button>
+            <button onclick="stopAudio(55)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-56">
+          <div class="scene-number">장면 56</div>
+          <div class="scene-image">
+            <img src="scene56.png"
+                 onerror="this.onerror=null; this.src='scene56.svg';"
+                 alt="장면 56">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 56번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-56" src="scene56.mp3"></audio>
+            <button onclick="playAudio(56)">🔊 들어보기</button>
+            <button onclick="stopAudio(56)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-57">
+          <div class="scene-number">장면 57</div>
+          <div class="scene-image">
+            <img src="scene57.png"
+                 onerror="this.onerror=null; this.src='scene57.svg';"
+                 alt="장면 57">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 57번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-57" src="scene57.mp3"></audio>
+            <button onclick="playAudio(57)">🔊 들어보기</button>
+            <button onclick="stopAudio(57)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-58">
+          <div class="scene-number">장면 58</div>
+          <div class="scene-image">
+            <img src="scene58.png"
+                 onerror="this.onerror=null; this.src='scene58.svg';"
+                 alt="장면 58">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 58번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-58" src="scene58.mp3"></audio>
+            <button onclick="playAudio(58)">🔊 들어보기</button>
+            <button onclick="stopAudio(58)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-59">
+          <div class="scene-number">장면 59</div>
+          <div class="scene-image">
+            <img src="scene59.png"
+                 onerror="this.onerror=null; this.src='scene59.svg';"
+                 alt="장면 59">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 59번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-59" src="scene59.mp3"></audio>
+            <button onclick="playAudio(59)">🔊 들어보기</button>
+            <button onclick="stopAudio(59)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+
+        <div class="scene-card" id="scene-60">
+          <div class="scene-number">장면 60</div>
+          <div class="scene-image">
+            <img src="scene60.png"
+                 onerror="this.onerror=null; this.src='scene60.svg';"
+                 alt="장면 60">
+          </div>
+          <div class="scene-narration">
+            <p>이것은 60번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.</p>
+          </div>
+          <div class="scene-controls">
+            <audio id="audio-60" src="scene60.mp3"></audio>
+            <button onclick="playAudio(60)">🔊 들어보기</button>
+            <button onclick="stopAudio(60)">⏸️ 정지</button>
+          </div>
+        </div>
+      
+    </div>
+
+    <div class="footer">
+      <p>🎨 Google AI + Hugging Face로 생성된 스토리북</p>
+      <p>생성 시간: 2026. 1. 29. 오후 4:25:27</p>
+    </div>
+  </div>
+
+  <script>
+    let currentScene = 0;
+    let isPlayingAll = false;
+
+    function playAudio(sceneNumber) {
+      const audio = document.getElementById('audio-' + sceneNumber);
+      const card = document.getElementById('scene-' + sceneNumber);
+
+      stopAll();
+
+      audio.play();
+      card.classList.add('playing');
+
+      audio.onended = () => {
+        card.classList.remove('playing');
+        if (isPlayingAll && sceneNumber < 60) {
+          setTimeout(() => playAudio(sceneNumber + 1), 500);
+        } else {
+          isPlayingAll = false;
+        }
+      };
+    }
+
+    function stopAudio(sceneNumber) {
+      const audio = document.getElementById('audio-' + sceneNumber);
+      const card = document.getElementById('scene-' + sceneNumber);
+
+      audio.pause();
+      audio.currentTime = 0;
+      card.classList.remove('playing');
+    }
+
+    function playAll() {
+      isPlayingAll = true;
+      playAudio(1);
+    }
+
+    function stopAll() {
+      isPlayingAll = false;
+      for (let i = 1; i <= 60; i++) {
+        stopAudio(i);
+      }
+    }
+
+    function downloadStory() {
+      const metadata = {
+        title: "숲속 친구들의 하루",
+        duration: 10,
+        targetAge: "5",
+        theme: "우정과 협동",
+        scenes: [
+  {
+    "sceneNumber": 1,
+    "duration": 10,
+    "narration": "이것은 1번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 1: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 2,
+    "duration": 10,
+    "narration": "이것은 2번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 2: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 3,
+    "duration": 10,
+    "narration": "이것은 3번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 3: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 4,
+    "duration": 10,
+    "narration": "이것은 4번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 4: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 5,
+    "duration": 10,
+    "narration": "이것은 5번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 5: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 6,
+    "duration": 10,
+    "narration": "이것은 6번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 6: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 7,
+    "duration": 10,
+    "narration": "이것은 7번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 7: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 8,
+    "duration": 10,
+    "narration": "이것은 8번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 8: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 9,
+    "duration": 10,
+    "narration": "이것은 9번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 9: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 10,
+    "duration": 10,
+    "narration": "이것은 10번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 10: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 11,
+    "duration": 10,
+    "narration": "이것은 11번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 11: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 12,
+    "duration": 10,
+    "narration": "이것은 12번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 12: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 13,
+    "duration": 10,
+    "narration": "이것은 13번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 13: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 14,
+    "duration": 10,
+    "narration": "이것은 14번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 14: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 15,
+    "duration": 10,
+    "narration": "이것은 15번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 15: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 16,
+    "duration": 10,
+    "narration": "이것은 16번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 16: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 17,
+    "duration": 10,
+    "narration": "이것은 17번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 17: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 18,
+    "duration": 10,
+    "narration": "이것은 18번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 18: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 19,
+    "duration": 10,
+    "narration": "이것은 19번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 19: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 20,
+    "duration": 10,
+    "narration": "이것은 20번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 20: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 21,
+    "duration": 10,
+    "narration": "이것은 21번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 21: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 22,
+    "duration": 10,
+    "narration": "이것은 22번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 22: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 23,
+    "duration": 10,
+    "narration": "이것은 23번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 23: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 24,
+    "duration": 10,
+    "narration": "이것은 24번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 24: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 25,
+    "duration": 10,
+    "narration": "이것은 25번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 25: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 26,
+    "duration": 10,
+    "narration": "이것은 26번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 26: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 27,
+    "duration": 10,
+    "narration": "이것은 27번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 27: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 28,
+    "duration": 10,
+    "narration": "이것은 28번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 28: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 29,
+    "duration": 10,
+    "narration": "이것은 29번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 29: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 30,
+    "duration": 10,
+    "narration": "이것은 30번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 30: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 31,
+    "duration": 10,
+    "narration": "이것은 31번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 31: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 32,
+    "duration": 10,
+    "narration": "이것은 32번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 32: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 33,
+    "duration": 10,
+    "narration": "이것은 33번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 33: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 34,
+    "duration": 10,
+    "narration": "이것은 34번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 34: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 35,
+    "duration": 10,
+    "narration": "이것은 35번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 35: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 36,
+    "duration": 10,
+    "narration": "이것은 36번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 36: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 37,
+    "duration": 10,
+    "narration": "이것은 37번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 37: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 38,
+    "duration": 10,
+    "narration": "이것은 38번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 38: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 39,
+    "duration": 10,
+    "narration": "이것은 39번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 39: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 40,
+    "duration": 10,
+    "narration": "이것은 40번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 40: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 41,
+    "duration": 10,
+    "narration": "이것은 41번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 41: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 42,
+    "duration": 10,
+    "narration": "이것은 42번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 42: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 43,
+    "duration": 10,
+    "narration": "이것은 43번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 43: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 44,
+    "duration": 10,
+    "narration": "이것은 44번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 44: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 45,
+    "duration": 10,
+    "narration": "이것은 45번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 45: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 46,
+    "duration": 10,
+    "narration": "이것은 46번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 46: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 47,
+    "duration": 10,
+    "narration": "이것은 47번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 47: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 48,
+    "duration": 10,
+    "narration": "이것은 48번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 48: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 49,
+    "duration": 10,
+    "narration": "이것은 49번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 49: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 50,
+    "duration": 10,
+    "narration": "이것은 50번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 50: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 51,
+    "duration": 10,
+    "narration": "이것은 51번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 51: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 52,
+    "duration": 10,
+    "narration": "이것은 52번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 52: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 53,
+    "duration": 10,
+    "narration": "이것은 53번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 53: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 54,
+    "duration": 10,
+    "narration": "이것은 54번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 54: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 55,
+    "duration": 10,
+    "narration": "이것은 55번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 55: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 56,
+    "duration": 10,
+    "narration": "이것은 56번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 56: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 57,
+    "duration": 10,
+    "narration": "이것은 57번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 57: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 58,
+    "duration": 10,
+    "narration": "이것은 58번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 58: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 59,
+    "duration": 10,
+    "narration": "이것은 59번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 59: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  },
+  {
+    "sceneNumber": 60,
+    "duration": 10,
+    "narration": "이것은 60번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.",
+    "backgroundDescription": "Scene 60: peaceful forest with sunshine",
+    "characters": [
+      "cute animal friend"
+    ],
+    "actions": [
+      "exploring"
+    ]
+  }
+]
+      };
+
+      const blob = new Blob([JSON.stringify(metadata, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = '숲속-친구들의-하루-metadata.json';
+      a.click();
+    }
+
+    // 키보드 단축키
+    document.addEventListener('keydown', (e) => {
+      if (e.code === 'Space') {
+        e.preventDefault();
+        if (isPlayingAll) {
+          stopAll();
+        } else {
+          playAll();
+        }
+      }
+    });
+  </script>
+</body>
+</html>
