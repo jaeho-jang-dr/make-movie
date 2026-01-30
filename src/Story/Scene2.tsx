@@ -26,7 +26,7 @@ export const Scene2 = () => {
     [0, 1],
     { extrapolateRight: 'clamp' }
   );
-  const narrationText = "이것은 2번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.";
+  const narrationText = "어느 화창한 날, 디노는 숲 너머 미지의 세계로 소풍을 떠나기로 결심했답니다.";
   const visibleText = narrationText.substring(0, Math.floor(textReveal * narrationText.length));
 
   return (
@@ -118,8 +118,8 @@ export const Scene2 = () => {
         {visibleText}
       </div>
 
-      {/* 오디오 */}
-      <Audio src={staticFile("audio/scene2-narration.mp3")} />
+      {/* 오디오 - 비활성화 (자막으로 대체) */}
+      {/* <Audio src={staticFile("audio/scene2-narration.mp3")} /> */}
     </AbsoluteFill>
   );
 };

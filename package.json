@@ -1,9 +1,26 @@
 {
-  "name": "google-story-video",
-  "version": "1.0.0",
-  "description": "Google AI를 활용한 어린이 동영상 자동 생성 시스템",
-  "main": "src/index.ts",
+  "name": "anime-maker",
+  "version": "2.0.0",
+  "description": "AI 기반 일본식 애니메이션 메이킹 앱 - Multi-AI Orchestration",
+  "main": "dist/electron/main.js",
   "scripts": {
+    "dev": "ts-node src/index.ts",
+    "cli": "ts-node src/cli/anime-maker.ts",
+    "status": "ts-node src/cli/anime-maker.ts status",
+    "teams": "ts-node src/cli/anime-maker.ts teams",
+    "teams:v": "ts-node src/cli/anime-maker.ts teams --verbose",
+    "phases": "ts-node src/cli/anime-maker.ts phases",
+    "agents": "ts-node src/cli/anime-maker.ts agents",
+    "conductor": "ts-node src/cli/anime-maker.ts conductor",
+    "story": "ts-node src/cli/anime-maker.ts story",
+    "anime": "ts-node src/cli/anime-maker.ts create",
+    "squad": "ts-node src/cli/anime-maker.ts squad",
+    "test:system": "ts-node src/cli/anime-maker.ts test",
+    "test:full": "ts-node src/cli/anime-maker.ts test --full",
+    "conductor:test": "ts-node src/test-conductor.ts",
+    "comfyui:test": "ts-node src/utils/comfyui-test.ts",
+    "swarm": "ts-node src/swarm/swarm-demo.ts",
+    "swarm:hive": "ts-node -e \"require('./src/swarm').createAnimeSwarm({pattern:'hive'}).printStatus()\"",
     "create": "ts-node src/automation/cli.ts create",
     "photo": "ts-node src/automation/photo-cli.ts create",
     "photo-list": "ts-node src/automation/photo-cli.ts list",
@@ -11,22 +28,31 @@
     "preview": "remotion preview src/index.ts",
     "render": "remotion render src/index.ts StoryVideo output/video.mp4",
     "build": "tsc",
+    "build:electron": "tsc -p tsconfig.electron.json && npm run copy:electron-assets",
+    "copy:electron-assets": "node -e \"const fs=require('fs');['index.html','styles.css','renderer.js'].forEach(f=>fs.copyFileSync('electron/'+f,'dist/electron/'+f))\"",
+    "web": "ts-node src/web/server.ts",
+    "electron": "npm run build:electron && electron .",
+    "electron:dev": "npm run build:electron && set NODE_ENV=development&& electron .",
+    "pack": "npm run build:electron && electron-builder --dir",
+    "dist": "npm run build:electron && electron-builder",
     "test": "echo \"No tests yet\" && exit 0",
     "test-setup": "node test-setup.js"
   },
   "keywords": [
-    "video",
-    "automation",
+    "anime",
+    "animation",
     "ai",
-    "google",
+    "orchestration",
     "gemini",
-    "remotion",
-    "children",
-    "story"
+    "claude",
+    "grok",
+    "conductor",
+    "multi-agent"
   ],
   "author": "Your Name",
   "license": "MIT",
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.30.0",
     "@google-cloud/text-to-speech": "^5.4.0",
     "@google/generative-ai": "^0.21.0",
     "@huggingface/inference": "^4.13.10",
@@ -35,17 +61,53 @@
     "dotenv": "^16.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "remotion": "^4.0.0"
+    "remotion": "^4.0.0",
+    "uuid": "^9.0.0",
+    "ws": "^8.14.0"
   },
   "devDependencies": {
     "@remotion/cli": "^4.0.0",
     "@types/node": "^20.10.0",
     "@types/react": "^18.2.0",
+    "@types/uuid": "^9.0.0",
+    "@types/ws": "^8.5.0",
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0",
     "ts-node": "^10.9.0",
     "typescript": "^5.3.0"
   },
   "engines": {
     "node": ">=18.0.0",
     "npm": ">=9.0.0"
+  },
+  "build": {
+    "appId": "com.anime-maker.app",
+    "productName": "Anime Maker",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "node_modules/**/*",
+      "package.json"
+    ],
+    "extraFiles": [
+      {
+        "from": ".env",
+        "to": ".env"
+      }
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "assets/icon.icns"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "assets/icon.png"
+    }
   }
 }

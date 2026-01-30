@@ -15,7 +15,14 @@ async function parseHtmlToStory() {
     // Extract Scenes
     const sceneRegex = /<div class="scene-card" id="scene-(\d+)">[\s\S]*?<p>(.*?)<\/p>/g;
     let match;
-    const scenes = [];
+    const scenes: Array<{
+      sceneNumber: number;
+      duration: number;
+      narration: string;
+      backgroundDescription: string;
+      characters: string[];
+      actions: string[];
+    }> = [];
     
     while ((match = sceneRegex.exec(html)) !== null) {
       const sceneNum = parseInt(match[1]);

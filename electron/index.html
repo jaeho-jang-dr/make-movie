@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'">
+    <title>Anime Maker - Multi-AI Studio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="logo">
+                <span class="logo-icon">🎬</span>
+                <h1>Anime Maker</h1>
+                <span class="version">v2.0</span>
+            </div>
+            <div class="header-status">
+                <div class="status-item" id="gemini-status">
+                    <span class="dot"></span>
+                    <span>Gemini</span>
+                </div>
+                <div class="status-item" id="grok-status">
+                    <span class="dot"></span>
+                    <span>Grok</span>
+                </div>
+                <div class="status-item" id="comfyui-status">
+                    <span class="dot"></span>
+                    <span>ComfyUI</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="app-main">
+            <!-- Sidebar -->
+            <nav class="sidebar">
+                <ul class="nav-menu">
+                    <li class="nav-item active" data-tab="dashboard">
+                        <span class="icon">📊</span>
+                        <span>대시보드</span>
+                    </li>
+                    <li class="nav-item" data-tab="create">
+                        <span class="icon">✨</span>
+                        <span>새 프로젝트</span>
+                    </li>
+                    <li class="nav-item" data-tab="teams">
+                        <span class="icon">👥</span>
+                        <span>팀 & 에이전트</span>
+                    </li>
+                    <li class="nav-item" data-tab="production">
+                        <span class="icon">🎬</span>
+                        <span>제작 현황</span>
+                    </li>
+                    <li class="nav-item" data-tab="settings">
+                        <span class="icon">⚙️</span>
+                        <span>설정</span>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Content Area -->
+            <div class="content">
+                <!-- Dashboard Tab -->
+                <section class="tab-content active" id="tab-dashboard">
+                    <h2>시스템 대시보드</h2>
+
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">👥</div>
+                            <div class="stat-info">
+                                <span class="stat-value" id="team-count">8</span>
+                                <span class="stat-label">팀</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">🤖</div>
+                            <div class="stat-info">
+                                <span class="stat-value" id="agent-count">24</span>
+                                <span class="stat-label">에이전트</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">📋</div>
+                            <div class="stat-info">
+                                <span class="stat-value" id="phase-count">6</span>
+                                <span class="stat-label">제작 단계</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">🎯</div>
+                            <div class="stat-info">
+                                <span class="stat-value" id="skill-count">22</span>
+                                <span class="stat-label">스킬</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-panels">
+                        <div class="panel">
+                            <h3>🎭 AI 오케스트레이션</h3>
+                            <div class="ai-orchestra">
+                                <div class="ai-card conductor">
+                                    <div class="ai-name">Claude (Conductor)</div>
+                                    <div class="ai-role">총괄 지휘</div>
+                                </div>
+                                <div class="ai-row">
+                                    <div class="ai-card">
+                                        <div class="ai-name">Gemini</div>
+                                        <div class="ai-role">스토리 작성</div>
+                                    </div>
+                                    <div class="ai-card">
+                                        <div class="ai-name">Grok</div>
+                                        <div class="ai-role">대화 생성</div>
+                                    </div>
+                                    <div class="ai-card">
+                                        <div class="ai-name">ComfyUI</div>
+                                        <div class="ai-role">이미지 생성</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel">
+                            <h3>📈 제작 파이프라인</h3>
+                            <div class="pipeline">
+                                <div class="phase">
+                                    <span class="phase-num">1</span>
+                                    <span class="phase-name">사전 제작</span>
+                                </div>
+                                <div class="phase">
+                                    <span class="phase-num">2</span>
+                                    <span class="phase-name">에셋 생성</span>
+                                </div>
+                                <div class="phase">
+                                    <span class="phase-num">3</span>
+                                    <span class="phase-name">애니메이션</span>
+                                </div>
+                                <div class="phase">
+                                    <span class="phase-num">4</span>
+                                    <span class="phase-name">후반 작업</span>
+                                </div>
+                                <div class="phase">
+                                    <span class="phase-num">5</span>
+                                    <span class="phase-name">QA</span>
+                                </div>
+                                <div class="phase">
+                                    <span class="phase-num">6</span>
+                                    <span class="phase-name">출력</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Create Tab -->
+                <section class="tab-content" id="tab-create">
+                    <h2>새 애니메이션 프로젝트</h2>
+
+                    <form id="create-form" class="create-form">
+                        <div class="form-group">
+                            <label for="theme">스토리 테마</label>
+                            <textarea id="theme" placeholder="예: 용감한 고양이가 마법의 숲에서 친구들과 모험을 떠나는 이야기" rows="3"></textarea>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="genre">장르</label>
+                                <select id="genre">
+                                    <option value="fantasy">판타지</option>
+                                    <option value="adventure">모험</option>
+                                    <option value="romance">로맨스</option>
+                                    <option value="comedy">코미디</option>
+                                    <option value="action">액션</option>
+                                    <option value="slice-of-life">일상</option>
+                                    <option value="mystery">미스터리</option>
+                                    <option value="sci-fi">SF</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="duration">목표 길이 (초)</label>
+                                <input type="number" id="duration" value="60" min="30" max="600">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="output-path">출력 폴더</label>
+                            <div class="path-input">
+                                <input type="text" id="output-path" readonly placeholder="출력 폴더 선택...">
+                                <button type="button" id="select-folder" class="btn btn-secondary">찾아보기</button>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="button" id="preview-story" class="btn btn-secondary">
+                                📝 스토리 미리보기
+                            </button>
+                            <button type="submit" class="btn btn-primary">
+                                🚀 제작 시작
+                            </button>
+                        </div>
+                    </form>
+
+                    <div id="story-preview" class="story-preview hidden">
+                        <h3>📖 스토리 미리보기</h3>
+                        <div id="story-content"></div>
+                    </div>
+                </section>
+
+                <!-- Teams Tab -->
+                <section class="tab-content" id="tab-teams">
+                    <h2>팀 & 에이전트</h2>
+                    <div id="teams-container" class="teams-grid"></div>
+                </section>
+
+                <!-- Production Tab -->
+                <section class="tab-content" id="tab-production">
+                    <h2>제작 현황</h2>
+
+                    <div id="no-production" class="empty-state">
+                        <span class="empty-icon">🎬</span>
+                        <p>진행 중인 프로젝트가 없습니다</p>
+                        <button class="btn btn-primary" onclick="showTab('create')">새 프로젝트 시작</button>
+                    </div>
+
+                    <div id="production-progress" class="production-view hidden">
+                        <div class="progress-header">
+                            <h3 id="production-title">프로젝트 제목</h3>
+                            <span id="production-status" class="status-badge">진행 중</span>
+                        </div>
+
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" id="overall-progress"></div>
+                        </div>
+                        <span class="progress-text" id="progress-text">0%</span>
+
+                        <div class="phase-progress">
+                            <div class="phase-item" data-phase="1">
+                                <span class="phase-icon">📝</span>
+                                <span class="phase-name">사전 제작</span>
+                                <span class="phase-status">대기</span>
+                            </div>
+                            <div class="phase-item" data-phase="2">
+                                <span class="phase-icon">🎨</span>
+                                <span class="phase-name">에셋 생성</span>
+                                <span class="phase-status">대기</span>
+                            </div>
+                            <div class="phase-item" data-phase="3">
+                                <span class="phase-icon">🎬</span>
+                                <span class="phase-name">애니메이션</span>
+                                <span class="phase-status">대기</span>
+                            </div>
+                            <div class="phase-item" data-phase="4">
+                                <span class="phase-icon">🔧</span>
+                                <span class="phase-name">후반 작업</span>
+                                <span class="phase-status">대기</span>
+                            </div>
+                            <div class="phase-item" data-phase="5">
+                                <span class="phase-icon">✅</span>
+                                <span class="phase-name">QA</span>
+                                <span class="phase-status">대기</span>
+                            </div>
+                            <div class="phase-item" data-phase="6">
+                                <span class="phase-icon">📦</span>
+                                <span class="phase-name">출력</span>
+                                <span class="phase-status">대기</span>
+                            </div>
+                        </div>
+
+                        <div class="log-container">
+                            <h4>제작 로그</h4>
+                            <div id="production-log" class="log-output"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Settings Tab -->
+                <section class="tab-content" id="tab-settings">
+                    <h2>설정</h2>
+
+                    <div class="settings-section">
+                        <h3>🤖 AI 설정</h3>
+                        <div class="setting-item">
+                            <label>Gemini API</label>
+                            <span class="status-badge success">연결됨</span>
+                        </div>
+                        <div class="setting-item">
+                            <label>Grok API</label>
+                            <span class="status-badge success">연결됨</span>
+                        </div>
+                        <div class="setting-item">
+                            <label>Claude (Conductor)</label>
+                            <span class="status-badge info">내장</span>
+                        </div>
+                    </div>
+
+                    <div class="settings-section">
+                        <h3>🖼️ ComfyUI 설정</h3>
+                        <div class="form-group">
+                            <label for="comfyui-url">ComfyUI URL</label>
+                            <input type="text" id="comfyui-url" value="http://127.0.0.1:8188">
+                        </div>
+                        <button id="test-comfyui" class="btn btn-secondary">연결 테스트</button>
+                    </div>
+
+                    <div class="settings-section">
+                        <h3>🔊 TTS 설정</h3>
+                        <div class="form-group">
+                            <label for="tts-voice">음성</label>
+                            <select id="tts-voice">
+                                <option value="ko-KR-Neural2-A">한국어 (여성)</option>
+                                <option value="ko-KR-Neural2-B">한국어 (남성)</option>
+                                <option value="ja-JP-Neural2-B">일본어 (여성)</option>
+                                <option value="ja-JP-Neural2-C">일본어 (남성)</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <span>Anime Maker v2.0 - Multi-AI Orchestration Studio</span>
+            <span id="system-status">시스템 준비 완료</span>
+        </footer>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>

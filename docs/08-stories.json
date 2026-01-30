@@ -1,0 +1,20 @@
+[
+  {
+    "title": "용감한 토끼의 모험",
+    "duration": 10,
+    "targetAge": "5-7세",
+    "theme": "용기와 도전"
+  },
+  {
+    "title": "친절한 곰 이야기",
+    "duration": 10,
+    "targetAge": "5-7세",
+    "theme": "우정과 배려"
+  },
+  {
+    "title": "마법사 고양이",
+    "duration": 10,
+    "targetAge": "5-7세",
+    "theme": "상상력과 창의성"
+  }
+]
