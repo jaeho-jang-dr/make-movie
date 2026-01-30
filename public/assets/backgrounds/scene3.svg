@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <!-- Background Layer -->
+  <g id="background">
+    <rect width="1920" height="1080" fill="#2C2255"/>
+    <!-- Sky Gradient -->
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3A2E5F;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#2C2255;stop-opacity:1"/>
+    </linearGradient>
+    <rect width="1920" height="600" fill="url(#skyGradient)"/>
+    <!-- Distant Forest Silhouette -->
+    <path d="M0,600 Q200,550 400,600 Q600,550 800,600 Q1000,550 1200,600 Q1400,550 1600,600 Q1800,550 1920,600 L1920,1080 L0,1080 Z" fill="#3A2E5F" opacity="0.6"/>
+  </g>
+
+  <!-- Midground Layer -->
+  <g id="midground">
+    <!-- Misty Shadows -->
+    <path d="M0,700 C200,680 400,720 600,700 C800,680 1000,720 1200,700 C1400,680 1600,720 1920,700" fill="none" stroke="#4A3C6B" stroke-width="80" opacity="0.3"/>
+    <path d="M0,800 C200,780 400,820 600,800 C800,780 1000,820 1200,800 C1400,780 1600,820 1920,800" fill="none" stroke="#4A3C6B" stroke-width="100" opacity="0.2"/>
+    <!-- Midground Trees -->
+    <g opacity="0.7">
+      <path d="M200,1080 L240,800 C240,800 220,760 200,800 C180,760 160,800 160,800 L200,1080 Z" fill="#3A2E5F"/>
+      <path d="M220,900 C220,900 240,860 260,900 C240,840 220,900 220,900" fill="#4A3C6B"/>
+      <path d="M180,920 C180,920 200,880 220,920 C200,860 180,920 180,920" fill="#4A3C6B"/>
+      <path d="M1600,1080 L1640,820 C1640,820 1620,780 1600,820 C1580,780 1560,820 1560,820 L1600,1080 Z" fill="#3A2E5F"/>
+      <path d="M1620,940 C1620,940 1640,900 1660,940 C1640,880 1620,940 1620,940" fill="#4A3C6B"/>
+      <path d="M1580,960 C1580,960 1600,920 1620,960 C1600,900 1580,960 1580,960" fill="#4A3C6B"/>
+    </g>
+  </g>
+
+  <!-- Foreground Layer -->
+  <g id="foreground">
+    <!-- Ground -->
+    <path d="M0,800 Q400,780 800,820 Q1200,780 1600,820 Q1920,780 1920,800 L1920,1080 L0,1080 Z" fill="#2C2255"/>
+    <!-- Gnarled Trees -->
+    <g>
+      <!-- Left Tree -->
+      <path d="M400,1080 L440,700 C440,700 420,650 400,700 C380,650 360,700 360,700 L400,1080 Z" fill="#3A2E5F"/>
+      <path d="M420,800 C420,800 440,750 460,800 C440,730 420,800 420,800" fill="#4A3C6B"/>
+      <path d="M380,820 C380,820 400,770 420,820 C400,750 380,820 380,820" fill="#4A3C6B"/>
+      <path d="M360,780 C360,780 380,730 400,780 C380,710 360,780 360,780" fill="#4A3C6B"/>
+      <!-- Right Tree -->
+      <path d="M1400,1080 L1440,720 C1440,720 1420,670 1400,720 C1380,670 1360,720 1360,720 L1400,1080 Z" fill="#3A2E5F"/>
+      <path d="M1420,820 C1420,820 1440,770 1460,820 C1440,750 1420,820 1420,820" fill="#4A3C6B"/>
+      <path d="M1380,840 C1380,840 1400,790 1420,840 C1400,770 1380,840 1380,840" fill="#4A3C6B"/>
+      <path d="M1360,800 C1360,800 1380,750 1400,800 C1380,730 1360,800 1360,800" fill="#4A3C6B"/>
+      <!-- Center Tree with Branch for 깜깜이 -->
+      <path d="M900,1080 L940,680 C940,680 920,630 900,680 C880,630 860,680 860,680 L900,1080 Z" fill="#3A2E5F"/>
+      <path d="M920,780 C920,780 940,730 960,780 C940,710 920,780 920,780" fill="#4A3C6B"/>
+      <path d="M880,800 C880,800 900,750 920,800 C900,730 880,800 880,800" fill="#4A3C6B"/>
+      <!-- Perch Branch -->
+      <path d="M920,720 L980,700 C980,700 990,690 980,680" fill="none" stroke="#3A2E5F" stroke-width="10"/>
+    </g>
+    <!-- Bark Textures -->
+    <g stroke="#4A3C6B" stroke-width="2" fill="none" opacity="0.8">
+      <path d="M400,1000 C410,980 420,1000 430,980" />
+      <path d="M400,950 C410,930 420,950 430,930" />
+      <path d="M900,950 C910,930 920,950 930,930" />
+      <path d="M900,900 C910,880 920,900 930,880" />
+      <path d="M1400,980 C1410,960 1420,980 1430,960" />
+      <path d="M1400,930 C1410,910 1420,930 1430,910" />
+    </g>
+    <!-- Bioluminescent Mushrooms -->
+    <g fill="#7D6D93" opacity="0.7">
+      <!-- Mushroom 1 -->
+      <ellipse cx="500" cy="900" rx="20" ry="10"/>
+      <path d="M500,900 L510,940 L490,940 Z" fill="#5C4E77"/>
+      <!-- Mushroom 2 -->
+      <ellipse cx="600" cy="920" rx="15" ry="8"/>
+      <path d="M600,920 L608,950 L592,950 Z" fill="#5C4E77"/>
+      <!-- Mushroom 3 -->
+      <ellipse cx="1300" cy="910" rx="18" ry="9"/>
+      <path d="M1300,910 L1310,945 L1290,945 Z" fill="#5C4E77"/>
+      <!-- Mushroom 4 -->
+      <ellipse cx="1100" cy="930" rx="12" ry="6"/>
+      <path d="M1100,930 L1108,955 L1092,955 Z" fill="#5C4E77"/>
+    </g>
+    <!-- Foreground Mist -->
+    <path d="M0,900 C200,880 400,920 600,900 C800,880 1000,920 1200,900 C1400,880 1600,920 1920,900" fill="none" stroke="#5C4E77" stroke-width="60" opacity="0.2"/>
+  </g>
+</svg>

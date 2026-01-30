@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <g>
+    <!-- Body (Black Fur with Shimmer) -->
+    <path d="M256,300 C320,300 370,240 370,180 C370,120 340,90 256,90 C172,90 142,120 142,180 C142,240 192,300 256,300 Z" fill="#000000" stroke="#000000" stroke-width="3"/>
+    <path d="M300,240 C310,240 320,230 320,210 C320,190 310,180 300,180 C290,180 280,190 280,210 C280,230 290,240 300,240 Z" fill="#333333" opacity="0.5"/>
+    <path d="M220,240 C230,240 240,230 240,210 C240,190 230,180 220,180 C210,180 200,190 200,210 C200,230 210,240 220,240 Z" fill="#333333" opacity="0.5"/>
+
+    <!-- Tail (Straight Up) -->
+    <path d="M256,90 C256,60 270,30 270,10 C270,0 260,0 256,10 C252,0 242,0 242,10 C242,30 256,60 256,90 Z" fill="#000000" stroke="#000000" stroke-width="3"/>
+
+    <!-- Legs (Dynamic Leap) -->
+    <path d="M200,300 C180,300 160,320 160,350 C160,380 180,400 200,400 C220,400 240,380 240,350 C240,320 220,300 200,300 Z" fill="#000000" stroke="#000000" stroke-width="3"/>
+    <path d="M312,300 C292,300 272,320 272,350 C272,380 292,400 312,400 C332,400 352,380 352,350 C352,320 332,300 312,300 Z" fill="#000000" stroke="#000000" stroke-width="3"/>
+
+    <!-- Clothing (Vest with Patterns) -->
+    <path d="M200,180 C200,140 256,120 256,120 C256,120 312,140 312,180 C312,220 280,240 256,240 C232,240 200,220 200,180 Z" fill="#FF6B6B" stroke="#000000" stroke-width="3"/>
+    <path d="M220,160 C220,150 240,150 240,160 C240,170 220,170 220,160 Z" fill="#FFD700" stroke="#000000" stroke-width="1"/>
+    <path d="M260,160 C260,150 280,150 280,160 C280,170 260,170 260,160 Z" fill="#FFD700" stroke="#000000" stroke-width="1"/>
+
+    <!-- Accessory (Hat on Back View) -->
+    <path d="M230,100 C230,80 282,80 282,100 C282,110 256,120 256,120 C256,120 230,110 230,100 Z" fill="#90EE90" stroke="#000000" stroke-width="3"/>
+    <path d="M240,90 C240,85 272,85 272,90 C272,95 240,95 240,90 Z" fill="#87CEEB" stroke="#000000" stroke-width="1"/>
+
+    <!-- Glowing Eyes (Barely Visible from Back) -->
+    <g style="opacity: 0.6;">
+      <circle cx="240" cy="130" r="10" fill="#4ECDC4" stroke="#000000" stroke-width="1"/>
+      <circle cx="272" cy="130" r="10" fill="#4ECDC4" stroke="#000000" stroke-width="1"/>
+      <circle cx="245" cy="125" r="3" fill="#FFFFFF" opacity="0.8"/>
+      <circle cx="277" cy="125" r="3" fill="#FFFFFF" opacity="0.8"/>
+    </g>
+  </g>
+</svg>

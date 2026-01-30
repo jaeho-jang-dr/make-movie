@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <g id="character_jiyoung">
+    <!-- Body Base -->
+    <path d="M256,300 C230,300 210,280 210,250 C210,220 230,200 256,200 C282,200 302,220 302,250 C302,280 282,300 256,300 Z" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Legs -->
+    <path d="M230,300 L220,380 C220,380 210,400 210,410 C210,420 220,430 230,430" fill="none" stroke="#000000" stroke-width="3"/>
+    <path d="M282,300 L292,380 C292,380 302,400 302,410 C302,420 292,430 282,430" fill="none" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Sneakers -->
+    <path d="M200,430 C200,430 180,430 180,410 C180,390 200,390 210,400 C220,410 220,430 200,430 Z" fill="#90EE90" stroke="#000000" stroke-width="3"/>
+    <path d="M312,430 C312,430 332,430 332,410 C332,390 312,390 302,400 C292,410 292,430 312,430 Z" fill="#90EE90" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Arms -->
+    <path d="M210,250 C210,250 180,280 180,300 C180,320 200,340 220,340" fill="none" stroke="#000000" stroke-width="3"/>
+    <path d="M302,250 C302,250 332,280 332,300 C332,320 312,340 292,340" fill="none" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Hands -->
+    <ellipse cx="220" cy="340" rx="20" ry="15" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    <ellipse cx="292" cy="340" rx="20" ry="15" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Head -->
+    <circle cx="256" cy="150" r="100" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Hair -->
+    <path d="M156,150 C156,80 256,50 256,50 C256,50 356,80 356,150" fill="#4ECDC4" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Glasses -->
+    <circle cx="230" cy="140" r="25" fill="none" stroke="#FF6B6B" stroke-width="3"/>
+    <circle cx="282" cy="140" r="25" fill="none" stroke="#FF6B6B" stroke-width="3"/>
+    <path d="M255,140 C255,140 265,130 275,140" fill="none" stroke="#FF6B6B" stroke-width="3"/>
+    
+    <!-- Eyes -->
+    <g id="eyes">
+      <circle cx="230" cy="130" r="15" fill="white" stroke="#000000" stroke-width="3"/>
+      <circle cx="282" cy="130" r="15" fill="white" stroke="#000000" stroke-width="3"/>
+      <circle cx="230" cy="125" r="5" fill="#87CEEB"/>
+      <circle cx="282" cy="125" r="5" fill="#87CEEB"/>
+      <circle cx="225" cy="120" r="2" fill="white"/>
+      <circle cx="277" cy="120" r="2" fill="white"/>
+    </g>
+    
+    <!-- Eyebrows -->
+    <path d="M215,105 C225,95 235,105 245,105" fill="none" stroke="#000000" stroke-width="3"/>
+    <path d="M267,105 C277,95 287,105 297,105" fill="none" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Mouth -->
+    <path d="M245,170 C245,180 265,180 265,170" fill="#FF6B6B" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Shirt Details -->
+    <path d="M210,250 L302,250" fill="none" stroke="#87CEEB" stroke-width="3"/>
+  </g>
+</svg>

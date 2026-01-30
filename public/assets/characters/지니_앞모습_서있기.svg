@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="background: transparent;">
+  <g id="character">
+    <!-- Body Outline -->
+    <path d="M256,150 C200,150 150,200 150,256 C150,312 200,362 256,362 C312,362 362,312 362,256 C362,200 312,150 256,150 Z" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    <!-- Legs -->
+    <path d="M220,340 L200,400 C200,410 210,420 220,420 L240,420 C250,420 260,410 260,400 L240,340" fill="#90EE90" stroke="#000000" stroke-width="3"/>
+    <path d="M272,340 L292,400 C292,410 282,420 272,420 L252,420 C242,420 232,410 232,400 L252,340" fill="#90EE90" stroke="#000000" stroke-width="3"/>
+    <!-- Skirt -->
+    <path d="M200,280 C200,300 256,320 312,300 C312,280 256,260 200,280 Z" fill="#FF6B6B" stroke="#000000" stroke-width="3"/>
+    <!-- Skirt Patterns (Polka Dots) -->
+    <circle cx="220" cy="290" r="5" fill="#FFFFFF"/>
+    <circle cx="240" cy="300" r="5" fill="#FFFFFF"/>
+    <circle cx="260" cy="290" r="5" fill="#FFFFFF"/>
+    <circle cx="280" cy="300" r="5" fill="#FFFFFF"/>
+    <circle cx="300" cy="290" r="5" fill="#FFFFFF"/>
+    <!-- Arms -->
+    <path d="M200,220 C180,240 180,260 200,280" fill="none" stroke="#FFD700" stroke-width="20" stroke-linecap="round"/>
+    <path d="M312,220 C332,240 332,260 312,280" fill="none" stroke="#FFD700" stroke-width="20" stroke-linecap="round"/>
+    <!-- Hands Clasped -->
+    <path d="M230,270 C220,290 260,290 280,270" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    <!-- Head -->
+    <circle cx="256" cy="120" r="100" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    <!-- Hair Base -->
+    <path d="M156,120 C156,60 256,20 356,60 C356,120 306,140 256,140 C206,140 156,120 156,120 Z" fill="#4ECDC4" stroke="#000000" stroke-width="3"/>
+    <!-- Curly Hair Strands -->
+    <path d="M160,80 C140,60 140,100 160,120" fill="none" stroke="#4ECDC4" stroke-width="10" stroke-linecap="round"/>
+    <path d="M352,80 C372,60 372,100 352,120" fill="none" stroke="#4ECDC4" stroke-width="10" stroke-linecap="round"/>
+    <path d="M200,40 C180,20 180,60 200,80" fill="none" stroke="#4ECDC4" stroke-width="10" stroke-linecap="round"/>
+    <path d="M312,40 C332,20 332,60 312,80" fill="none" stroke="#4ECDC4" stroke-width="10" stroke-linecap="round"/>
+    <!-- Glasses -->
+    <circle cx="220" cy="110" r="25" fill="none" stroke="#FF6B6B" stroke-width="3"/>
+    <circle cx="292" cy="110" r="25" fill="none" stroke="#FF6B6B" stroke-width="3"/>
+    <path d="M245,110 C256,100 256,100 267,110" fill="none" stroke="#FF6B6B" stroke-width="3"/>
+    <!-- Eyes -->
+    <g id="eyes">
+      <circle cx="220" cy="110" r="15" fill="#FFFFFF"/>
+      <circle cx="292" cy="110" r="15" fill="#FFFFFF"/>
+      <circle cx="220" cy="110" r="7" fill="#000000"/>
+      <circle cx="292" cy="110" r="7" fill="#000000"/>
+      <!-- Eye Sparkles -->
+      <circle cx="215" cy="105" r="2" fill="#FFFFFF"/>
+      <circle cx="287" cy="105" r="2" fill="#FFFFFF"/>
+    </g>
+    <!-- Eyebrows -->
+    <path d="M205,90 C215,85 225,90 235,95" fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round"/>
+    <path d="M277,90 C287,85 297,90 307,95" fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round"/>
+    <!-- Mouth (Shy Smile) -->
+    <path d="M240,140 C250,150 262,150 272,140" fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round"/>
+    <!-- Blush -->
+    <circle cx="200" cy="130" r="10" fill="#FF6B6B" opacity="0.5"/>
+    <circle cx="312" cy="130" r="10" fill="#FF6B6B" opacity="0.5"/>
+    <!-- Backpack -->
+    <path d="M150,200 C130,200 120,240 130,280 C150,280 170,260 170,240 C170,220 150,200 150,200 Z" fill="#FF6B6B" stroke="#000000" stroke-width="3"/>
+    <path d="M130,220 C110,220 100,240 110,260" fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

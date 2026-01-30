@@ -26,7 +26,7 @@ export const Scene3 = () => {
     [0, 1],
     { extrapolateRight: 'clamp' }
   );
-  const narrationText = "길을 걷다 디노는 반짝이는 신비한 나비를 만났어요. '안녕? 나랑 같이 놀래?'";
+  const narrationText = "이것은 3번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.";
   const visibleText = narrationText.substring(0, Math.floor(textReveal * narrationText.length));
 
   return (
@@ -39,11 +39,11 @@ export const Scene3 = () => {
         position: 'absolute'
       }}>
         <Img
-          src={staticFile("images/scene3-background.png")}
+          src={staticFile("images/scene3-background.svg")}
           onError={(e) => {
             const target = e.target as HTMLImageElement;
             target.onerror = null;
-            target.src = staticFile("images/scene3-background.svg");
+            target.src = staticFile("images/scene3-background.png");
           }}
           style={{
             width: '100%',
@@ -58,11 +58,11 @@ export const Scene3 = () => {
       
       {/* 캐릭터 1 - Spring Animation */}
       <Img
-        src={staticFile("images/scene3-character-0.png")}
+          src={staticFile("images/scene3-character-0.svg")}
         onError={(e) => {
           const target = e.target as HTMLImageElement;
           target.onerror = null;
-          target.src = staticFile("images/scene3-character-0.svg");
+          target.src = staticFile("images/scene3-character-0.png");
         }}
         style={{
           position: 'absolute',
@@ -89,44 +89,6 @@ export const Scene3 = () => {
           transform: `scale(${interpolate(
             frame,
             [30, 60],
-            [0.7, 1],
-            { extrapolateRight: 'clamp', extrapolateLeft: 'clamp' }
-          )})`
-        }}
-      />
-      {/* 캐릭터 2 - Spring Animation */}
-      <Img
-        src={staticFile("images/scene3-character-1.png")}
-        onError={(e) => {
-          const target = e.target as HTMLImageElement;
-          target.onerror = null;
-          target.src = staticFile("images/scene3-character-1.svg");
-        }}
-        style={{
-          position: 'absolute',
-          left: 400,
-          bottom: interpolate(
-            spring({
-              frame: frame - 50,
-              fps: 30,
-              config: { damping: 12, stiffness: 80, mass: 0.8 }
-            }),
-            [0, 1],
-            [-200, 150]
-          ),
-          width: 300,
-          height: 300,
-          objectFit: 'contain',
-          opacity: interpolate(
-            frame,
-            [50, 80],
-            [0, 1],
-            { extrapolateRight: 'clamp', extrapolateLeft: 'clamp' }
-          ),
-          filter: 'drop-shadow(0 10px 20px rgba(0,0,0,0.3))',
-          transform: `scale(${interpolate(
-            frame,
-            [50, 80],
             [0.7, 1],
             { extrapolateRight: 'clamp', extrapolateLeft: 'clamp' }
           )})`

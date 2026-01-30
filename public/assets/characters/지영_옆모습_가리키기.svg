@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="background: transparent;">
+  <!-- Body Outline and Base -->
+  <g id="body">
+    <path d="M200,300 Q230,400 260,300 Q290,200 320,300 Q350,400 380,300 Q410,200 440,300" fill="#87CEEB" stroke="#000" stroke-width="3" />
+    <path d="M260,300 L260,400 Q270,420 280,400 L280,300" fill="#FFD700" stroke="#000" stroke-width="3" />
+  </g>
+
+  <!-- Head and Hair -->
+  <g id="head">
+    <circle cx="230" cy="150" r="80" fill="#FFD700" stroke="#000" stroke-width="3" />
+    <path d="M230,70 Q260,40 290,70 Q320,100 290,130 Q260,160 230,130 Q200,100 230,70" fill="#4ECDC4" stroke="#000" stroke-width="3" />
+    <path d="M290,70 Q320,40 350,70 L350,150 Q320,180 290,150" fill="#4ECDC4" stroke="#000" stroke-width="3" />
+  </g>
+
+  <!-- Face Features -->
+  <g id="face">
+    <circle cx="200" cy="130" r="20" fill="#FFF" stroke="#000" stroke-width="3" />
+    <circle cx="200" cy="130" r="10" fill="#000" />
+    <circle cx="205" cy="125" r="3" fill="#FFF" opacity="0.8" />
+    <path d="M230,160 Q240,170 250,160" fill="none" stroke="#000" stroke-width="3" />
+    <path d="M240,170 Q245,175 250,170" fill="#FF6B6B" stroke="#000" stroke-width="3" />
+  </g>
+
+  <!-- Glasses -->
+  <g id="glasses">
+    <circle cx="200" cy="130" r="25" fill="none" stroke="#FF6B6B" stroke-width="3" />
+    <path d="M225,130 Q235,120 245,130" fill="none" stroke="#FF6B6B" stroke-width="3" />
+    <circle cx="205" cy="125" r="5" fill="#FFF" opacity="0.5" />
+  </g>
+
+  <!-- Arm Pointing Forward -->
+  <g id="arm_pointing">
+    <path d="M260,250 L320,220 Q340,210 360,220" fill="#87CEEB" stroke="#000" stroke-width="3" />
+    <path d="M360,220 L380,210 L400,220" fill="#87CEEB" stroke="#000" stroke-width="3" />
+  </g>
+
+  <!-- Arm Holding Sketchbook -->
+  <g id="arm_sketchbook">
+    <path d="M200,250 L160,280 Q140,290 120,280" fill="#87CEEB" stroke="#000" stroke-width="3" />
+    <rect x="100" y="260" width="40" height="60" rx="5" fill="#90EE90" stroke="#000" stroke-width="3" />
+    <path d="M110,280 L130,280" fill="none" stroke="#000" stroke-width="2" />
+  </g>
+
+  <!-- Legs -->
+  <g id="legs">
+    <path d="M260,400 L240,450 Q230,460 220,450 L200,400" fill="#FFD700" stroke="#000" stroke-width="3" />
+    <path d="M280,400 L300,450 Q310,460 320,450 L340,400" fill="#FFD700" stroke="#000" stroke-width="3" />
+  </g>
+
+  <!-- Clothing Details -->
+  <g id="clothing">
+    <path d="M260,300 L260,350 Q270,370 280,350 L280,300" fill="#FF6B6B" stroke="#000" stroke-width="3" />
+    <circle cx="270" cy="320" r="5" fill="#90EE90" stroke="#000" stroke-width="2" />
+    <circle cx="270" cy="340" r="5" fill="#90EE90" stroke="#000" stroke-width="2" />
+  </g>
+</svg>

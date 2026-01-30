@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <g id="Character_깜깜이">
+    <!-- Body -->
+    <path d="M256 300c-50 0-90-40-90-90s40-90 90-90 90 40 90 90-40 90-90 90z" fill="#000000" stroke="#000000" stroke-width="3"/>
+    <path d="M256 300c-40 0-72-32-72-72s32-72 72-72 72 32 72 72-32 72-72 72z" fill="#1a1a1a" opacity="0.8"/>
+    
+    <!-- Tail -->
+    <path d="M166 210c-20-30-40-60-60-80 10-20 30-30 50-20 20 10 20 40 10 60-5 10-10 20-10 30 0 5 2 10 10 10s10-5 10-10c0-5 5-15 10-25 10-20 10-40-10-50s-40 0-50 20c-5 10 0 25 10 35 20 20 40 50 50 80 5 10 0 25-10 30s-25 0-30-10-5-20 0-30c10-20-10-40-30-30s0 40 20 50 40-10 50-30c-5-15-15-25-25-35" fill="#000000" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Legs -->
+    <path d="M210 300c-10 20-30 30-50 20s-20-30-10-50 30-20 50 0 10 40-10 60c-5 5-5 15 0 20s15-5 20-10 5-15 0-20c-10-10 0-30 10-40s30 0 40 10c5 5 5 15 0 20s-15 5-20 0c-5-5-5-15 0-20 5-5 15-5 20 0 5 5 5 15 0 20" fill="#000000" stroke="#000000" stroke-width="3"/>
+    <path d="M302 300c-10 20-30 30-50 20s-20-30-10-50 30-20 50 0 10 40-10 60c-5 5-5 15 0 20s15-5 20-10 5-15 0-20c-10-10 0-30 10-40s30 0 40 10c5 5 5 15 0 20s-15 5-20 0c-5-5-5-15 0-20 5-5 15-5 20 0 5 5 5 15 0 20" fill="#000000" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Head -->
+    <circle cx="256" cy="180" r="80" fill="#000000" stroke="#000000" stroke-width="3"/>
+    <circle cx="256" cy="180" r="70" fill="#1a1a1a" opacity="0.9"/>
+    
+    <!-- Ears -->
+    <path d="M196 120c-10-20-30-30-50-20s-20 30-10 50 30 20 50 0 10-40-10-60" fill="#000000" stroke="#000000" stroke-width="3"/>
+    <path d="M316 120c-10-20-30-30-50-20s-20 30-10 50 30 20 50 0 10-40-10-60" fill="#000000" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Eyes -->
+    <g id="Eyes">
+      <ellipse cx="230" cy="170" rx="20" ry="30" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+      <ellipse cx="282" cy="170" rx="20" ry="30" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+      <ellipse cx="230" cy="160" rx="8" ry="12" fill="#ffffff" opacity="0.8"/>
+      <ellipse cx="282" cy="160" rx="8" ry="12" fill="#ffffff" opacity="0.8"/>
+    </g>
+    
+    <!-- Mouth/Smirk -->
+    <path d="M240 200c0 5 5 10 10 10s10-5 10-10-10-15-20 0" fill="none" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Whiskers -->
+    <line x1="220" y1="190" x2="180" y2="180" stroke="#ffffff" stroke-width="2" opacity="0.7"/>
+    <line x1="220" y1="200" x2="180" y2="200" stroke="#ffffff" stroke-width="2" opacity="0.7"/>
+    <line x1="292" y1="190" x2="332" y2="180" stroke="#ffffff" stroke-width="2" opacity="0.7"/>
+    <line x1="292" y1="200" x2="332" y2="200" stroke="#ffffff" stroke-width="2" opacity="0.7"/>
+  </g>
+</svg>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <g>
+    <!-- Body Outline -->
+    <path d="M256,300 C200,300 160,240 160,180 C160,120 200,80 256,80 C312,80 352,120 352,180 C352,240 312,300 256,300 Z" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Shirt -->
+    <path d="M200,200 C180,260 180,300 200,340 L312,340 C332,300 332,260 312,200 L200,200 Z" fill="#90EE90" stroke="#000000" stroke-width="3"/>
+    <path d="M220,260 L240,260 L230,280 Z" fill="#4ECDC4" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Arms -->
+    <path d="M180,220 C140,240 140,300 160,340" fill="none" stroke="#000000" stroke-width="3"/>
+    <path d="M332,220 C372,240 372,300 352,340" fill="none" stroke="#000000" stroke-width="3"/>
+    <circle cx="160" cy="340" r="15" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    <circle cx="352" cy="340" r="15" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Legs -->
+    <path d="M220,340 L220,400 C220,420 200,420 200,400 L200,340" fill="#87CEEB" stroke="#000000" stroke-width="3"/>
+    <path d="M292,340 L292,400 C292,420 312,420 312,400 L312,340" fill="#87CEEB" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Head -->
+    <circle cx="256" cy="140" r="80" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Hat -->
+    <path d="M200,80 C180,60 240,40 280,60 C300,70 312,90 312,110 L200,110 C200,90 200,80 200,80 Z" fill="#FF6B6B" stroke="#000000" stroke-width="3"/>
+    <path d="M240,60 C260,40 280,40 300,60" fill="none" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Freckles -->
+    <circle cx="230" cy="140" r="2" fill="#FF6B6B" stroke="#000000" stroke-width="1"/>
+    <circle cx="240" cy="145" r="2" fill="#FF6B6B" stroke="#000000" stroke-width="1"/>
+    <circle cx="220" cy="145" r="2" fill="#FF6B6B" stroke="#000000" stroke-width="1"/>
+    
+    <!-- Eyes -->
+    <circle cx="230" cy="120" r="20" fill="white" stroke="#000000" stroke-width="3"/>
+    <circle cx="282" cy="120" r="20" fill="white" stroke="#000000" stroke-width="3"/>
+    <circle cx="230" cy="120" r="10" fill="#4ECDC4" stroke="#000000" stroke-width="2"/>
+    <circle cx="282" cy="120" r="10" fill="#4ECDC4" stroke="#000000" stroke-width="2"/>
+    <circle cx="225" cy="115" r="3" fill="white" stroke="none"/>
+    <circle cx="277" cy="115" r="3" fill="white" stroke="none"/>
+    
+    <!-- Eyebrows -->
+    <path d="M215,100 C225,90 235,90 245,100" fill="none" stroke="#000000" stroke-width="3"/>
+    <path d="M267,100 C277,90 287,90 297,100" fill="none" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Mouth -->
+    <path d="M240,160 C250,180 262,180 272,160" fill="none" stroke="#000000" stroke-width="3"/>
+    <path d="M240,160 C250,170 262,170 272,160" fill="#FF6B6B" stroke="none"/>
+  </g>
+</svg>

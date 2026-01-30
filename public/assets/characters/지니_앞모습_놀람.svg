@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <g>
+    <!-- Body Base -->
+    <path d="M256,300 C200,300 160,240 160,180 C160,120 200,100 256,100 C312,100 352,120 352,180 C352,240 312,300 256,300 Z" fill="#87CEEB" stroke="#000000" stroke-width="3"/>
+    <!-- Arms in Surprise -->
+    <path d="M160,180 C140,180 120,200 100,220" fill="none" stroke="#87CEEB" stroke-width="10"/>
+    <path d="M352,180 C372,180 392,200 412,220" fill="none" stroke="#87CEEB" stroke-width="10"/>
+    <!-- Hair (Curly and Fluffed Up) -->
+    <path d="M200,100 C180,60 240,40 256,80 C272,40 332,60 312,100" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    <path d="M180,80 C160,40 220,20 240,60" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    <path d="M272,60 C292,20 352,40 332,80" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    <!-- Clothing with Pattern -->
+    <path d="M180,180 C180,240 256,280 256,280 C256,280 332,240 332,180" fill="#90EE90" stroke="#000000" stroke-width="3"/>
+    <circle cx="206" cy="210" r="5" fill="#4ECDC4"/>
+    <circle cx="256" cy="230" r="5" fill="#4ECDC4"/>
+    <circle cx="306" cy="210" r="5" fill="#4ECDC4"/>
+    <!-- Face Base -->
+    <circle cx="256" cy="140" r="60" fill="#87CEEB" stroke="#000000" stroke-width="3"/>
+    <!-- Eyes (Wide-Eyed Shock) -->
+    <circle cx="230" cy="130" r="20" fill="#FFFFFF" stroke="#000000" stroke-width="3"/>
+    <circle cx="282" cy="130" r="20" fill="#FFFFFF" stroke="#000000" stroke-width="3"/>
+    <circle cx="230" cy="130" r="10" fill="#000000"/>
+    <circle cx="282" cy="130" r="10" fill="#000000"/>
+    <circle cx="225" cy="125" r="3" fill="#FFFFFF"/>
+    <circle cx="277" cy="125" r="3" fill="#FFFFFF"/>
+    <!-- Mouth (Open in Shock) -->
+    <path d="M240,160 C240,170 272,170 272,160 C272,150 256,145 240,160" fill="#FF6B6B" stroke="#000000" stroke-width="3"/>
+    <!-- Glasses (Pink and Askew) -->
+    <circle cx="230" cy="130" r="25" fill="none" stroke="#FF6B6B" stroke-width="3" transform="rotate(5 230 130)"/>
+    <circle cx="282" cy="135" r="25" fill="none" stroke="#FF6B6B" stroke-width="3" transform="rotate(5 282 135)"/>
+    <path d="M255,130 C260,128 275,130 280,135" fill="none" stroke="#FF6B6B" stroke-width="3"/>
+    <!-- Eyebrows (Raised in Surprise) -->
+    <path d="M220,105 C225,100 235,100 240,105" fill="none" stroke="#000000" stroke-width="3"/>
+    <path d="M272,105 C277,100 287,100 292,105" fill="none" stroke="#000000" stroke-width="3"/>
+  </g>
+</svg>

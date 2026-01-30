@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <style>
+    .body { fill: #87CEEB; stroke: #000; stroke-width: 3; }
+    .accent { fill: #4ECDC4; stroke: #000; stroke-width: 3; }
+    .rust { fill: #FF6B6B; opacity: 0.6; }
+    .eye { fill: #FFD700; }
+    .light { fill: #90EE90; }
+    .gear { fill: #4ECDC4; stroke: #000; stroke-width: 2; }
+    .bolt { fill: #FFD700; stroke: #000; stroke-width: 2; }
+  </style>
+  <!-- Body -->
+  <path class="body" d="M256,100 C350,100 400,200 400,250 C400,300 350,400 256,400 C162,400 112,300 112,250 C112,200 162,100 256,100 Z" />
+  <!-- Head -->
+  <circle class="body" cx="256" cy="120" r="80" />
+  <!-- Antenna Ears -->
+  <path class="accent" d="M200,40 L180,80" stroke-linecap="round" />
+  <path class="accent" d="M312,40 L332,80" stroke-linecap="round" />
+  <circle class="light" cx="200" cy="40" r="6" />
+  <circle class="light" cx="312" cy="40" r="6" />
+  <!-- Eyes -->
+  <circle class="eye" cx="236" cy="110" r="12" />
+  <circle class="eye" cx="276" cy="110" r="12" />
+  <!-- Paws -->
+  <ellipse class="accent" cx="150" cy="350" rx="40" ry="30" />
+  <ellipse class="accent" cx="362" cy="350" rx="40" ry="30" />
+  <ellipse class="accent" cx="200" cy="380" rx="40" ry="30" />
+  <ellipse class="accent" cx="312" cy="380" rx="40" ry="30" />
+  <!-- Paw Lights -->
+  <circle class="light" cx="150" cy="340" r="5" />
+  <circle class="light" cx="362" cy="340" r="5" />
+  <circle class="light" cx="200" cy="370" r="5" />
+  <circle class="light" cx="312" cy="370" r="5" />
+  <!-- Rust Patches -->
+  <path class="rust" d="M300,200 C320,200 340,220 340,240 C340,260 320,280 300,280 C280,280 260,260 260,240 C260,220 280,200 300,200 Z" />
+  <path class="rust" d="M180,180 C200,180 220,200 220,220 C220,240 200,260 180,260 C160,260 140,240 140,220 C140,200 160,180 180,180 Z" />
+  <!-- Gears -->
+  <circle class="gear" cx="180" cy="300" r="15" />
+  <circle class="gear" cx="180" cy="300" r="5" />
+  <rect class="gear" x="175" y="285" width="10" height="30" rx="2" />
+  <rect class="gear" x="165" y="295" width="30" height="10" rx="2" />
+  <circle class="gear" cx="330" cy="300" r="15" />
+  <circle class="gear" cx="330" cy="300" r="5" />
+  <rect class="gear" x="325" y="285" width="10" height="30" rx="2" />
+  <rect class="gear" x="315" y="295" width="30" height="10" rx="2" />
+  <!-- Bolts -->
+  <circle class="bolt" cx="256" cy="200" r="6" />
+  <circle class="bolt" cx="200" cy="250" r="6" />
+  <circle class="bolt" cx="312" cy="250" r="6" />
+  <!-- Mouth -->
+  <path class="accent" d="M236,140 C246,160 266,160 276,140" fill="none" stroke="#000" stroke-width="3" />
+</svg>

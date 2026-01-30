@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <style>
+    .cap { fill: #FF6B6B; stroke: #000; stroke-width: 3; }
+    .brim { fill: #FF6B6B; opacity: 0.8; stroke: #000; stroke-width: 3; }
+    .star { fill: #FFD700; stroke: #000; stroke-width: 2; }
+    .highlight { fill: #fff; opacity: 0.3; }
+    .shadow { fill: #000; opacity: 0.2; }
+  </style>
+  <g transform="translate(256, 256)">
+    <!-- Main Cap Body -->
+    <path class="cap" d="M-180,0
+      C-180,-100 0,-140 100,-140
+      C200,-140 180,-60 180,0
+      C180,60 100,100 0,100
+      C-100,100 -180,60 -180,0Z" />
+    <!-- Worn-out Brim -->
+    <path class="brim" d="M-120,-80
+      C-120,-120 0,-140 80,-140
+      C100,-140 120,-130 140,-110
+      C140,-110 120,-80 100,-80
+      C0,-80 -120,-80 -120,-80Z" />
+    <!-- Brim Shadow -->
+    <path class="shadow" d="M-120,-80
+      C-120,-100 0,-120 80,-120
+      C100,-120 120,-110 140,-90
+      C140,-90 120,-80 100,-80
+      C0,-80 -120,-80 -120,-80Z" />
+    <!-- Cap Highlight -->
+    <path class="highlight" d="M-80,-40
+      C-80,-80 0,-100 60,-100
+      C80,-100 100,-80 100,-60
+      C100,-40 80,-20 60,-20
+      C0,-20 -80,-40 -80,-40Z" />
+    <!-- Embroidered Star -->
+    <g transform="translate(0, -40)">
+      <path class="star" d="M0,-30
+        L-10,0 L-40,-10 L-15,20 L-25,50
+        L0,30 L25,50 L15,20 L40,-10
+        L10,0 Z" />
+    </g>
+  </g>
+</svg>

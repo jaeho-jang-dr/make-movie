@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="background: transparent;">
+  <g id="Character_MinSu">
+    <!-- Body Outline and Base -->
+    <path d="M256,300 C210,300 180,250 180,200 C180,150 210,120 256,120 C302,120 332,150 332,200 C332,250 302,300 256,300 Z" fill="#FFD700" stroke="#000000" stroke-width="3" />
+    
+    <!-- Legs (Dynamic Falling Pose) -->
+    <path d="M210,300 L180,360 C180,360 165,380 165,400" fill="none" stroke="#000000" stroke-width="3" />
+    <path d="M302,300 L332,360 C332,360 347,380 347,400" fill="none" stroke="#000000" stroke-width="3" />
+    
+    <!-- Arms (Flailing) -->
+    <path d="M180,200 L150,260 C150,260 135,280 135,300" fill="none" stroke="#000000" stroke-width="3" />
+    <path d="M332,200 L362,260 C362,260 377,280 377,300" fill="none" stroke="#000000" stroke-width="3" />
+    
+    <!-- Clothing Details (Shirt and Shorts) -->
+    <path d="M180,200 L180,260 C180,260 210,280 256,280 C302,280 332,260 332,260 L332,200" fill="#87CEEB" stroke="#000000" stroke-width="3" />
+    <path d="M210,280 L210,320 C210,320 240,340 272,340 C304,340 302,320 302,320 L302,280" fill="#90EE90" stroke="#000000" stroke-width="3" />
+    
+    <!-- Head -->
+    <circle cx="256" cy="140" r="80" fill="#FFD700" stroke="#000000" stroke-width="3" />
+    
+    <!-- Face Features (Layered on Top) -->
+    <g id="Face">
+      <!-- Eyes (Wide-Eyed Panic) -->
+      <circle cx="230" cy="130" r="20" fill="white" stroke="#000000" stroke-width="3" />
+      <circle cx="282" cy="130" r="20" fill="white" stroke="#000000" stroke-width="3" />
+      <circle cx="230" cy="130" r="10" fill="#4ECDC4" />
+      <circle cx="282" cy="130" r="10" fill="#4ECDC4" />
+      <circle cx="225" cy="125" r="3" fill="white" />
+      <circle cx="277" cy="125" r="3" fill="white" />
+      
+      <!-- Eyebrows (Raised in Panic) -->
+      <path d="M220,110 C210,100 200,100 190,110" fill="none" stroke="#000000" stroke-width="3" />
+      <path d="M292,110 C282,100 272,100 262,110" fill="none" stroke="#000000" stroke-width="3" />
+      
+      <!-- Mouth (Open in Panic) -->
+      <path d="M240,160 C240,170 272,170 272,160 C272,150 256,145 240,160 Z" fill="#FF6B6B" stroke="#000000" stroke-width="3" />
+    </g>
+    
+    <!-- Red Cap Flying Off -->
+    <path d="M300,80 C340,80 360,120 360,140 C360,160 340,180 300,180 C260,180 240,160 240,140 C240,120 260,80 300,80 Z" fill="#FF6B6B" stroke="#000000" stroke-width="3" transform="rotate(30 300 130)" />
+    <path d="M340,100 C360,100 380,120 380,140" fill="none" stroke="#000000" stroke-width="3" transform="rotate(30 300 130)" />
+    
+    <!-- Backpack and Spilling Contents -->
+    <path d="M180,220 L180,280 C180,280 150,300 150,340 C150,380 180,400 210,400 L302,400 C332,400 362,380 362,340 C362,300 332,280 332,280 L332,220" fill="#4ECDC4" stroke="#000000" stroke-width="3" />
+    <path d="M180,280 L150,340" fill="none" stroke="#000000" stroke-width="3" />
+    <path d="M332,280 L362,340" fill="none" stroke="#000000" stroke-width="3" />
+    
+    <!-- Spilling Items (Books, Pencil, etc.) -->
+    <rect x="140" y="350" width="40" height="20" fill="#87CEEB" stroke="#000000" stroke-width="3" transform="rotate(-20 160 360)" />
+    <rect x="350" y="350" width="10" height="40" fill="#FFD700" stroke="#000000" stroke-width="3" transform="rotate(10 355 370)" />
+    <circle cx="160" cy="380" r="10" fill="#FF6B6B" stroke="#000000" stroke-width="3" />
+  </g>
+</svg>

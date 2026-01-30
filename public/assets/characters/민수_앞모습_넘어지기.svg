@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <g>
+    <!-- Body Outline -->
+    <path d="M256,200 C200,200 150,260 150,320 C150,380 200,440 256,440 C312,440 362,380 362,320 C362,260 312,200 256,200 Z" fill="none" stroke="#000000" stroke-width="3"/>
+    <!-- Body Fill -->
+    <path d="M256,200 C200,200 150,260 150,320 C150,380 200,440 256,440 C312,440 362,380 362,320 C362,260 312,200 256,200 Z" fill="#87CEEB"/>
+    <!-- Head Outline -->
+    <circle cx="256" cy="150" r="100" fill="none" stroke="#000000" stroke-width="3"/>
+    <!-- Head Fill -->
+    <circle cx="256" cy="150" r="100" fill="#FFD700"/>
+    <!-- Left Arm Outline (Flailing) -->
+    <path d="M200,250 C160,250 120,200 100,180" fill="none" stroke="#000000" stroke-width="3"/>
+    <!-- Left Arm Fill -->
+    <path d="M200,250 C160,250 120,200 100,180" fill="#87CEEB" stroke-width="0"/>
+    <!-- Right Arm Outline (Flailing) -->
+    <path d="M312,250 C352,250 392,200 412,180" fill="none" stroke="#000000" stroke-width="3"/>
+    <!-- Right Arm Fill -->
+    <path d="M312,250 C352,250 392,200 412,180" fill="#87CEEB" stroke-width="0"/>
+    <!-- Left Leg Outline (Slipping) -->
+    <path d="M220,400 C180,400 140,360 120,340" fill="none" stroke="#000000" stroke-width="3"/>
+    <!-- Left Leg Fill -->
+    <path d="M220,400 C180,400 140,360 120,340" fill="#90EE90" stroke-width="0"/>
+    <!-- Right Leg Outline (Slipping) -->
+    <path d="M292,400 C332,400 372,440 392,460" fill="none" stroke="#000000" stroke-width="3"/>
+    <!-- Right Leg Fill -->
+    <path d="M292,400 C332,400 372,440 392,460" fill="#90EE90" stroke-width="0"/>
+    <!-- Sneaker Left Outline -->
+    <ellipse cx="110" cy="350" rx="30" ry="15" transform="rotate(-30 110 350)" fill="none" stroke="#000000" stroke-width="3"/>
+    <!-- Sneaker Left Fill -->
+    <ellipse cx="110" cy="350" rx="30" ry="15" transform="rotate(-30 110 350)" fill="#4ECDC4"/>
+    <!-- Sneaker Right Outline -->
+    <ellipse cx="400" cy="470" rx="30" ry="15" transform="rotate(30 400 470)" fill="none" stroke="#000000" stroke-width="3"/>
+    <!-- Sneaker Right Fill -->
+    <ellipse cx="400" cy="470" rx="30" ry="15" transform="rotate(30 400 470)" fill="#4ECDC4"/>
+    <!-- Red Cap Outline (Flying Off) -->
+    <path d="M300,80 C340,80 380,120 380,160 C380,200 340,240 300,240" fill="none" stroke="#000000" stroke-width="3"/>
+    <!-- Red Cap Fill -->
+    <path d="M300,80 C340,80 380,120 380,160 C380,200 340,240 300,240" fill="#FF6B6B"/>
+    <!-- Cap Brim Outline -->
+    <path d="M300,160 C340,160 380,140 420,140" fill="none" stroke="#000000" stroke-width="3"/>
+    <!-- Cap Brim Fill -->
+    <path d="M300,160 C340,160 380,140 420,140" fill="#FF6B6B" stroke-width="0"/>
+    <!-- Left Eye Outline -->
+    <circle cx="220" cy="130" r="25" fill="none" stroke="#000000" stroke-width="3"/>
+    <!-- Left Eye White -->
+    <circle cx="220" cy="130" r="25" fill="#FFFFFF"/>
+    <!-- Left Pupil -->
+    <circle cx="220" cy="130" r="10" fill="#000000"/>
+    <!-- Left Eye Highlight -->
+    <circle cx="225" cy="125" r="5" fill="#FFFFFF"/>
+    <!-- Right Eye Outline -->
+    <circle cx="292" cy="130" r="25" fill="none" stroke="#000000" stroke-width="3"/>
+    <!-- Right Eye White -->
+    <circle cx="292" cy="130" r="25" fill="#FFFFFF"/>
+    <!-- Right Pupil -->
+    <circle cx="292" cy="130" r="10" fill="#000000"/>
+    <!-- Right Eye Highlight -->
+    <circle cx="297" cy="125" r="5" fill="#FFFFFF"/>
+    <!-- Mouth Outline (Panic) -->
+    <path d="M240,170 C250,190 262,190 272,170" fill="none" stroke="#000000" stroke-width="3"/>
+    <!-- Mouth Fill -->
+    <path d="M240,170 C250,190 262,190 272,170" fill="#FFFFFF" stroke-width="0"/>
+    <!-- Eyebrows (Panic) -->
+    <path d="M205,105 C215,95 225,105 235,105" fill="none" stroke="#000000" stroke-width="3"/>
+    <path d="M277,105 C287,95 297,105 307,105" fill="none" stroke="#000000" stroke-width="3"/>
+  </g>
+</svg>

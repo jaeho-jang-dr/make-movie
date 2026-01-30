@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <!-- Background Layer -->
+  <g id="background">
+    <rect width="1920" height="1080" fill="#FFF5C3" opacity="0.5"/>
+    <path d="M0,540 Q480,400 960,540 Q1440,680 1920,540 L1920,1080 L0,1080 Z" fill="#DAA520" opacity="0.7"/>
+    <path d="M0,600 Q480,450 960,600 Q1440,750 1920,600 L1920,1080 L0,1080 Z" fill="#FFD700" opacity="0.3"/>
+  </g>
+
+  <!-- Midground Layer - Cave Walls with Runes -->
+  <g id="midground">
+    <path d="M0,0 L0,1080 Q400,900 800,1080 Q1200,900 1600,1080 L1920,1080 L1920,0 Q1600,200 1200,0 Q800,200 400,0 Z" fill="#DAA520" opacity="0.8"/>
+    <!-- Left Wall Runes -->
+    <g fill="#FFEC80" opacity="0.6">
+      <path d="M200,400 L220,400 L220,460 L200,460 Z"/>
+      <path d="M240,420 L260,420 L260,480 L240,480 Z M250,400 L250,500"/>
+      <path d="M280,440 L300,440 L300,500 L280,500 Z M290,420 L290,520"/>
+    </g>
+    <!-- Right Wall Runes -->
+    <g fill="#FFEC80" opacity="0.6">
+      <path d="M1700,400 L1720,400 L1720,460 L1700,460 Z"/>
+      <path d="M1740,420 L1760,420 L1760,480 L1740,480 Z M1750,400 L1750,500"/>
+      <path d="M1780,440 L1800,440 L1800,500 L1780,500 Z M1790,420 L1790,520"/>
+    </g>
+    <!-- Cave Texture -->
+    <g fill="none" stroke="#FFD700" stroke-width="3" opacity="0.4">
+      <path d="M100,300 Q150,250 200,300"/>
+      <path d="M300,400 Q350,350 400,400"/>
+      <path d="M1500,300 Q1550,250 1600,300"/>
+      <path d="M1700,400 Q1750,350 1800,400"/>
+    </g>
+  </g>
+
+  <!-- Foreground Layer - Pedestal and Treasure Chest -->
+  <g id="foreground">
+    <!-- Pedestal -->
+    <path d="M900,700 L1020,700 L1080,800 L840,800 Z" fill="#DAA520" opacity="0.9"/>
+    <path d="M840,800 L1080,800 L1080,850 L840,850 Z" fill="#FFD700" opacity="0.8"/>
+    <!-- Treasure Chest Base -->
+    <path d="M880,650 L1040,650 L1060,750 L860,750 Z" fill="#DAA520"/>
+    <!-- Chest Lid -->
+    <path d="M860,650 Q960,600 1060,650 L1060,700 L860,700 Z" fill="#FFD700"/>
+    <!-- Chest Details -->
+    <g fill="none" stroke="#FFEC80" stroke-width="3">
+      <path d="M880,670 L1040,670"/>
+      <path d="M920,650 L920,750"/>
+      <path d="M1000,650 L1000,750"/>
+    </g>
+    <!-- Golden Light from Chest -->
+    <g opacity="0.7">
+      <path d="M860,650 L700,400 L960,550 Z" fill="#FFF0A3"/>
+      <path d="M1060,650 L1220,400 L960,550 Z" fill="#FFF0A3"/>
+      <path d="M860,650 L600,200 L960,500 Z" fill="#FFEC80" opacity="0.5"/>
+      <path d="M1060,650 L1320,200 L960,500 Z" fill="#FFEC80" opacity="0.5"/>
+    </g>
+  </g>
+
+  <!-- Atmospheric Sparkles -->
+  <g id="sparkles" fill="#FFF0A3" opacity="0.8">
+    <circle cx="500" cy="300" r="3"/>
+    <circle cx="600" cy="400" r="2"/>
+    <circle cx="700" cy="500" r="4"/>
+    <circle cx="800" cy="450" r="3"/>
+    <circle cx="1100" cy="400" r="2"/>
+    <circle cx="1200" cy="500" r="4"/>
+    <circle cx="1300" cy="350" r="3"/>
+    <circle cx="1400" cy="450" r="2"/>
+    <circle cx="750" cy="200" r="3"/>
+    <circle cx="1150" cy="250" r="4"/>
+  </g>
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <g>
+    <!-- Body -->
+    <path d="M256,300 C220,300 200,340 200,380 C200,420 220,460 256,460 C292,460 312,420 312,380 C312,340 292,300 256,300 Z" fill="#90EE90" stroke="#000000" stroke-width="3"/>
+    <path d="M220,320 C220,280 240,240 256,240 C272,240 292,280 292,320" fill="#90EE90" stroke="#000000" stroke-width="3"/>
+
+    <!-- Head -->
+    <circle cx="256" cy="200" r="100" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+
+    <!-- Hat -->
+    <path d="M180,160 C180,120 220,100 256,100 C292,100 332,120 332,160 C332,180 320,200 300,200 C280,200 232,200 212,200 C192,200 180,180 180,160 Z" fill="#FF6B6B" stroke="#000000" stroke-width="3"/>
+    <path d="M240,100 C240,80 272,80 272,100" fill="none" stroke="#000000" stroke-width="3"/>
+
+    <!-- Hair -->
+    <path d="M200,180 C200,140 240,120 256,120 C272,120 312,140 312,180" fill="#4ECDC4" stroke="#000000" stroke-width="3"/>
+
+    <!-- Left Arm (Pointing Forward) -->
+    <path d="M220,300 C200,300 180,320 160,320 C140,320 120,340 120,360" fill="#90EE90" stroke="#000000" stroke-width="3"/>
+    <circle cx="120" cy="360" r="10" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+
+    <!-- Right Arm -->
+    <path d="M292,300 C312,300 332,320 352,320 C372,320 392,300 392,280" fill="#90EE90" stroke="#000000" stroke-width="3"/>
+    <circle cx="392" cy="280" r="10" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+
+    <!-- Legs -->
+    <path d="M220,460 C200,460 180,480 180,500" fill="#87CEEB" stroke="#000000" stroke-width="3"/>
+    <path d="M292,460 C312,460 332,480 332,500" fill="#87CEEB" stroke="#000000" stroke-width="3"/>
+    <ellipse cx="180" cy="500" rx="20" ry="10" fill="#4ECDC4" stroke="#000000" stroke-width="3"/>
+    <ellipse cx="332" cy="500" rx="20" ry="10" fill="#4ECDC4" stroke="#000000" stroke-width="3"/>
+
+    <!-- Face Features (Layered on top) -->
+    <!-- Left Eye -->
+    <circle cx="230" cy="180" r="20" fill="white" stroke="#000000" stroke-width="3"/>
+    <circle cx="230" cy="180" r="10" fill="#4ECDC4" stroke="#000000" stroke-width="3"/>
+    <circle cx="225" cy="175" r="3" fill="white" stroke="none"/>
+
+    <!-- Right Eye -->
+    <circle cx="280" cy="180" r="20" fill="white" stroke="#000000" stroke-width="3"/>
+    <circle cx="280" cy="180" r="10" fill="#4ECDC4" stroke="#000000" stroke-width="3"/>
+    <circle cx="275" cy="175" r="3" fill="white" stroke="none"/>
+
+    <!-- Freckles -->
+    <circle cx="240" cy="200" r="2" fill="#FF6B6B" stroke="none"/>
+    <circle cx="250" cy="205" r="2" fill="#FF6B6B" stroke="none"/>
+    <circle cx="260" cy="200" r="2" fill="#FF6B6B" stroke="none"/>
+
+    <!-- Mouth -->
+    <path d="M240,220 C250,230 260,220 270,220" fill="none" stroke="#000000" stroke-width="3"/>
+
+    <!-- Nose -->
+    <path d="M255,200 C260,200 260,205 255,205" fill="none" stroke="#000000" stroke-width="3"/>
+  </g>
+</svg>

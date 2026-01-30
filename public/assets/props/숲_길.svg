@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <style>
+    .path { fill: #87CEEB; stroke: #000; stroke-width: 3; }
+    .moss { fill: #90EE90; stroke: #000; stroke-width: 3; }
+    .pebble { fill: #FF6B6B; stroke: #000; stroke-width: 1; }
+    .fern { fill: #4ECDC4; stroke: #000; stroke-width: 3; }
+    .firefly { fill: #FFD700; stroke: none; opacity: 0.8; }
+  </style>
+  <!-- Background (sky-like) -->
+  <rect x="0" y="0" width="512" height="512" fill="#87CEEB" />
+  <!-- Forest Path -->
+  <path class="path" d="M100,400 Q150,450 200,400 Q250,350 300,400 Q350,450 400,400" fill="none" />
+  <!-- Mossy Edges -->
+  <path class="moss" d="M100,400 Q130,430 160,400 Q190,370 220,400 Q250,430 280,400 Q310,370 340,400 Q370,430 400,400" fill="none" stroke-opacity="0.6" />
+  <path class="moss" d="M100,400 Q130,370 160,400 Q190,430 220,400 Q250,370 280,400 Q310,430 340,400 Q370,370 400,400" fill="none" stroke-opacity="0.6" />
+  <!-- Pebbles -->
+  <circle class="pebble" cx="150" cy="420" r="5" />
+  <circle class="pebble" cx="180" cy="390" r="4" />
+  <circle class="pebble" cx="220" cy="410" r="6" />
+  <circle class="pebble" cx="250" cy="380" r="5" />
+  <circle class="pebble" cx="300" cy="420" r="4" />
+  <circle class="pebble" cx="350" cy="390" r="6" />
+  <!-- Ferns (Left Side) -->
+  <path class="fern" d="M80,350 C60,300 40,250 20,200" fill="none" />
+  <path class="fern" d="M80,350 C100,300 120,250 140,200" fill="none" />
+  <path class="fern" d="M60,320 C50,280 40,240 30,200" fill="none" />
+  <path class="fern" d="M100,320 C110,280 120,240 130,200" fill="none" />
+  <!-- Ferns (Right Side) -->
+  <path class="fern" d="M420,350 C440,300 460,250 480,200" fill="none" />
+  <path class="fern" d="M420,350 C400,300 380,250 360,200" fill="none" />
+  <path class="fern" d="M440,320 C450,280 460,240 470,200" fill="none" />
+  <path class="fern" d="M400,320 C390,280 380,240 370,200" fill="none" />
+  <!-- Fireflies -->
+  <circle class="firefly" cx="120" cy="300" r="3" />
+  <circle class="firefly" cx="180" cy="250" r="2.5" />
+  <circle class="firefly" cx="240" cy="320" r="3" />
+  <circle class="firefly" cx="300" cy="280" r="2.5" />
+  <circle class="firefly" cx="360" cy="310" r="3" />
+</svg>

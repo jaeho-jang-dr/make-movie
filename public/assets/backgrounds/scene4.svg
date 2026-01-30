@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <!-- Background Layer -->
+  <g id="background">
+    <rect width="1920" height="1080" fill="#4A4A4A" />
+    <!-- Cave Back Wall with Fading Light -->
+    <path d="M0 0 L1920 0 L1920 1080 L0 1080 Z" fill="url(#bgGradient)" opacity="0.8" />
+    <defs>
+      <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" style="stop-color:#5C5C5C;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#4A4A4A;stop-opacity:1" />
+      </linearGradient>
+    </defs>
+    <!-- Distant Cave Texture -->
+    <path d="M200 600 Q300 550, 400 600 Q500 650, 600 600 Q700 550, 800 600 Q900 650, 1000 600 Q1100 550, 1200 600 Q1300 650, 1400 600 Q1500 550, 1600 600" fill="none" stroke="#5C5C5C" stroke-width="5" opacity="0.3" />
+  </g>
+
+  <!-- Midground Layer -->
+  <g id="midground">
+    <!-- Cave Walls with Mossy Texture -->
+    <path d="M0 1080 L200 800 Q300 700, 400 750 Q500 800, 600 750 Q700 700, 800 750 L800 1080 Z" fill="#5C5C5C" opacity="0.9" />
+    <path d="M1920 1080 L1720 800 Q1620 700, 1520 750 Q1420 800, 1320 750 Q1220 700, 1120 750 L1120 1080 Z" fill="#5C5C5C" opacity="0.9" />
+    <!-- Moss Details -->
+    <path d="M250 850 Q280 820, 310 850 Q340 880, 370 850" fill="none" stroke="#6E6E6E" stroke-width="10" opacity="0.7" />
+    <path d="M450 900 Q480 870, 510 900 Q540 930, 570 900" fill="none" stroke="#6E6E6E" stroke-width="10" opacity="0.7" />
+    <path d="M1250 850 Q1280 820, 1310 850 Q1340 880, 1370 850" fill="none" stroke="#6E6E6E" stroke-width="10" opacity="0.7" />
+    <path d="M1450 900 Q1480 870, 1510 900 Q1540 930, 1570 900" fill="none" stroke="#6E6E6E" stroke-width="10" opacity="0.7" />
+    <!-- Dripping Water Echoes -->
+    <circle cx="400" cy="950" r="5" fill="#828282" opacity="0.6" />
+    <circle cx="400" cy="970" r="3" fill="#828282" opacity="0.4" />
+    <circle cx="400" cy="990" r="2" fill="#828282" opacity="0.2" />
+    <circle cx="1500" cy="950" r="5" fill="#828282" opacity="0.6" />
+    <circle cx="1500" cy="970" r="3" fill="#828282" opacity="0.4" />
+    <circle cx="1500" cy="990" r="2" fill="#828282" opacity="0.2" />
+  </g>
+
+  <!-- Foreground Layer -->
+  <g id="foreground">
+    <!-- Jagged Cave Entrance -->
+    <path d="M800 1080 L850 800 Q900 700, 950 750 Q1000 800, 1050 750 Q1100 700, 1150 800 L1200 1080 Z" fill="#4A4A4A" />
+    <path d="M720 1080 L770 820 Q820 720, 870 770 Q920 820, 970 770 Q1020 720, 1070 820 Q1120 920, 1170 820 L1220 1080 Z" fill="url(#fgGradient)" />
+    <defs>
+      <linearGradient id="fgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" style="stop-color:#5C5C5C;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#4A4A4A;stop-opacity:1" />
+      </linearGradient>
+    </defs>
+    <!-- Vines Hanging Like Curtains -->
+    <path d="M850 700 Q840 800, 850 900" fill="none" stroke="#6E6E6E" stroke-width="8" opacity="0.8" />
+    <path d="M880 700 Q870 800, 880 900" fill="none" stroke="#6E6E6E" stroke-width="8" opacity="0.8" />
+    <path d="M910 700 Q900 800, 910 900" fill="none" stroke="#6E6E6E" stroke-width="8" opacity="0.8" />
+    <path d="M940 700 Q930 800, 940 900" fill="none" stroke="#6E6E6E" stroke-width="8" opacity="0.8" />
+    <path d="M970 700 Q960 800, 970 900" fill="none" stroke="#6E6E6E" stroke-width="8" opacity="0.8" />
+    <path d="M1000 700 Q990 800, 1000 900" fill="none" stroke="#6E6E6E" stroke-width="8" opacity="0.8" />
+    <path d="M1030 700 Q1020 800, 1030 900" fill="none" stroke="#6E6E6E" stroke-width="8" opacity="0.8" />
+    <path d="M1060 700 Q1050 800, 1060 900" fill="none" stroke="#6E6E6E" stroke-width="8" opacity="0.8" />
+    <!-- Moss on Rocks -->
+    <path d="M750 900 Q780 870, 810 900 Q840 930, 870 900" fill="none" stroke="#6E6E6E" stroke-width="12" opacity="0.9" />
+    <path d="M1050 900 Q1080 870, 1110 900 Q1140 930, 1170 900" fill="none" stroke="#6E6E6E" stroke-width="12" opacity="0.9" />
+    <!-- Rock Details with Rounded Edges -->
+    <path d="M720 1000 Q740 980, 760 1000 Q780 1020, 800 1000" fill="#5C5C5C" opacity="0.9" />
+    <path d="M1120 1000 Q1140 980, 1160 1000 Q1180 1020, 1200 1000" fill="#5C5C5C" opacity="0.9" />
+  </g>
+
+  <!-- Atmospheric Overlay -->
+  <g id="atmosphere">
+    <rect width="1920" height="1080" fill="#969696" opacity="0.1" />
+    <path d="M0 0 L1920 0 L1920 600 Q1800 550, 1600 600 Q1400 650, 1200 600 Q1000 550, 800 600 Q600 650, 400 600 Q200 550, 0 600 Z" fill="url(#mistGradient)" opacity="0.3" />
+    <defs>
+      <linearGradient id="mistGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" style="stop-color:#969696;stop-opacity:0.5" />
+        <stop offset="100%" style="stop-color:#969696;stop-opacity:0" />
+      </linearGradient>
+    </defs>
+  </g>
+</svg>

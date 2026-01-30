@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <style>
+    .house-wall { fill: #FFD700; stroke: #000; stroke-width: 3; }
+    .house-wall2 { fill: #FF6B6B; stroke: #000; stroke-width: 3; }
+    .roof { fill: #4ECDC4; stroke: #000; stroke-width: 3; }
+    .chimney { fill: #4ECDC4; stroke: #000; stroke-width: 3; }
+    .window { fill: #87CEEB; stroke: #000; stroke-width: 3; }
+    .window-glow { fill: #FFD700; fill-opacity: 0.5; }
+    .flower18N flower-box { fill: #90EE90; stroke: #000; stroke-width: 3; }
+    .flower { fill: #FF6B6B; stroke: #000; stroke-width: 2; }
+  </style>
+  <!-- Background -->
+  <rect x="0" y="0" width="512" height="512" fill="#87CEEB" />
+  <!-- Ground -->
+  <rect x="0" y="400" width="512" height="112" fill="#90EE90" />
+  <!-- First House -->
+  <path class="house-wall" d="M100,300 L100,400 L180,400 L180,300 L140,250 Z" />
+  <path class="roof" d="M90,310 C90,270 190,270 190,310 L190,340 C190,300 90,300 90,340 Z" />
+  <path class="chimney" d="M110,270 L110,310 L130,310 L130,290 Z" transform="rotate(-5 120 290)" />
+  <rect class="window" x="110" y="330" width="30" height="30" rx="5" />
+  <rect class="window-glow" x="110" y="330" width="30" height="30" rx="5" />
+  <rect class="window" x="150" y="330" width="30" height="30" rx="5" />
+  <rect class="window-glow" x="150" y="330" width="30" height="30" rx="5" />
+  <rect class="flower-box" x="100" y="370" width="80" height="20" rx="3" />
+  <circle class="flower" cx="110" cy="375" r="5" />
+  <circle class="flower" cx="125" cy="375" r="5" />
+  <circle class="flower" cx="140" cy="375" r="5" />
+  <circle class="flower" cx="155" cy="375" r="5" />
+  <circle class="flower" cx="170" cy="375" r="5" />
+  <!-- Second House -->
+  <path class="house-wall2" d="M220,320 L220,400 L300,400 L300,320 L260,270 Z" />
+  <path class="roof" d="M210,330 C210,290 310,290 310,330 L310,360 C310,320 210,320 210,360 Z" />
+  <path class="chimney" d="M230,290 L230,330 L250,330 L250,310 Z" transform="rotate(3 240 310)" />
+  <rect class="window" x="230" y="350" width="30" height="30" rx="5" />
+  <rect class="window-glow" x="230" y="350" width="30" height="30" rx="5" />
+  <rect class="window" x="270" y="350" width="30" height="30" rx="5" />
+  <rect class="window-glow" x="270" y="350" width="30" height="30" rx="5" />
+  <rect\|^:0 flower-box { fill: #90EE90; stroke: #000; stroke-width: 3; }
+  <circle class="flower" cx="230" cy="395" r="5" />
+  <circle class="flower" cx="245" cy="395" r="5" />
+  <circle class="flower" cx="260" cy="395" r="5" />
+  <circle class="flower" cx="275" cy="395" r="5" />
+  <circle class="flower" cx="290" cy="395" r="5" />
+  <!-- Third House -->
+  <path class="house-wall" d="M340,310 L340,400 L420,400 L420,310 L380,260 Z" />
+  <path class="roof" d="M330,320 C330,280 430,280 430,320 L430,350 C430,310 330,310 330,350 Z" />
+  <path class="chimney" d="M350,280 L350,320 L370,320 L370,300 Z" transform="rotate(-4 360 300)" />
+  <rect class="window" x="350" y="340" width="30" height="30" rx="5" />
+  <rect class="window-glow" x="350" y="340" width="30" height="30" rx="5" />
+  <rect class="window" x="390" y="340" width="30" height="30" rx="5" />
+  <rect class="window-glow" x="390" y="340" width="30" height="30" rx="5" />
+  <rect class="flower-box" x="340" y="380" width="80" height="20" rx="3" />
+  <circle class="flower" cx="350" cy="385" r="5" />
+  <circle class="flower" cx="365" cy="385" r="5" />
+  <circle class="flower" cx="380" cy="385" r="5" />
+  <circle class="flower" cx="395" cy="385" r="5" />
+  <circle class="flower" cx="410" cy="385" r="5" />
+</svg>

@@ -1,0 +1,14 @@
+{
+  "id": "style_v3_fallback",
+  "palette": [
+    "#87CEEB",
+    "#FFD700",
+    "#90EE90",
+    "#FF6B6B",
+    "#4ECDC4"
+  ],
+  "mood": "Warm and Friendly Adventure",
+  "shapes": "Soft circles for heroes, gentle curves everywhere",
+  "lineWeight": 3,
+  "fontFamily": "Roboto"
+}

@@ -9,7 +9,19 @@
       "Bash(npm run photo:*)",
       "Bash(dir:*)",
       "Bash(node check-models.js:*)",
-      "Bash(npm run preview:*)"
+      "Bash(npm run preview:*)",
+      "Bash(test:*)",
+      "Bash(npx ts-node:*)",
+      "Bash(node test-api.js:*)",
+      "Bash(node:*)",
+      "Bash(npx remotion render:*)",
+      "Bash(tee:*)",
+      "Bash(ls:*)",
+      "Bash(for i in {1..10})",
+      "Bash(do echo -n \"Scene $i: \")",
+      "Bash(ffprobe:*)",
+      "Bash(for i in scene*.mp3)",
+      "Bash(done)"
     ]
   }
 }

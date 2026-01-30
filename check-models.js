@@ -1,6 +1,8 @@
 // 사용 가능한 Gemini 모델 목록 확인
 const { GoogleGenerativeAI } = require('@google/generative-ai');
-require('dotenv').config();
+const dotenv = require('dotenv');
+dotenv.config({ path: '.env.local' });
+dotenv.config();
 
 const apiKey = process.env.GOOGLE_AI_API_KEY;
 const genAI = new GoogleGenerativeAI(apiKey);

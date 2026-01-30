@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <!-- Background Layer -->
+  <g id="background">
+    <rect width="1920" height="1080" fill="#FFF5C3" />
+    <!-- Sky with gradient sunlight -->
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFE066;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFF0A3;stop-opacity:1" />
+    </linearGradient>
+    <rect x="0" y="0" width="1920" height="600" fill="url(#skyGradient)" />
+    <!-- Distant hills -->
+    <path d="M0,600 Q480,500 960,600 Q1440,500 1920,600 L1920,1080 L0,1080 Z" fill="#FFEC80" opacity="0.6" />
+  </g>
+
+  <!-- Midground Layer -->
+  <g id="midground">
+    <!-- Cave walls with texture -->
+    <path d="M0,0 L400,0 Q500,200 400,400 Q300,600 400,800 Q500,1000 400,1080 L0,1080 Z" fill="#FFD700" opacity="0.8" />
+    <path d="M1920,0 L1520,0 Q1420,200 1520,400 Q1620,600 1520,800 Q1420,1000 1520,1080 L1920,1080 Z" fill="#FFD700" opacity="0.8" />
+    <!-- Cave exit arch -->
+    <path d="M400,400 Q960,200 1520,400 L1520,1080 L400,1080 Z" fill="#FFE066" opacity="0.7" />
+    <!-- Greenery outside cave -->
+    <path d="M400,600 Q500,550 600,600 Q700,550 800,600 Q900,550 1000,600 Q1100,550 1200,600 Q1300,550 1400,600 Q1500,550 1520,600 L1520,1080 L400,1080 Z" fill="#FFEC80" opacity="0.9" />
+    <path d="M500,550 Q550,500 600,550 Q650,500 700,550 Q750,500 800,550 Q850,500 900,550 Q950,500 1000,550 Q1050,500 1100,550 Q1150,500 1200,550 Q1250,500 1300,550 Q1350,500 1400,550 Q1450,500 1500,550" stroke="#FFD700" stroke-width="5" fill="none" opacity="0.8" />
+  </g>
+
+  <!-- Foreground Layer -->
+  <g id="foreground">
+    <!-- Cave floor with texture -->
+    <path d="M0,800 Q480,850 960,800 Q1440,850 1920,800 L1920,1080 L0,1080 Z" fill="#FFE066" opacity="0.9" />
+    <!-- Sunlight streaming in -->
+    <radialGradient id="sunlight" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#FFF5C3;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#FFE066;stop-opacity:0" />
+    </radialGradient>
+    <circle cx="960" cy="300" r="300" fill="url(#sunlight)" />
+    <!-- Sun rays -->
+    <g opacity="0.5">
+      <path d="M960,300 L800,500" stroke="#FFF5C3" stroke-width="10" stroke-opacity="0.7" />
+      <path d="M960,300 L1120,500" stroke="#FFF5C3" stroke-width="10" stroke-opacity="0.7" />
+      <path d="M960,300 L700,400" stroke="#FFF5C3" stroke-width="10" stroke-opacity="0.7" />
+      <path d="M960,300 L1220,400" stroke="#FFF5C3" stroke-width="10" stroke-opacity="0.7" />
+      <path d="M960,300 L850,600" stroke="#FFF5C3" stroke-width="10" stroke-opacity="0.7" />
+      <path d="M960,300 L1070,600" stroke="#FFF5C3" stroke-width="10" stroke-opacity="0.7" />
+    </g>
+    <!-- Sparkling dust motes -->
+    <g opacity="0.6">
+      <circle cx="850" cy="450" r="3" fill="#FFF5C3" />
+      <circle cx="880" cy="480" r="2" fill="#FFF5C3" />
+      <circle cx="900" cy="420" r="4" fill="#FFF5C3" />
+      <circle cx="930" cy="500" r="3" fill="#FFF5C3" />
+      <circle cx="960" cy="460" r="2" fill="#FFF5C3" />
+      <circle cx="990" cy="430" r="4" fill="#FFF5C3" />
+      <circle cx="1020" cy="490" r="3" fill="#FFF5C3" />
+      <circle cx="1050" cy="450" r="2" fill="#FFF5C3" />
+      <circle cx="1080" cy="470" r="4" fill="#FFF5C3" />
+      <circle cx="1110" cy="510" r="3" fill="#FFF5C3" />
+    </g>
+    <!-- Cave wall details -->
+    <path d="M100,200 Q150,250 200,200" stroke="#FFD700" stroke-width="5" fill="none" opacity="0.5" />
+    <path d="M150,400 Q200,450 250,400" stroke="#FFD700" stroke-width="5" fill="none" opacity="0.5" />
+    <path d="M1700,200 Q1750,250 1800,200" stroke="#FFD700" stroke-width="5" fill="none" opacity="0.5" />
+    <path d="M1650,400 Q1700,450 1750,400" stroke="#FFD700" stroke-width="5" fill="none" opacity="0.5" />
+  </g>
+
+  <!-- Atmospheric Perspective Overlay -->
+  <g id="atmosphere">
+    <linearGradient id="mist" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFF5C3;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#FFF5C3;stop-opacity:0" />
+    </linearGradient>
+    <rect x="0" y="0" width="1920" height="1080" fill="url(#mist)" />
+  </g>
+</svg>

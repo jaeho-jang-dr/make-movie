@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <g>
+    <!-- Body (Black fur with soft highlights) -->
+    <path d="M256,300 C320,300 370,240 370,180 C370,120 320,80 256,80 C192,80 142,120 142,180 C142,240 192,300 256,300 Z" fill="#000000" stroke="#000000" stroke-width="3"/>
+    <path d="M256,280 C310,280 350,230 350,180 C350,130 310,90 256,90 C202,90 162,130 162,180 C162,230 202,280 256,280 Z" fill="#1A1A1A" opacity="0.3"/>
+
+    <!-- Tail (Flicking motion) -->
+    <path d="M142,240 C120,240 100,260 100,280 C100,300 120,320 142,320 C164,320 184,300 184,280 C184,260 164,240 142,240 Z" fill="#000000" stroke="#000000" stroke-width="3"/>
+    <path d="M100,280 C80,300 60,340 60,360" fill="none" stroke="#000000" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Head -->
+    <circle cx="256" cy="150" r="100" fill="#000000" stroke="#000000" stroke-width="3"/>
+    <path d="M256,130 C290,130 310,110 310,80 C310,50 290,30 256,30 C222,30 202,50 202,80 C202,110 222,130 256,130 Z" fill="#1A1A1A" opacity="0.3"/>
+
+    <!-- Eyes (Glowing yellow with sparkle) -->
+    <g>
+      <ellipse cx="220" cy="120" rx="30" ry="40" fill="#FFD700" stroke="#FFD700" stroke-width="2"/>
+      <ellipse cx="292" cy="120" rx="30" ry="40" fill="#FFD700" stroke="#FFD700" stroke-width="2"/>
+      <ellipse cx="220" cy="110" rx="10" ry="15" fill="#FFFFFF" opacity="0.7"/>
+      <ellipse cx="292" cy="110" rx="10" ry="15" fill="#FFFFFF" opacity="0.7"/>
+      <circle cx="220" cy="130" r="10" fill="#000000"/>
+      <circle cx="292" cy="130" r="10" fill="#000000"/>
+    </g>
+
+    <!-- Mysterious Smile -->
+    <path d="M230,160 C240,170 270,170 280,160" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Clothing (Vest with pattern using vibrant colors) -->
+    <path d="M210,200 L302,200 L320,260 L256,300 L192,260 Z" fill="#87CEEB" stroke="#000000" stroke-width="3"/>
+    <circle cx="256" cy="230" r="5" fill="#FF6B6B"/>
+    <circle cx="230" cy="230" r="5" fill="#90EE90"/>
+    <circle cx="282" cy="230" r="5" fill="#4ECDC4"/>
+
+    <!-- Accessory (Hat with texture) -->
+    <path d="M200,80 L312,80 L330,40 L182,40 Z" fill="#4ECDC4" stroke="#000000" stroke-width="3"/>
+    <path d="M200,60 L312,60" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-opacity="0.5"/>
+    <path d="M200,70 L312,70" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-opacity="0.5"/>
+
+    <!-- Legs -->
+    <ellipse cx="220" cy="320" rx="25" ry="40" fill="#000000" stroke="#000000" stroke-width="3"/>
+    <ellipse cx="292" cy="320" rx="25" ry="40" fill="#000000" stroke="#000000" stroke-width="3"/>
+
+    <!-- Arms -->
+    <ellipse cx="180" cy="220" rx="40" ry="20" fill="#000000" stroke="#000000" stroke-width="3" transform="rotate(-30, 180, 220)"/>
+    <ellipse cx="332" cy="220" rx="40" ry="20" fill="#000000" stroke="#000000" stroke-width="3" transform="rotate(30, 332, 220)"/>
+  </g>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <style>
+    .rock { fill: #4ECDC4; stroke: #000; stroke-width: 3; }
+    .crack { fill: none; stroke: #000; stroke-width: 2; }
+    .face { fill: #000; }
+    .motion { fill: none; stroke: #FF6B6B; stroke-width: 3; stroke-opacity: 0.7; }
+  </style>
+  <g transform="translate(256, 256)">
+    <!-- Rock 1 (Top Left) -->
+    <path class="rock" d="M-120, -100 c-30,0 -50,30 -40,60 c10,30 40,40 60,20 c20,-20 10,-60 -20,-80" transform="rotate(20)" />
+    <path class="crack" d="M-130,-80 l20,10 l-10,20" />
+    <circle class="face" cx="-135" cy="-75" r="3" />
+    <circle class="face" cx="-115" cy="-75" r="3" />
+    <path class="face" d="M-130,-60 c0,5 10,5 10,0" fill="none" stroke="#000" stroke-width="2" />
+    <path class="motion" d="M-160,-120 h-30" />
+    <path class="motion" d="M-160,-110 h-20" />
+    <path class="motion" d="M-160,-100 h-25" />
+
+    <!-- Rock 2 (Center) -->
+    <path class="rock" d="M0,-30 c-40,0 -60,40 -40,80 c20,40 60,30 80,0 c20,-30 0,-80 -40,-80" transform="rotate(-10)" />
+    <path class="crack" d="M-20,0 l20,20 l-10,20" />
+    <circle class="face" cx="-25" cy="10" r="4" />
+    <circle class="face" cx="15" cy="10" r="4" />
+    <path class="face" d="M-20,30 c0,8 20,8 20,0" fill="none" stroke="#000" stroke-width="2" />
+    <path class="motion" d="M-80,-50 h-30" />
+    <path class="motion" d="M-80,-40 h-20" />
+    <path class="motion" d="M-80,-30 h-25" />
+
+    <!-- Rock 3 (Bottom Right) -->
+    <path class="rock" d="M100,80 c-25,0 -40,25 -30,50 c10,25 35,30 50,10 c15,-20 5,-60 -20,-60" transform="rotate(15)" />
+    <path class="crack" d="M90,100 l15,10 l-5,15" />
+    <circle class="face" cx="85" cy="105" r="3" />
+    <circle class="face" cx="105" cy="105" r="3" />
+    <path class="face" d="M90,120 c0,5 10,5 10,0" fill="none" stroke="#000" stroke-width="2" />
+    <path class="motion" d="M60,60 h-30" />
+    <path class="motion" d="M60,70 h-20" />
+    <path class="motion" d="M60,80 h-25" />
+  </g>
+</svg>

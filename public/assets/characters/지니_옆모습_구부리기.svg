@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <g>
+    <!-- Body Outline and Base Color -->
+    <path d="M256,100 C300,100 340,140 340,200 C340,260 310,300 256,300 C202,300 172,260 172,200 C172,140 212,100 256,100 Z" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    <!-- Torso Bending Pose -->
+    <path d="M220,200 C200,200 180,240 180,280 C180,320 200,360 240,360 C280,360 300,320 300,280 C300,240 280,200 260,200 L220,200 Z" fill="#87CEEB" stroke="#000000" stroke-width="3"/>
+    <!-- Arms -->
+    <path d="M180,240 C160,240 140,260 140,300 C140,340 160,360 180,360" fill="none" stroke="#FFD700" stroke-width="3"/>
+    <path d="M300,240 C320,240 340,260 340,300 C340,340 320,360 300,360" fill="none" stroke="#FFD700" stroke-width="3"/>
+    <!-- Legs -->
+    <path d="M220,360 L200,400 C190,420 190,440 200,460" fill="none" stroke="#90EE90" stroke-width="3"/>
+    <path d="M260,360 L280,400 C290,420 290,440 280,460" fill="none" stroke="#90EE90" stroke-width="3"/>
+    <!-- Backpack -->
+    <path d="M300,220 C320,220 340,240 340,280 C340,320 320,340 300,340 C280,340 260,320 260,280 C260,240 280,220 300,220 Z" fill="#FF6B6B" stroke="#000000" stroke-width="3"/>
+    <!-- Hair -->
+    <path d="M220,100 C200,80 180,60 160,80 C140,100 140,140 160,160 C180,180 220,180 240,160 C260,140 260,100 240,80 Z" fill="#4ECDC4" stroke="#000000" stroke-width="3"/>
+    <!-- Face Base -->
+    <circle cx="256" cy="140" r="40" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    <!-- Eyes -->
+    <g>
+      <circle cx="240" cy="130" r="10" fill="white" stroke="#000000" stroke-width="2"/>
+      <circle cx="240" cy="130" r="5" fill="#4ECDC4" stroke="#000000" stroke-width="1"/>
+      <circle cx="238" cy="128" r="2" fill="white" opacity="0.8"/>
+      <circle cx="272" cy="130" r="10" fill="white" stroke="#000000" stroke-width="2"/>
+      <circle cx="272" cy="130" r="5" fill="#4ECDC4" stroke="#000000" stroke-width="1"/>
+      <circle cx="270" cy="128" r="2" fill="white" opacity="0.8"/>
+    </g>
+    <!-- Glasses -->
+    <path d="M230,140 C220,140 210,150 210,170 C210,190 220,200 230,200" fill="none" stroke="#FF6B6B" stroke-width="2"/>
+    <path d="M282,140 C292,140 302,150 302,170 C302,190 292,200 282,200" fill="none" stroke="#FF6B6B" stroke-width="2"/>
+    <line x1="230" y1="170" x2="282" y2="170" stroke="#FF6B6B" stroke-width="2"/>
+    <!-- Mouth -->
+    <path d="M250,160 C255,165 260,165 265,160" fill="none" stroke="#000000" stroke-width="2"/>
+    <!-- Clothing Texture (Stripes on Torso) -->
+    <line x1="190" y1="240" x2="190" y2="320" stroke="#4ECDC4" stroke-width="2" opacity="0.5"/>
+    <line x1="210" y1="240" x2="210" y2="320" stroke="#4ECDC4" stroke-width="2" opacity="0.5"/>
+    <line x1="230" y1="240" x2="230" y2="320" stroke="#4ECDC4" stroke-width="2" opacity="0.5"/>
+    <line x1="250" y1="240" x2="250" y2="320" stroke="#4ECDC4" stroke-width="2" opacity="0.5"/>
+    <line x1="270" y1="240" x2="270" y2="320" stroke="#4ECDC4" stroke-width="2" opacity="0.5"/>
+    <line x1="290" y1="240" x2="290" y2="320" stroke="#4ECDC4" stroke-width="2" opacity="0.5"/>
+  </g>
+</svg>

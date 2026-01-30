@@ -1,0 +1,364 @@
+{
+  "characters": [
+    {
+      "name": "민수",
+      "poses": [
+        {
+          "name": "민수_앞모습_서있기",
+          "angle": "front",
+          "action": "standing",
+          "description": "Red baseball cap tilted slightly, freckles on cheeks, small backpack hanging on shoulders, shy smile with big expressive eyes, hands nervously clasped, wearing worn sneakers and a striped shirt in Disney-Pixar style with vibrant colors."
+        },
+        {
+          "name": "민수_옆모습_걷기",
+          "angle": "side",
+          "action": "walking",
+          "description": "Side profile showing red cap and backpack, cautious steps with slightly hunched posture, curious eyes looking forward, detailed textures on sneakers, Pixar-style fluidity in movement."
+        },
+        {
+          "name": "민수_뒷모습_달리기",
+          "angle": "back",
+          "action": "running",
+          "description": "Back view of 민수 running, backpack bouncing, red cap slightly askew, arms swinging dynamically, showing timid energy with Pixar’s exaggerated motion and charm."
+        },
+        {
+          "name": "민수_삼사분면_놀람",
+          "angle": "three_quarter",
+          "action": "surprised",
+          "description": "Three-quarter view with wide eyes and open mouth in shock, red cap almost falling off, hands raised defensively, freckles prominent, Pixar-style exaggerated expression."
+        },
+        {
+          "name": "민수_앞모습_겁먹음",
+          "angle": "front",
+          "action": "scared",
+          "description": "Front view, trembling with wide fearful eyes, red cap casting a shadow over face, clutching backpack straps tightly, knees slightly bent, Disney-style emotional depth."
+        },
+        {
+          "name": "민수_옆모습_구부리기",
+          "angle": "side",
+          "action": "bending",
+          "description": "Side view bending forward as if peering into something, curious yet hesitant expression, red cap tipped forward, backpack slightly open, Pixar’s playful proportions."
+        },
+        {
+          "name": "민수_삼사분면_기쁨",
+          "angle": "three_quarter",
+          "action": "happy",
+          "description": "Three-quarter view with a big toothy grin, eyes sparkling with joy, red cap straight, arms open in excitement, freckles highlighted, Disney’s warm and inviting style."
+        },
+        {
+          "name": "민수_앞모습_넘어짐",
+          "angle": "front",
+          "action": "falling",
+          "description": "Front view of 민수 tripping, red cap flying off, arms flailing, backpack contents spilling, wide-eyed panic, Pixar’s humorous and dynamic animation style."
+        },
+        {
+          "name": "민수_옆모습_가리키기",
+          "angle": "side",
+          "action": "pointing",
+          "description": "Side view pointing forward hesitantly, red cap on, freckles visible, unsure expression with big eyes, backpack slightly tilted, Disney’s expressive storytelling."
+        }
+      ]
+    },
+    {
+      "name": "지영",
+      "poses": [
+        {
+          "name": "지영_앞모습_서있기",
+          "angle": "front",
+          "action": "standing",
+          "description": "Ponytail bouncing with energy, green sneakers with bright laces, mischievous grin, hands on hips, wearing pink glasses, Pixar-style vibrant and cheeky design."
+        },
+        {
+          "name": "지영_옆모습_걷기",
+          "angle": "side",
+          "action": "walking",
+          "description": "Side view striding confidently, ponytail swinging, green sneakers in mid-step, pink glasses reflecting light, holding a sketchbook, Disney’s bold character energy."
+        },
+        {
+          "name": "지영_뒷모습_달리기",
+          "angle": "back",
+          "action": "running",
+          "description": "Back view running with determination, ponytail flying, green sneakers kicking up dust, sketchbook tucked under arm, Pixar’s dynamic and lively motion."
+        },
+        {
+          "name": "지영_삼사분면_놀람",
+          "angle": "three_quarter",
+          "action": "surprised",
+          "description": "Three-quarter view with raised eyebrows and open mouth, pink glasses slipping down nose, hands up in surprise, green sneakers planted firmly, Disney’s exaggerated charm."
+        },
+        {
+          "name": "지영_앞모습_웃음",
+          "angle": "front",
+          "action": "happy",
+          "description": "Front view laughing with head tilted back, ponytail bouncing, pink glasses shining, hands clapping, green sneakers scuffed from adventure, Pixar’s infectious joy."
+        },
+        {
+          "name": "지영_옆모습_가리키기",
+          "angle": "side",
+          "action": "pointing",
+          "description": "Side view pointing forward confidently, ponytail sharp, pink glasses glinting, mischievous smirk, sketchbook in other hand, Disney’s playful boldness."
+        },
+        {
+          "name": "지영_삼사분면_손전등_들기",
+          "angle": "three_quarter",
+          "action": "holding_flashlight",
+          "description": "Three-quarter view holding a flashlight with a goofy grin, green sneakers wide apart, pink glasses reflecting light, ponytail perky, Pixar’s humorous detail."
+        },
+        {
+          "name": "지영_앞모습_장난기",
+          "angle": "front",
+          "action": "mischievous",
+          "description": "Front view with a sly wink, hands behind back, ponytail slightly messy, pink glasses tilted, green sneakers scuffed, Disney’s trickster personality shining through."
+        },
+        {
+          "name": "지영_옆모습_구부리기",
+          "angle": "side",
+          "action": "bending",
+          "description": "Side view bending down to inspect something, ponytail hanging, pink glasses pushed up, green sneakers grounded, sketchbook open, Pixar’s curious and lively pose."
+        }
+      ]
+    },
+    {
+      "name": "깜깜이",
+      "poses": [
+        {
+          "name": "깜깜이_앞모습_앉기",
+          "angle": "front",
+          "action": "sitting",
+          "description": "Tiny black cat sitting with glowing yellow eyes, mysterious smirk, tail curled neatly, fur with subtle sheen, Disney-Pixar’s magical and enigmatic charm."
+        },
+        {
+          "name": "깜깜이_옆모습_걷기",
+          "angle": "side",
+          "action": "walking",
+          "description": "Side view walking with a graceful stride, glowing yellow eyes forward, tail swaying, sleek black fur, Pixar’s elegant and mysterious animation."
+        },
+        {
+          "name": "깜깜이_뒷모습_점프",
+          "angle": "back",
+          "action": "jumping",
+          "description": "Back view leaping with tail straight up, black fur shimmering, glowing eyes barely visible, Pixar’s dynamic and magical movement."
+        },
+        {
+          "name": "깜깜이_삼사분면_응시",
+          "angle": "three_quarter",
+          "action": "staring",
+          "description": "Three-quarter view staring intently with glowing yellow eyes, head tilted, black fur glossy, Disney’s wise and enigmatic expression."
+        },
+        {
+          "name": "깜깜이_앞모습_미소",
+          "angle": "front",
+          "action": "smiling",
+          "description": "Front view with a subtle mysterious smile, glowing yellow eyes half-closed, tail flicking, black fur with soft highlights, Pixar’s charming mystique."
+        },
+        {
+          "name": "깜깜이_옆모습_숨기",
+          "angle": "side",
+          "action": "hiding",
+          "description": "Side view crouching as if hiding, glowing yellow eyes peeking, tail low, black fur blending into shadows, Disney’s sneaky and magical vibe."
+        },
+        {
+          "name": "깜깜이_삼사분면_말하기",
+          "angle": "three_quarter",
+          "action": "speaking",
+          "description": "Three-quarter view with mouth open as if speaking wisdom, glowing yellow eyes intense, tail raised, Pixar’s storytelling magic in expression."
+        },
+        {
+          "name": "깜깜이_앞모습_사라짐",
+          "angle": "front",
+          "action": "vanishing",
+          "description": "Front view fading with a mystical shimmer, glowing yellow eyes last to disappear, black fur dissolving into sparkles, Disney’s enchanting effect."
+        }
+      ]
+    }
+  ],
+  "props": [
+    {
+      "name": "빨간_야구모자",
+      "description": "Bright red baseball cap with a worn-out brim, slightly faded with a cute embroidered star, Pixar-style charm with vibrant color and soft texture.",
+      "importance": "major"
+    },
+    {
+      "name": "보물_지도",
+      "description": "Crumpled parchment map with colorful markings and doodles, edges torn, tied with a tiny ribbon, Disney-style whimsical and adventurous design.",
+      "importance": "major"
+    },
+    {
+      "name": "손전등",
+      "description": "Chunky yellow flashlight with a friendly face sticker, emitting a warm golden glow, scuffed but cute, Pixar’s playful and practical aesthetic.",
+      "importance": "major"
+    },
+    {
+      "name": "거대한_거미줄",
+      "description": "Giant spider web with shimmering strands, dewdrops sparkling like jewels, slightly cartoonish to avoid being too scary, Disney’s magical yet eerie vibe.",
+      "importance": "major"
+    },
+    {
+      "name": "가시_함정",
+      "description": "Cave floor trap with rounded, non-threatening spikes, glowing red warning lines, cartoonish design with Pixar’s humorous danger style.",
+      "importance": "major"
+    },
+    {
+      "name": "보물_상자",
+      "description": "Ornate treasure chest with golden carvings, glowing softly, heavy lock with intricate details, Disney’s enchanting and hopeful design.",
+      "importance": "major"
+    },
+    {
+      "name": "낡은_편지",
+      "description": "Yellowed parchment letter with elegant handwriting, tied with a faded ribbon, soft glow effect, Pixar’s emotional and nostalgic charm.",
+      "importance": "major"
+    },
+    {
+      "name": "작은_배낭",
+      "description": "민수’s small blue backpack with colorful patches, slightly worn, stuffed with little trinkets peeking out, Disney’s cute and detailed accessory.",
+      "importance": "minor"
+    },
+    {
+      "name": "초록_운동화",
+      "description": "지영’s bright green sneakers with neon laces, scuffed from adventure, cute doodles on the soles, Pixar’s energetic and playful style.",
+      "importance": "minor"
+    }
+  ],
+  "backgrounds": [
+    {
+      "sceneNumber": 1,
+      "location": "작은_마을_언덕",
+      "timeOfDay": "afternoon",
+      "mood": "peaceful yet lonely",
+      "description": "A quaint village with small, cozy houses adorned with flower pots, surrounded by rolling green mountains, a lone hill where 민수 stands with a curious gaze, soft clouds casting gentle shadows, Disney’s warm and inviting environmental storytelling with intricate details on every rooftop.",
+      "colorPalette": [
+        "#A9C5E0",
+        "#6BA9D1",
+        "#8ED1FC",
+        "#CDE4F7",
+        "#E8F1FF"
+      ]
+    },
+    {
+      "sceneNumber": 2,
+      "location": "숲속_덤불_길",
+      "timeOfDay": "late_afternoon",
+      "mood": "adventurous and lively",
+      "description": "A vibrant forest path with towering trees, sunlight filtering through leaves creating dappled patterns, colorful bushes with hidden critters peeking out, a sense of excitement as the path winds deeper, Pixar’s lush and energetic forest design with playful details.",
+      "colorPalette": [
+        "#78B256",
+        "#5A9C3E",
+        "#93C47D",
+        "#B6D7A8",
+        "#D9EAD3"
+      ]
+    },
+    {
+      "sceneNumber": 3,
+      "location": "어두운_숲_심장부",
+      "timeOfDay": "twilight",
+      "mood": "mysterious and eerie",
+      "description": "A dark forest clearing with gnarled trees, misty shadows swirling around, bioluminescent mushrooms glowing faintly, a tree branch where 깜깜이 perches ominously, Disney’s magical yet spooky atmosphere with intricate bark textures.",
+      "colorPalette": [
+        "#3A2E5F",
+        "#2C2255",
+        "#4A3C6B",
+        "#5C4E77",
+        "#7D6D93"
+      ]
+    },
+    {
+      "sceneNumber": 4,
+      "location": "동굴_입구",
+      "timeOfDay": "evening",
+      "mood": "tense and foreboding",
+      "description": "A jagged cave entrance with moss-covered rocks, faint light fading at the edges, eerie echoes suggested by dripping water, vines hanging like curtains, Pixar’s dramatic yet cartoonish danger with rounded edges for a friendly feel.",
+      "colorPalette": [
+        "#5C5C5C",
+        "#4A4A4A",
+        "#6E6E6E",
+        "#828282",
+        "#969696"
+      ]
+    },
+    {
+      "sceneNumber": 5,
+      "location": "동굴_내부_거미줄_통로",
+      "timeOfDay": "night",
+      "mood": "claustrophobic and creepy",
+      "description": "A narrow cave passage with glowing spider webs blocking the way, faint blue light from unseen sources, stalactites dripping, walls with ancient carvings, Disney’s eerie yet whimsical design with softened scary elements for kids.",
+      "colorPalette": [
+        "#8B8B8B",
+        "#6E6E6E",
+        "#A1A1A1",
+        "#B5B5B5",
+        "#C9C9C9"
+      ]
+    },
+    {
+      "sceneNumber": 6,
+      "location": "동굴_함정_구역",
+      "timeOfDay": "night",
+      "mood": "urgent and dangerous",
+      "description": "A collapsing cave section with glowing red cracks in the floor, rounded spikes below, dust and debris falling, dramatic shadows, Pixar’s thrilling yet safe-looking danger with exaggerated motion and vibrant warning colors.",
+      "colorPalette": [
+        "#FF6B6B",
+        "#D90404",
+        "#FF8787",
+        "#FF9E9E",
+        "#FFB5B5"
+      ]
+    },
+    {
+      "sceneNumber": 7,
+      "location": "동굴_보물_방",
+      "timeOfDay": "night",
+      "mood": "hopeful and magical",
+      "description": "A hidden cave chamber with a glowing treasure chest on a pedestal, golden light spilling out, ancient runes on walls, soft sparkles in the air, Disney’s enchanting and awe-inspiring design with a warm, inviting atmosphere.",
+      "colorPalette": [
+        "#FFD700",
+        "#DAA520",
+        "#FFEC80",
+        "#FFF0A3",
+        "#FFF5C3"
+      ]
+    },
+    {
+      "sceneNumber": 8,
+      "location": "동굴_보물_발견_장소",
+      "timeOfDay": "night",
+      "mood": "surprised yet heartwarming",
+      "description": "The same cave chamber now lit by the open treasure chest, soft beige glow from the letter, walls reflecting warmth, a cozy nook-like feel despite the cave setting, Pixar’s emotional and touching reveal with detailed light play.",
+      "colorPalette": [
+        "#F4E4BC",
+        "#E6D4A3",
+        "#F7EBD1",
+        "#F9F0E0",
+        "#FCF8F0"
+      ]
+    },
+    {
+      "sceneNumber": 9,
+      "location": "동굴_출구_햇살",
+      "timeOfDay": "morning",
+      "mood": "triumphant and bright",
+      "description": "The cave exit with blinding sunlight streaming in, lush greenery just outside, sparkling dust motes in the air, a sense of victory and renewal, Disney’s uplifting and vibrant transition with detailed light effects.",
+      "colorPalette": [
+        "#FFE066",
+        "#FFD700",
+        "#FFEC80",
+        "#FFF0A3",
+        "#FFF5C3"
+      ]
+    },
+    {
+      "sceneNumber": 10,
+      "location": "밝은_마을_놀이터",
+      "timeOfDay": "midday",
+      "mood": "joyful and communal",
+      "description": "A sunny village playground with colorful swings and slides, children laughing, green mountains in the background, blue sky with fluffy clouds, flowers everywhere, Pixar’s cheerful and detailed community scene with a sense of belonging.",
+      "colorPalette": [
+        "#87CEEB",
+        "#5DADE2",
+        "#AED6F1",
+        "#D6EAF8",
+        "#EBF5FB"
+      ]
+    }
+  ]
+}

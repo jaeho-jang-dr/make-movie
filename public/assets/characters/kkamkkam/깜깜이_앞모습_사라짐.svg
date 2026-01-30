@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <style>
+    .cat-body { fill: #1a1a1a; opacity: 0.6; }
+    .cat-eyes { fill: #ffd700; opacity: 0.9; }
+  </style>
+  <g transform="translate(200, 200)">
+    <!-- Body -->
+    <path class="cat-body" d="M-40,50 Q-60,0 -40,-50 Q0,-70 40,-50 Q60,0 40,50 Q0,70 -40,50 Z" />
+    <!-- Head -->
+    <path class="cat-body" d="M-30,-40 Q-50,-80 0,-90 Q50,-80 30,-40 Q40,-20 0,-10 Q-40,-20 -30,-40 Z" />
+    <!-- Left Ear -->
+    <path class="cat-body" d="M-30,-70 Q-50,-110 -20,-90 Q-30,-80 -30,-70 Z" />
+    <!-- Right Ear -->
+    <path class="cat-body" d="M30,-70 Q50,-110 20,-90 Q30,-80 30,-70 Z" />
+    <!-- Left Eye -->
+    <ellipse class="cat-eyes" cx="-15" cy="-50" rx="10" ry="15" />
+    <!-- Right Eye -->
+    <ellipse class="cat-eyes" cx="15" cy="-50" rx="10" ry="15" />
+    <!-- Tail -->
+    <path class="cat-body" d="M-40,40 Q-80,80 -40,120 Q0,140 40,120" fill="none" stroke="#1a1a1a" stroke-width="10" stroke-opacity="0.5" />
+  </g>
+</svg>

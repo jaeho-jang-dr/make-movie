@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="background: transparent;">
+  <g id="character">
+    <!-- Body Outline and Base Color -->
+    <path d="M256,150 C310,150 350,200 350,250 C350,300 310,350 256,350 C202,350 162,300 162,250 C162,200 202,150 256,150 Z" fill="#87CEEB" stroke="#000000" stroke-width="3" />
+    
+    <!-- Clothing (Shirt with Pattern) -->
+    <path d="M200,220 C220,240 292,240 312,220 C322,205 312,180 292,180 C272,180 240,180 220,180 C200,180 190,205 200,220 Z" fill="#FFD700" stroke="#000000" stroke-width="3" />
+    <path d="M220,200 L240,200 L240,220 L220,220 Z" fill="#90EE90" stroke="#000000" stroke-width="1" />
+    <path d="M250,200 L270,200 L270,220 L250,220 Z" fill="#90EE90" stroke="#000000" stroke-width="1" />
+    <path d="M280,200 L300,200 L300,220 L280,220 Z" fill="#90EE90" stroke="#000000" stroke-width="1" />
+
+    <!-- Arms (Trembling) -->
+    <path d="M162,230 C140,240 140,270 162,280" fill="none" stroke="#000000" stroke-width="3" />
+    <path d="M350,230 C372,240 372,270 350,280" fill="none" stroke="#000000" stroke-width="3" />
+
+    <!-- Hands Clutching Sketchbook -->
+    <path d="M170,280 C160,290 160,310 180,310 C190,310 200,300 200,290 C190,280 180,280 170,280 Z" fill="#87CEEB" stroke="#000000" stroke-width="3" />
+    <path d="M312,280 C322,290 322,310 302,310 C292,310 282,300 282,290 C292,280 302,280 312,280 Z" fill="#87CEEB" stroke="#000000" stroke-width="3" />
+
+    <!-- Sketchbook -->
+    <path d="M190,280 L292,280 L302,330 L180,330 Z" fill="#4ECDC4" stroke="#000000" stroke-width="3" />
+    <path d="M190,300 L292,300" fill="none" stroke="#000000" stroke-width="1" />
+
+    <!-- Head -->
+    <circle cx="256" cy="120" r="90" fill="#87CEEB" stroke="#000000" stroke-width="3" />
+
+    <!-- Pink Glasses (Fogging Up) -->
+    <circle cx="230" cy="110" r="25" fill="#FF6B6B" fill-opacity="0.6" stroke="#000000" stroke-width="3" />
+    <circle cx="280" cy="110" r="25" fill="#FF6B6B" fill-opacity="0.6" stroke="#000000" stroke-width="3" />
+    <path d="M255,110 L265,110" fill="none" stroke="#000000" stroke-width="3" />
+
+    <!-- Eyes (Full of Fear) -->
+    <g id="eyes">
+      <circle cx="230" cy="110" r="15" fill="#FFFFFF" stroke="#000000" stroke-width="3" />
+      <circle cx="280" cy="110" r="15" fill="#FFFFFF" stroke="#000000" stroke-width="3" />
+      <circle cx="230" cy="110" r="7" fill="#000000" />
+      <circle cx="280" cy="110" r="7" fill="#000000" />
+      <circle cx="225" cy="105" r="3" fill="#FFFFFF" />
+      <circle cx="275" cy="105" r="3" fill="#FFFFFF" />
+    </g>
+
+    <!-- Eyebrows (Raised in Fear) -->
+    <path d="M220,90 C230,80 240,80 250,90" fill="none" stroke="#000000" stroke-width="3" />
+    <path d="M260,90 C270,80 280,80 290,90" fill="none" stroke="#000000" stroke-width="3" />
+
+    <!-- Mouth (Quivering) -->
+    <path d="M250,140 C260,150 270,140 280,140" fill="none" stroke="#000000" stroke-width="3" />
+
+    <!-- Hat (Accessory) -->
+    <path d="M210,50 C230,30 280,30 300,50 C310,70 310,90 290,100 C270,110 240,110 220,100 C200,90 200,70 210,50 Z" fill="#90EE90" stroke="#000000" stroke-width="3" />
+
+    <!-- Backpack (Accessory) -->
+    <path d="M320,240 C340,240 350,260 350,280 C350,300 340,320 320,320 C310,310 310,250 320,240 Z" fill="#4ECDC4" stroke="#000000" stroke-width="3" />
+    <path d="M330,250 C340,250 345,260 345,270" fill="none" stroke="#000000" stroke-width="3" />
+  </g>
+</svg>

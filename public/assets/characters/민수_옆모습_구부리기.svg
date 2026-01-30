@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="background: transparent;">
+  <g id="character_minsu">
+    <!-- Body Outline and Base Color -->
+    <path d="M256,300 C200,300 150,250 150,180 C150,110 200,80 256,80 C312,80 362,110 362,180 C362,250 312,300 256,300 Z" fill="#FFD700" stroke="#000000" stroke-width="3" />
+    
+    <!-- Backpack -->
+    <path d="M362,200 C362,250 382,280 402,280 C422,280 442,250 442,200 C442,150 422,120 402,120 C382,120 362,150 362,200 Z" fill="#90EE90" stroke="#000000" stroke-width="3" />
+    <path d="M362,180 C362,200 382,210 402,210 C422,210 442,200 442,180" fill="none" stroke="#000000" stroke-width="3" />
+
+    <!-- Legs -->
+    <path d="M220,300 L200,380 C200,400 210,410 230,410 C250,410 260,400 260,380 L240,300" fill="#87CEEB" stroke="#000000" stroke-width="3" />
+    <path d="M292,300 L272,380 C272,400 282,410 302,410 C322,410 332,400 332,380 L312,300" fill="#87CEEB" stroke="#000000" stroke-width="3" />
+
+    <!-- Arms -->
+    <path d="M362,180 C382,180 402,160 402,140 C402,120 382,100 362,100" fill="#FFD700" stroke="#000000" stroke-width="3" />
+    <path d="M150,180 C130,180 110,160 110,140 C110,120 130,100 150,100" fill="#FFD700" stroke="#000000" stroke-width="3" />
+
+    <!-- Head -->
+    <circle cx="256" cy="120" r="100" fill="#FFD700" stroke="#000000" stroke-width="3" />
+
+    <!-- Red Cap -->
+    <path d="M206,60 C206,40 256,20 306,20 C356,20 406,40 406,60 C406,80 356,100 306,100 L256,100 L206,60 Z" fill="#FF6B6B" stroke="#000000" stroke-width="3" />
+    <circle cx="356" cy="40" r="10" fill="#4ECDC4" stroke="#000000" stroke-width="3" />
+
+    <!-- Face Features Group -->
+    <g id="face_features">
+      <!-- Eye -->
+      <circle cx="306" cy="100" r="30" fill="white" stroke="#000000" stroke-width="3" />
+      <circle cx="306" cy="100" r="15" fill="#4ECDC4" stroke="#000000" stroke-width="3" />
+      <circle cx="300" cy="95" r="5" fill="white" stroke="none" />
+
+      <!-- Eyebrow -->
+      <path d="M286,70 C296,60 316,60 326,70" fill="none" stroke="#000000" stroke-width="3" />
+
+      <!-- Mouth -->
+      <path d="M286,130 C296,140 306,140 316,130" fill="none" stroke="#000000" stroke-width="3" />
+    </g>
+  </g>
+</svg>

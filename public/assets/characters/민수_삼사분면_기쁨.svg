@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="background: transparent;">
+  <!-- Body Base -->
+  <g id="body">
+    <path d="M256,300 C200,300 160,240 160,180 C160,120 200,80 256,80 C312,80 352,120 352,180 C352,240 312,300 256,300 Z" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    <path d="M220,280 C200,280 180,260 180,220 C180,180 200,160 220,160 C240,160 260,180 260,220 C260,260 240,280 220,280 Z" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    <path d="M292,280 C272,280 252,260 252,220 C252,180 272,160 292,160 C312,160 332,180 332,220 C332,260 312,280 292,280 Z" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+  </g>
+
+  <!-- Arms in Excited Pose -->
+  <g id="arms">
+    <path d="M160,200 C140,200 120,180 120,140 C120,100 140,80 180,80" fill="none" stroke="#000000" stroke-width="3"/>
+    <path d="M352,200 C372,200 392,180 392,140 C392,100 372,80 332,80" fill="none" stroke="#000000" stroke-width="3"/>
+    <ellipse cx="180" cy="80" rx="20" ry="20" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    <ellipse cx="332" cy="80" rx="20" ry="20" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+  </g>
+
+  <!-- Clothing -->
+  <g id="clothing">
+    <path d="M200,160 L180,300 L256,340 L332,300 L312,160" fill="#90EE90" stroke="#000000" stroke-width="3"/>
+    <path d="M220,200 L256,220 L292,200" fill="none" stroke="#000000" stroke-width="3"/>
+  </g>
+
+  <!-- Face Base -->
+  <g id="face">
+    <circle cx="256" cy="140" r="80" fill="#4ECDC4" stroke="#000000" stroke-width="3"/>
+  </g>
+
+  <!-- Eyes with Sparkle -->
+  <g id="eyes">
+    <circle cx="236" cy="120" r="20" fill="#FFFFFF" stroke="#000000" stroke-width="3"/>
+    <circle cx="276" cy="120" r="20" fill="#FFFFFF" stroke="#000000" stroke-width="3"/>
+    <circle cx="236" cy="120" r="10" fill="#87CEEB"/>
+    <circle cx="276" cy="120" r="10" fill="#87CEEB"/>
+    <circle cx="240" cy="115" r="3" fill="#FFFFFF"/>
+    <circle cx="280" cy="115" r="3" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Freckles -->
+  <g id="freckles">
+    <circle cx="230" cy="140" r="2" fill="#FF6B6B"/>
+    <circle cx="240" cy="145" r="2" fill="#FF6B6B"/>
+    <circle cx="220" cy="145" r="2" fill="#FF6B6B"/>
+    <circle cx="272" cy="140" r="2" fill="#FF6B6B"/>
+    <circle cx="282" cy="145" r="2" fill="#FF6B6B"/>
+    <circle cx="262" cy="145" r="2" fill="#FF6B6B"/>
+  </g>
+
+  <!-- Mouth with Toothy Grin -->
+  <g id="mouth">
+    <path d="M236,160 C246,180 266,180 276,160" fill="none" stroke="#000000" stroke-width="3"/>
+    <path d="M246,165 L256,165 L256,175 L246,175 Z" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
+    <path d="M256,165 L266,165 L266,175 L256,175 Z" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
+  </g>
+
+  <!-- Red Cap -->
+  <g id="cap">
+    <path d="M200,100 C200,60 312,60 312,100 C312,120 256,140 256,140 C256,140 200,120 200,100 Z" fill="#FF6B6B" stroke="#000000" stroke-width="3"/>
+    <path d="M280,80 C290,80 300,90 300,100" fill="none" stroke="#000000" stroke-width="3"/>
+  </g>
+</svg>

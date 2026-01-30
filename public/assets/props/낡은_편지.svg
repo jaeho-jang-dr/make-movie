@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <style>
+    .parchment { fill: #FFD700; stroke: #4ECDC4; stroke-width: 3; }
+    .ribbon { fill: #FF6B6B; stroke: #FF6B6B; stroke-width: 3; opacity: 0.7; }
+    .writing { fill: none; stroke: #4ECDC4; stroke-width: 2; stroke-opacity: 0.8; }
+    .glow { fill: #FFD700; opacity: 0.3; filter: blur(8px); }
+  </style>
+  <!-- Glow Effect -->
+  <defs>
+    <filter id="blurGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+    </filter>
+  </defs>
+  <!-- Background Glow -->
+  <ellipse class="glow" cx="256" cy="256" rx="180" ry="120" style="filter: url(#blurGlow);" />
+  <!-- Parchment Base -->
+  <path class="parchment" d="M156,156 h200 a20,20 0 0 1 20,20 v160 a20,20 0 0 1 -20,20 h-200 a20,20 0 0 1 -20,-20 v-160 a20,20 0 0 1 20,-20 z" />
+  <!-- Folded Corners -->
+  <path class="parchment" d="M336,156 l40,40 h-40 v-40 z" opacity="0.8" />
+  <path class="parchment" d="M156,336 l-40,-40 h40 v40 z" opacity="0.8" />
+  <!-- Ribbon -->
+  <path class="ribbon" d="M206,256 h100 v-30 h20 v60 h-20 v-30 h-100 v-60 h-20 v60 h20 z" />
+  <path class="ribbon" d="M236,196 c10,-20 30,-20 40,0" fill="none" stroke-width="15" />
+  <path class="ribbon" d="M236,316 c10,20 30,20 40,0" fill="none" stroke-width="15" />
+  <!-- Handwriting Lines -->
+  <path class="writing" d="M166,186 h180" />
+  <path class="writing" d="M166,206 h180" />
+  <path class="writing" d="M166,226 h180" />
+  <path class="writing" d="M166,246 h100" />
+  <path class="writing" d="M166,286 h180" />
+  <path class="writing" d="M166,306 h180" />
+</svg>

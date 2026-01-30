@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <g>
+    <!-- Body Outline -->
+    <path d="M256,300 C210,300 180,250 180,200 C180,150 210,120 256,120 C302,120 332,150 332,200 C332,250 302,300 256,300 Z" fill="#FFD700" stroke="#000000" stroke-width="3" />
+    <!-- Body Shading -->
+    <path d="M256,280 C220,280 200,240 200,200 C200,160 220,140 256,140 C292,140 312,160 312,200 C312,240 292,280 256,280 Z" fill="#FF6B6B" opacity="0.3" />
+    
+    <!-- Head Outline -->
+    <path d="M256,180 C306,180 346,140 346,90 C346,40 306,0 256,0 C206,0 166,40 166,90 C166,140 206,180 256,180 Z" fill="#FFD700" stroke="#000000" stroke-width="3" />
+    
+    <!-- Red Cap -->
+    <path d="M166,90 C166,40 206,0 256,0 C306,0 346,40 346,90 C346,100 340,110 330,115 C310,125 290,130 256,130 C222,130 202,125 182,115 C172,110 166,100 166,90 Z" fill="#FF6B6B" stroke="#000000" stroke-width="3" />
+    <path d="M180,80 C180,60 200,40 220,40 C240,40 260,60 260,80" fill="none" stroke="#000000" stroke-width="3" />
+    
+    <!-- Backpack -->
+    <path d="M200,200 C180,200 160,230 160,260 C160,290 180,320 200,320 C220,320 240,290 240,260 C240,230 220,200 200,200 Z" fill="#4ECDC4" stroke="#000000" stroke-width="3" />
+    <path d="M180,240 C180,220 190,210 200,210" fill="none" stroke="#000000" stroke-width="3" />
+    <path d="M220,240 C220,220 210,210 200,210" fill="none" stroke="#000000" stroke-width="3" />
+    
+    <!-- Left Arm -->
+    <path d="M180,180 C160,180 140,200 140,220 C140,240 160,260 180,260" fill="#FFD700" stroke="#000000" stroke-width="3" />
+    <path d="M160,220 C150,220 140,230 140,240" fill="none" stroke="#000000" stroke-width="3" />
+    
+    <!-- Right Arm -->
+    <path d="M332,180 C352,180 372,200 372,220 C372,240 352,260 332,260" fill="#FFD700" stroke="#000000" stroke-width="3" />
+    <path d="M352,220 C362,220 372,230 372,240" fill="none" stroke="#000000" stroke-width="3" />
+    
+    <!-- Left Leg -->
+    <path d="M220,300 C200,300 180,320 180,340 C180,360 200,380 220,380" fill="#87CEEB" stroke="#000000" stroke-width="3" />
+    <!-- Right Leg -->
+    <path d="M292,300 C312,300 332,320 332,340 C332,360 312,380 292,380" fill="#87CEEB" stroke="#000000" stroke-width="3" />
+    
+    <!-- Face Features Group -->
+    <g>
+      <!-- Left Eye -->
+      <circle cx="220" cy="80" r="20" fill="white" stroke="#000000" stroke-width="3" />
+      <circle cx="220" cy="80" r="10" fill="black" />
+      <circle cx="215" cy="75" r="3" fill="white" opacity="0.8" />
+      
+      <!-- Right Eye -->
+      <circle cx="292" cy="80" r="20" fill="white" stroke="#000000" stroke-width="3" />
+      <circle cx="292" cy="80" r="10" fill="black" />
+      <circle cx="287" cy="75" r="3" fill="white" opacity="0.8" />
+      
+      <!-- Eyebrows (Scared Expression) -->
+      <path d="M205,60 C215,50 225,50 235,60" fill="none" stroke="#000000" stroke-width="3" />
+      <path d="M277,60 C287,50 297,50 307,60" fill="none" stroke="#000000" stroke-width="3" />
+      
+      <!-- Mouth (Trembling) -->
+      <path d="M240,110 C250,120 260,120 270,110" fill="none" stroke="#000000" stroke-width="3" />
+    </g>
+  </g>
+</svg>

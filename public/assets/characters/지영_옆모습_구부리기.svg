@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <g>
+    <!-- Body Outline and Base -->
+    <path d="M256,300 C200,300 150,250 150,180 C150,110 200,80 256,80 C312,80 362,110 362,180 C362,250 312,300 256,300 Z" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    <!-- Clothing (Shirt) -->
+    <path d="M200,150 C180,150 160,180 160,220 C160,260 180,290 200,290 L312,290 C332,290 352,260 352,220 C352,180 332,150 312,150 L200,150 Z" fill="#87CEEB" stroke="#000000" stroke-width="3"/>
+    <!-- Shorts -->
+    <path d="M210,280 L302,280 L310,320 L202,320 L210,280 Z" fill="#FF6B6B" stroke="#000000" stroke-width="3"/>
+    <!-- Legs -->
+    <path d="M220,320 L230,400 C230,410 225,420 215,420 L205,420 C195,420 190,410 190,400 L200,320" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    <path d="M280,320 L290,400 C290,410 285,420 275,420 L265,420 C255,420 250,410 250,400 L260,320" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    <!-- Sneakers -->
+    <path d="M190,400 L230,400 L235,420 L240,430 L230,440 L190,440 L180,430 L185,420 L190,400 Z" fill="#90EE90" stroke="#000000" stroke-width="3"/>
+    <path d="M250,400 L290,400 L295,420 L300,430 L290,440 L250,440 L240,430 L245,420 L250,400 Z" fill="#90EE90" stroke="#000000" stroke-width="3"/>
+    <!-- Arms (Bending Down Pose) -->
+    <path d="M180,200 C160,220 140,260 140,300 C140,340 160,360 180,360" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    <path d="M332,200 C352,220 372,260 372,300 C372,340 352,360 332,360" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    <!-- Hands -->
+    <circle cx="180" cy="360" r="15" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    <circle cx="332" cy="360" r="15" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    <!-- Head -->
+    <circle cx="256" cy="100" r="80" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    <!-- Ponytail -->
+    <path d="M200,60 C180,40 160,60 140,100 C120,140 140,180 160,200" fill="#4ECDC4" stroke="#000000" stroke-width="3"/>
+    <!-- Glasses -->
+    <circle cx="230" cy="90" r="20" fill="none" stroke="#FF6B6B" stroke-width="3"/>
+    <circle cx="270" cy="90" r="20" fill="none" stroke="#FF6B6B" stroke-width="3"/>
+    <line x1="250" y1="90" x2="260" y2="90" stroke="#FF6B6B" stroke-width="3"/>
+    <!-- Sketchbook -->
+    <rect x="160" y="340" width="40" height="30" rx="5" ry="5" fill="#87CEEB" stroke="#000000" stroke-width="3"/>
+    <!-- Face Features (Layered on Top) -->
+    <g>
+      <!-- Eyes -->
+      <circle cx="230" cy="90" r="10" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
+      <circle cx="270" cy="90" r="10" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
+      <circle cx="233" cy="87" r="5" fill="#000000"/>
+      <circle cx="273" cy="87" r="5" fill="#000000"/>
+      <!-- Eye Sparkle -->
+      <circle cx="236" cy="85" r="2" fill="#FFFFFF"/>
+      <circle cx="276" cy="85" r="2" fill="#FFFFFF"/>
+      <!-- Mouth (Curious Smile) -->
+      <path d="M240,110 C245,115 255,115 260,110" fill="none" stroke="#000000" stroke-width="3"/>
+      <!-- Eyebrows -->
+      <path d="M225,80 C230,75 235,75 240,80" fill="none" stroke="#000000" stroke-width="2"/>
+      <path d="M265,80 C270,75 275,75 280,80" fill="none" stroke="#000000" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

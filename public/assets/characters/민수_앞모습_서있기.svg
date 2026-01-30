@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <g>
+    <!-- Body Outline and Base -->
+    <path d="M256,300 C220,300 190,340 190,380 C190,420 220,460 256,460 C292,460 322,420 322,380 C322,340 292,300 256,300 Z" fill="#90EE90" stroke="#000000" stroke-width="3" />
+    <path d="M256,200 C210,200 170,260 170,320 C170,380 210,440 256,440 C302,440 342,380 342,320 C342,260 302,200 256,200 Z" fill="#FFD700" stroke="#000000" stroke-width="3" />
+
+    <!-- Striped Shirt -->
+    <path d="M170,260 C170,260 150,300 150,340 C150,380 170,420 210,440 C250,460 302,460 342,440 C382,420 362,380 362,340 C362,300 342,260 342,260 L170,260 Z" fill="#87CEEB" stroke="#000000" stroke-width="3" />
+    <rect x="170" y="260" width="172" height="30" fill="#FF6B6B" />
+    <rect x="170" y="320" width="172" height="30" fill="#FF6B6B" />
+    <rect x="170" y="380" width="172" height="30" fill="#FF6B6B" />
+
+    <!-- Arms -->
+    <path d="M170,280 C150,280 130,320 130,340 C130,360 150,400 170,400" fill="none" stroke="#000000" stroke-width="3" />
+    <path d="M342,280 C362,280 382,320 382,340 C382,360 362,400 342,400" fill="none" stroke="#000000" stroke-width="3" />
+    <path d="M130,340 C110,340 90,360 90,380 C90,400 110,420 130,420" fill="#FFD700" stroke="#000000" stroke-width="3" />
+    <path d="M382,340 C402,340 422,360 422,380 C422,400 402,420 382,420" fill="#FFD700" stroke="#000000" stroke-width="3" />
+
+    <!-- Hands Clasped -->
+    <ellipse cx="256" cy="410" rx="30" ry="20" fill="#FFD700" stroke="#000000" stroke-width="3" />
+
+    <!-- Legs -->
+    <path d="M220,440 C200,440 180,460 180,480 C180,500 200,520 220,520" fill="#4ECDC4" stroke="#000000" stroke-width="3" />
+    <path d="M292,440 C312,440 332,460 332,480 C332,500 312,520 292,520" fill="#4ECDC4" stroke="#000000" stroke-width="3" />
+
+    <!-- Sneakers -->
+    <path d="M180,500 C160,500 140,510 140,520 C140,530 160,540 180,540 C200,540 220,530 220,520 C220,510 200,500 180,500 Z" fill="#FF6B6B" stroke="#000000" stroke-width="3" />
+    <path d="M292,500 C272,500 252,510 252,520 C252,530 272,540 272,540 C292,540 312,530 312,520 C312,510 292,500 292,500 Z" fill="#FF6B6B" stroke="#000000" stroke-width="3" />
+
+    <!-- Head -->
+    <circle cx="256" cy="160" r="100" fill="#FFD700" stroke="#000000" stroke-width="3" />
+
+    <!-- Baseball Cap -->
+    <path d="M156,100 C156,60 256,40 256,40 C256,40 356,60 356,100 C356,140 306,160 256,160 C206,160 156,140 156,100 Z" fill="#FF6B6B" stroke="#000000" stroke-width="3" />
+    <path d="M156,100 C156,80 206,60 256,60 C306,60 356,80 356,100" fill="none" stroke="#000000" stroke-width="3" />
+
+    <!-- Hair (Peeking under cap) -->
+    <path d="M156,120 C156,140 206,160 256,160 C306,160 356,140 356,120" fill="#4ECDC4" stroke="#000000" stroke-width="3" />
+
+    <!-- Eyes -->
+    <circle cx="220" cy="140" r="20" fill="#FFFFFF" stroke="#000000" stroke-width="3" />
+    <circle cx="292" cy="140" r="20" fill="#FFFFFF" stroke="#000000" stroke-width="3" />
+    <circle cx="220" cy="140" r="10" fill="#4ECDC4" stroke="#000000" stroke-width="3" />
+    <circle cx="292" cy="140" r="10" fill="#4ECDC4" stroke="#000000" stroke-width="3" />
+    <circle cx="215" cy="135" r="3" fill="#FFFFFF" stroke="none" />
+    <circle cx="287" cy="135" r="3" fill="#FFFFFF" stroke="none" />
+
+    <!-- Eyebrows -->
+    <path d="M210,120 C215,110 225,110 230,120" fill="none" stroke="#000000" stroke-width="3" />
+    <path d="M282,120 C287,110 297,110 302,120" fill="none" stroke="#000000" stroke-width="3" />
+
+    <!-- Freckles -->
+    <circle cx="230" cy="160" r="2" fill="#FF6B6B" stroke="none" />
+    <circle cx="240" cy="165" r="2" fill="#FF6B6B" stroke="none" />
+    <circle cx="250" cy="160" r="2" fill="#FF6B6B" stroke="none" />
+    <circle cx="262" cy="160" r="2" fill="#FF6B6B" stroke="none" />
+    <circle cx="272" cy="165" r="2" fill="#FF6B6B" stroke="none" />
+    <circle cx="282" cy="160" r="2" fill="#FF6B6B" stroke="none" />
+
+    <!-- Mouth (Shy Smile) -->
+    <path d="M240,180 C245,190 267,190 272,180" fill="none" stroke="#000000" stroke-width="3" />
+
+    <!-- Backpack -->
+    <path d="M200,220 C180,220 160,260 160,300 C160,340 180,380 200,380 C220,380 240,340 240,300 C240,260 220,220 200,220 Z" fill="#90EE90" stroke="#000000" stroke-width="3" />
+    <path d="M180,240 C160,240 140,260 140,280 C140,300 160,320 180,320" fill="none" stroke="#000000" stroke-width="3" />
+    <path d="M220,240 C240,240 260,260 260,280 C260,300 240,320 220,320" fill="none" stroke="#000000" stroke-width="3" />
+  </g>
+</svg>

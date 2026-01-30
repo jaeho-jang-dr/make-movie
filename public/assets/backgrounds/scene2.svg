@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <!-- Background Layer (Sky and Distant Forest) -->
+  <g id="background">
+    <rect x="0" y="0" width="1920" height="1080" fill="#D9EAD3" opacity="0.8"/>
+    <!-- Distant Hills -->
+    <path d="M0,600 Q400,500 800,600 Q1200,500 1600,600 Q2000,500 1920,600 L1920,1080 L0,1080 Z" fill="#B6D7A8" opacity="0.7"/>
+    <!-- Distant Trees Silhouette -->
+    <path d="M100,550 Q150,450 200,550 Q250,450 300,550 Q350,450 400,550 Q450,450 500,550 Q550,450 600,550 Q650,450 700,550 Q750,450 800,550 Q850,450 900,550 Q950,450 1000,550 Q1050,450 1100,550 Q1150,450 1200,550 Q1250,450 1300,550 Q1350,450 1400,550 Q1450,450 1500,550 Q1550,450 1600,550 Q1650,450 1700,550 Q1750,450 1800,550 Q1850,450 1900,550 L1920,600 L0,600 Z" fill="#93C47D" opacity="0.5"/>
+  </g>
+
+  <!-- Midground Layer (Forest Path and Trees) -->
+  <g id="midground">
+    <!-- Path -->
+    <path d="M0,800 Q400,700 800,800 Q1200,700 1600,800 Q2000,700 1920,800 L1920,1080 L0,1080 Z" fill="#B6D7A8"/>
+    <!-- Trees on Left Side -->
+    <path d="M100,400 Q50,200 150,100 Q250,200 200,400 Q150,300 100,400 Z" fill="#5A9C3E"/>
+    <path d="M300,500 Q250,300 350,200 Q450,300 400,500 Q350,400 300,500 Z" fill="#78B256"/>
+    <!-- Trees on Right Side -->
+    <path d="M1700,450 Q1650,250 1750,150 Q1850,250 1800,450 Q1750,350 1700,450 Z" fill="#5A9C3E"/>
+    <path d="M1500,550 Q1450,350 1550,250 Q1650,350 1600,550 Q1550,450 1500,550 Z" fill="#78B256"/>
+    <!-- Bushes -->
+    <circle cx="400" cy="750" r="60" fill="#93C47D"/>
+    <circle cx="450" cy="780" r="50" fill="#78B256"/>
+    <circle cx="1400" cy="750" r="70" fill="#93C47D"/>
+    <circle cx="1450" cy="780" r="60" fill="#78B256"/>
+  </g>
+
+  <!-- Foreground Layer (Detailed Foliage and Path Details) -->
+  <g id="foreground">
+    <!-- Path Details (Pebbles and Grass Edges) -->
+    <ellipse cx="600" cy="850" rx="10" ry="5" fill="#93C47D"/>
+    <ellipse cx="620" cy="860" rx="8" ry="4" fill="#B6D7A8"/>
+    <ellipse cx="800" cy="820" rx="12" ry="6" fill="#93C47D"/>
+    <ellipse cx="1000" cy="840" rx="10" ry="5" fill="#B6D7A8"/>
+    <path d="M0,800 Q50,780 100,800 Q150,780 200,800 Q250,780 300,800" stroke="#78B256" stroke-width="5" fill="none"/>
+    <path d="M1920,800 Q1870,780 1820,800 Q1770,780 1720,800 Q1670,780 1620,800" stroke="#78B256" stroke-width="5" fill="none"/>
+    <!-- Foreground Trees -->
+    <path d="M200,600 Q150,400 250,300 Q350,400 300,600 Q250,500 200,600 Z" fill="#5A9C3E"/>
+    <path d="M1600,600 Q1550,400 1650,300 Q1750,400 1700,600 Q1650,500 1600,600 Z" fill="#5A9C3E"/>
+    <!-- Detailed Bushes with Hidden Critter Hints -->
+    <g>
+      <circle cx="300" cy="850" r="40" fill="#78B256"/>
+      <circle cx="330" cy="870" r="30" fill="#93C47D"/>
+      <circle cx="270" cy="880" r="35" fill="#93C47D"/>
+      <!-- Hint of Critter (Eye or Ear Shape) -->
+      <ellipse cx="310" cy="860" rx="5" ry="3" fill="#5A9C3E"/>
+    </g>
+    <g>
+      <circle cx="1550" cy="850" r="45" fill="#78B256"/>
+      <circle cx="1580" cy="870" r="35" fill="#93C47D"/>
+      <circle cx="1520" cy="880" r="40" fill="#93C47D"/>
+      <!-- Hint of Critter -->
+      <ellipse cx="1560" cy="860" rx="6" ry="4" fill="#5A9C3E"/>
+    </g>
+    <!-- Sunlight Dappled Patterns -->
+    <ellipse cx="500" cy="600" rx="50" ry="30" fill="#D9EAD3" opacity="0.3"/>
+    <ellipse cx="700" cy="650" rx="40" ry="25" fill="#D9EAD3" opacity="0.3"/>
+    <ellipse cx="900" cy="620" rx="45" ry="28" fill="#D9EAD3" opacity="0.3"/>
+    <ellipse cx="1100" cy="680" rx="50" ry="30" fill="#D9EAD3" opacity="0.3"/>
+  </g>
+</svg>

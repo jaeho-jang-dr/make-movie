@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <g>
+    <!-- Body Base -->
+    <path d="M256,300 C210,300 180,250 180,200 C180,150 210,120 256,120 C302,120 332,150 332,200 C332,250 302,300 256,300 Z" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Legs -->
+    <path d="M220,300 L200,380 C200,380 190,400 190,410 C190,420 200,430 210,430 L230,430 C240,430 250,420 250,410 C250,400 240,380 240,380 L260,300" fill="#90EE90" stroke="#000000" stroke-width="3"/>
+    <path d="M252,300 L272,380 C272,380 282,400 282,410 C282,420 292,430 302,430 L322,430 C332,430 342,420 342,410 C342,400 332,380 332,380 L312,300" fill="#90EE90" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Sneakers -->
+    <path d="M190,430 L170,450 C170,450 160,460 160,470 C160,480 170,490 180,490 L230,490 C240,490 250,480 250,470 C250,460 240,450 240,450 L220,430" fill="#90EE90" stroke="#000000" stroke-width="3"/>
+    <path d="M282,430 L262,450 C262,450 252,460 252,470 C252,480 262,490 272,490 L322,490 C332,490 342,480 342,470 C342,460 332,450 332,450 L312,430" fill="#90EE90" stroke="#000000" stroke-width="3"/>
+    <path d="M190,460 L210,460" fill="none" stroke="#FF6B6B" stroke-width="3"/>
+    <path d="M282,460 L302,460" fill="none" stroke="#FF6B6B" stroke-width="3"/>
+    
+    <!-- Arms -->
+    <path d="M180,200 C160,200 140,240 140,260 C140,280 160,300 180,300" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    <path d="M332,200 C352,200 372,240 372,260 C372,280 352,300 332,300" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Hands on Hips -->
+    <circle cx="140" cy="260" r="20" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    <circle cx="372" cy="260" r="20" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Head -->
+    <circle cx="256" cy="100" r="80" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Ponytail -->
+    <path d="M200,60 C180,40 160,80 160,100 C160,120 180,140 200,120" fill="#4ECDC4" stroke="#000000" stroke-width="3"/>
+    <path d="M190,80 C170,60 150,100 150,120 C150,140 170,160 190,140" fill="#4ECDC4" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Glasses -->
+    <circle cx="230" cy="90" r="20" fill="#FF6B6B" stroke="#000000" stroke-width="3"/>
+    <circle cx="282" cy="90" r="20" fill="#FF6B6B" stroke="#000000" stroke-width="3"/>
+    <path d="M250,90 L262,90" fill="none" stroke="#000000" stroke-width="3"/>
+    <path d="M210,90 L220,90" fill="none" stroke="#000000" stroke-width="3"/>
+    <path d="M292,90 L302,90" fill="none" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Eyes -->
+    <circle cx="230" cy="90" r="10" fill="#FFFFFF" stroke="#000000" stroke-width="3"/>
+    <circle cx="282" cy="90" r="10" fill="#FFFFFF" stroke="#000000" stroke-width="3"/>
+    <circle cx="230" cy="90" r="5" fill="#000000"/>
+    <circle cx="282" cy="90" r="5" fill="#000000"/>
+    <circle cx="228" cy="88" r="2" fill="#FFFFFF"/>
+    <circle cx="280" cy="88" r="2" fill="#FFFFFF"/>
+    
+    <!-- Mischievous Grin -->
+    <path d="M240,120 C250,130 262,130 272,120" fill="none" stroke="#000000" stroke-width="3"/>
+    <path d="M272,120 C278,122 280,118 278,116" fill="none" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Eyebrows -->
+    <path d="M220,80 C230,70 240,70 250,80" fill="none" stroke="#000000" stroke-width="3"/>
+    <path d="M272,80 C282,70 292,70 302,80" fill="none" stroke="#000000" stroke-width="3"/>
+  </g>
+</svg>

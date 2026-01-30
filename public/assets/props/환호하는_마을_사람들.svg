@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <style>
+    .villager { stroke: #000; stroke-width: 3; stroke-miterlimit: 10; }
+    .face { fill: #FFD700; }
+    .hair { fill: #4ECDC4; }
+    .outfit { fill: #FF6B6B; }
+    .accessory { fill: #90EE90; }
+    .background { fill: #87CEEB; }
+  </style>
+  <rect class="background" x="0" y="0" width="512" height="512"/>
+  <g transform="translate(56, 56) scale(0.8)">
+    <!-- Villager 1 (Left) -->
+    <g transform="translate(50, 100)">
+      <circle class="face villager" cx="50" cy="50" r="40"/>
+      <path class="hair villager" d="M30,30 Q60,0 90,30 L90,60 Q60,30 30,60 Z"/>
+      <path class="outfit villager" d="M30,85 L70,85 L80,130 L60,150 L40,130 Z" fill="#90EE90"/>
+      <path class="villager" d="M40,40 Q45,30 50,40" fill="none"/>
+      <circle class="villager" cx="35" cy="45" r="5" fill="#000"/>
+      <circle class="villager" cx="65" cy="45" r="5" fill="#000"/>
+      <path class="accessory villager" d="M20,90 Q10,80 20,70" fill="none" stroke-width="4"/>
+      <path class="villager" d="M70,90 L90,70" fill="none"/>
+    </g>
+    <!-- Villager 2 (Center) -->
+    <g transform="translate(150, 80)">
+      <circle class="face villager" cx="50" cy="50" r="40"/>
+      <path class="hair villager" d="M20,40 Q50,10 80,40 L80,70 Q50,40 20,70 Z" fill="#FF6B6B"/>
+      <path class="outfit villager" d="M25,85 L75,85 L85,140 L60,160 L40,140 Z" fill="#4ECDC4"/>
+      <path class="villager" d="M40,40 Q45,30 50,40" fill="none"/>
+      <circle class="villager" cx="35" cy="45" r="6" fill="#000"/>
+      <circle class="villager" cx="65" cy="45" r="6" fill="#000"/>
+      <path class="accessory villager" d="M80,90 Q90,70 80,50" fill="none" stroke-width="4"/>
+      <path class="villager" d="M20,90 L0,60" fill="none"/>
+    </g>
+    <!-- Villager 3 (Right) -->
+    <g transform="translate(250, 100)">
+      <circle class="face villager" cx="50" cy="50" r="40"/>
+      <path class="hair villager" d="M30,30 Q60,-10 90,30 L90,60 Q60,20 30,60 Z"/>
+      <path class="outfit villager" d="M30,85 L70,85 L80,130 L60,150 L40,130 Z"/>
+      <path class="villager" d="M40,40 Q45,30 50,40" fill="none"/>
+      <circle class="villager" cx="35" cy="45" r="5" fill="#000"/>
+      <circle class="villager" cx="65" cy="45" r="5" fill="#000"/>
+      <path class="accessory villager" d="M20,90 Q10,70 20,50" fill="none" stroke-width="4" stroke="#90EE90"/>
+      <path class="villager" d="M70,90 L90,60" fill="none"/>
+    </g>
+  </g>
+</svg>

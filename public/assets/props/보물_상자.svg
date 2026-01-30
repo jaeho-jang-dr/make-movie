@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <style>
+    .chest-body { fill: #FFD700; stroke: #000000; stroke-width: 3; }
+    .chest-lid { fill: #FFD700; stroke: #000000; stroke-width: 3; }
+    .lock { fill: #4ECDC4; stroke: #000000; stroke-width: 3; }
+    .glow { fill: #90EE90; fill-opacity: 0.5; }
+    .detail { fill: none; stroke: #FF6B6B; stroke-width: 3; }
+  </style>
+  <!-- Glow effect behind chest -->
+  <ellipse class="glow" cx="256" cy="400" rx="200" ry="80" />
+  <ellipse class="glow" cx="256" cy="200" rx="180" ry="60" />
+  <!-- Chest Body -->
+  <path class="chest-body" d="M150,200 L362,200 C380,200 400,220 400,240 L400,350 C400,370 380,390 362,390 L150,390 C132,390 112,370 112,350 L112,240 C112,220 132,200 150,200 Z" />
+  <!-- Chest Lid -->
+  <path class="chest-lid" d="M150,150 L362,150 C380,150 400,170 400,190 C400,210 380,230 362,230 L150,230 C132,230 112,210 112,190 C112,170 132,150 150,150 Z" />
+  <!-- Lock -->
+  <rect class="lock" x="236" y="250" width="40" height="60" rx="5" ry="5" />
+  <circle class="lock" cx="256" cy="280" r="8" />
+  <!-- Carvings and Details on Lid -->
+  <path class="detail" d="M130,170 Q150,150 170,170" />
+  <path class="detail" d="M342,170 Q362,150 382,170" />
+  <path class="detail" d="M200,180 Q220,160 240,180" />
+  <path class="detail" d="M272,180 Q292,160 312,180" />
+  <!-- Carvings on Body -->
+  <path class="detail" d="M130,260 Q150,240 170,260" />
+  <path class="detail" d="M342,260 Q362,240 382,260" />
+  <path class="detail" d="M130,320 Q150,300 170,320" />
+  <path class="detail" d="M342,320 Q362,300 382,320" />
+</svg>

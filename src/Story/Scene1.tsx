@@ -26,7 +26,7 @@ export const Scene1 = () => {
     [0, 1],
     { extrapolateRight: 'clamp' }
   );
-  const narrationText = "옛날 아주 먼 옛날, 평화로운 숲속 마을에 호기심 많은 아기 공룡 디노가 살고 있었어요.";
+  const narrationText = "이것은 1번째 장면입니다. 옛날 옛적에 멋진 모험이 있었어요.";
   const visibleText = narrationText.substring(0, Math.floor(textReveal * narrationText.length));
 
   return (
@@ -39,11 +39,11 @@ export const Scene1 = () => {
         position: 'absolute'
       }}>
         <Img
-          src={staticFile("images/scene1-background.png")}
+          src={staticFile("images/scene1-background.svg")}
           onError={(e) => {
             const target = e.target as HTMLImageElement;
             target.onerror = null;
-            target.src = staticFile("images/scene1-background.svg");
+            target.src = staticFile("images/scene1-background.png");
           }}
           style={{
             width: '100%',
@@ -58,11 +58,11 @@ export const Scene1 = () => {
       
       {/* 캐릭터 1 - Spring Animation */}
       <Img
-        src={staticFile("images/scene1-character-0.png")}
+          src={staticFile("images/scene1-character-0.svg")}
         onError={(e) => {
           const target = e.target as HTMLImageElement;
           target.onerror = null;
-          target.src = staticFile("images/scene1-character-0.svg");
+          target.src = staticFile("images/scene1-character-0.png");
         }}
         style={{
           position: 'absolute',

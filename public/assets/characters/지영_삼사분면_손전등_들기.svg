@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <g>
+    <!-- Body Outline and Base Color -->
+    <path d="M256,150 C300,150 330,200 330,250 C330,300 300,350 256,350 C212,350 182,300 182,250 C182,200 212,150 256,150 Z" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Legs -->
+    <path d="M220,320 L200,400 Q190,410 180,400 L160,320" fill="#87CEEB" stroke="#000000" stroke-width="3"/>
+    <path d="M292,320 L312,400 Q322,410 332,400 L352,320" fill="#87CEEB" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Sneakers -->
+    <path d="M160,400 L180,400 L190,420 L170,420 Z" fill="#90EE90" stroke="#000000" stroke-width="3"/>
+    <path d="M332,400 L352,400 L362,420 L342,420 Z" fill="#90EE90" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Arms -->
+    <path d="M330,220 L360,280 Q370,290 380,280 L400,240" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    <path d="M182,220 L152,280 Q142,290 132,280 L112,240" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Flashlight in Right Hand -->
+    <path d="M400,240 L420,220 L430,230 L410,250 Z" fill="#4ECDC4" stroke="#000000" stroke-width="3"/>
+    <path d="M420,220 L440,200 L450,210 L430,230 Z" fill="#4ECDC4" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Head -->
+    <circle cx="256" cy="120" r="80" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Ponytail -->
+    <path d="M200,80 Q180,60 160,80 Q140,100 160,120" fill="#FF6B6B" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Glasses -->
+    <circle cx="230" cy="100" r="20" fill="none" stroke="#FF6B6B" stroke-width="3"/>
+    <circle cx="270" cy="100" r="20" fill="none" stroke="#FF6B6B" stroke-width="3"/>
+    <path d="M250,100 L260,100" stroke="#FF6B6B" stroke-width="3"/>
+    <!-- Reflection on Glasses -->
+    <circle cx="235" cy="95" r="5" fill="white" opacity="0.7"/>
+    <circle cx="275" cy="95" r="5" fill="white" opacity="0.7"/>
+    
+    <!-- Eyes -->
+    <circle cx="230" cy="100" r="10" fill="white" stroke="#000000" stroke-width="2"/>
+    <circle cx="270" cy="100" r="10" fill="white" stroke="#000000" stroke-width="2"/>
+    <circle cx="230" cy="100" r="5" fill="#4ECDC4"/>
+    <circle cx="270" cy="100" r="5" fill="#4ECDC4"/>
+    <!-- Eye Sparkles -->
+    <circle cx="227" cy="97" r="2" fill="white"/>
+    <circle cx="267" cy="97" r="2" fill="white"/>
+    
+    <!-- Mouth (Goofy Grin) -->
+    <path d="M240,130 Q256,140 272,130" fill="none" stroke="#000000" stroke-width="3"/>
+    <path d="M245,135 Q256,145 267,135" fill="#FF6B6B" stroke="#000000" stroke-width="2"/>
+    
+    <!-- Nose -->
+    <circle cx="250" cy="115" r="5" fill="#FFD700" stroke="#000000" stroke-width="2"/>
+    
+    <!-- Clothing Details (Stripes on Shirt) -->
+    <path d="M182,200 L330,200" stroke="#4ECDC4" stroke-width="5"/>
+    <path d="M182,230 L330,230" stroke="#4ECDC4" stroke-width="5"/>
+    <path d="M182,260 L330,260" stroke="#4ECDC4" stroke-width="5"/>
+  </g>
+</svg>

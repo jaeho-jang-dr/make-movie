@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="background: transparent;">
+  <g id="character">
+    <!-- Body Outline and Base -->
+    <path d="M256 350 C300 350, 340 300, 340 250 C340 180, 300 150, 256 150 C212 150, 172 180, 172 250 C172 300, 212 350, 256 350 Z" fill="#87CEEB" stroke="#000000" stroke-width="3" />
+    
+    <!-- Head Outline and Base -->
+    <circle cx="256" cy="120" r="100" fill="#FFD700" stroke="#000000" stroke-width="3" />
+    
+    <!-- Hair (Curly and Neat) -->
+    <path d="M200 50 C180 30, 150 50, 150 80 C150 100, 170 120, 200 120" fill="#FF6B6B" stroke="#000000" stroke-width="3" />
+    <path d="M220 40 C200 20, 170 40, 170 70 C170 90, 190 110, 220 110" fill="#FF6B6B" stroke="#000000" stroke-width="3" />
+    <path d="M280 40 C300 20, 330 40, 330 70 C330 90, 310 110, 280 110" fill="#FF6B6B" stroke="#000000" stroke-width="3" />
+    <path d="M310 50 C330 30, 360 50, 360 80 C360 100, 340 120, 310 120" fill="#FF6B6B" stroke="#000000" stroke-width="3" />
+    
+    <!-- Glasses (Pink, Slightly Tilted) -->
+    <circle cx="220" cy="90" r="25" fill="none" stroke="#FF6B6B" stroke-width="3" />
+    <circle cx="290" cy="95" r="25" fill="none" stroke="#FF6B6B" stroke-width="3" />
+    <path d="M245 92 C255 90, 265 92, 275 95" fill="none" stroke="#FF6B6B" stroke-width="3" />
+    <path d="M195 90 C205 85, 210 85, 215 90" fill="none" stroke="#FF6B6B" stroke-width="3" />
+    <path d="M295 95 C305 90, 310 90, 315 95" fill="none" stroke="#FF6B6B" stroke-width="3" />
+    
+    <!-- Eyes (Large, Expressive with Sparkle) -->
+    <circle cx="220" cy="90" r="15" fill="white" stroke="#000000" stroke-width="3" />
+    <circle cx="290" cy="95" r="15" fill="white" stroke="#000000" stroke-width="3" />
+    <circle cx="220" cy="90" r="7" fill="#4ECDC4" />
+    <circle cx="290" cy="95" r="7" fill="#4ECDC4" />
+    <circle cx="215" cy="85" r="3" fill="white" opacity="0.7" />
+    <circle cx="285" cy="90" r="3" fill="white" opacity="0.7" />
+    
+    <!-- Mouth (Curious Expression) -->
+    <path d="M240 130 C250 140, 260 140, 270 130" fill="none" stroke="#000000" stroke-width="3" />
+    
+    <!-- Finger on Chin (Thinking Pose) -->
+    <path d="M270 140 C280 160, 290 180, 290 200 C290 220, 280 240, 270 250" fill="#FFD700" stroke="#000000" stroke-width="3" />
+    <circle cx="290" cy="200" r="10" fill="#FFD700" stroke="#000000" stroke-width="3" />
+    
+    <!-- Sketchbook in Other Hand -->
+    <path d="M180 200 C180 230, 200 250, 220 250 C240 250, 240 230, 240 200 C240 180, 220 160, 200 160 C180 160, 180 180, 180 200 Z" fill="#90EE90" stroke="#000000" stroke-width="3" />
+    <path d="M190 180 L230 180" fill="none" stroke="#000000" stroke-width="2" />
+    <path d="M190 190 L230 190" fill="none" stroke="#000000" stroke-width="2" />
+    <path d="M190 200 L230 200" fill="none" stroke="#000000" stroke-width="2" />
+    
+    <!-- Arm Holding Sketchbook -->
+    <path d="M200 160 C180 180, 160 200, 160 230 C160 250, 170 270, 190 280" fill="#FFD700" stroke="#000000" stroke-width="3" />
+    
+    <!-- Clothing Details (Patterned Shirt) -->
+    <path d="M200 250 L240 250 L260 300 L220 300 Z" fill="#4ECDC4" stroke="#000000" stroke-width="3" />
+    <circle cx="210" cy="260" r="5" fill="#FF6B6B" />
+    <circle cx="230" cy="260" r="5" fill="#FF6B6B" />
+    <circle cx="220" cy="280" r="5" fill="#FF6B6B" />
+    
+    <!-- Legs -->
+    <path d="M220 300 L200 350 L180 350 L200 300" fill="#87CEEB" stroke="#000000" stroke-width="3" />
+    <path d="M260 300 L280 350 L300 350 L280 300" fill="#87CEEB" stroke="#000000" stroke-width="3" />
+    
+    <!-- Shoes -->
+    <path d="M180 350 C170 360, 170 370, 190 370 C200 370, 200 360, 190 350" fill="#FF6B6B" stroke="#000000" stroke-width="3" />
+    <path d="M300 350 C310 360, 310 370, 290 370 C280 370, 280 360, 290 350" fill="#FF6B6B" stroke="#000000" stroke-width="3" />
+  </g>
+</svg>

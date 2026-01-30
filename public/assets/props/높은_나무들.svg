@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <style>
+    .trunk { fill: #4ECDC4; stroke: #000; stroke-width: 3; }
+    .leaves { fill: #90EE90; stroke: #000; stroke-width: 3; }
+    .moss { fill: #FF6B6B; stroke: #000; stroke-width: 3; }
+    .knot { fill: #FFD700; stroke: #000; stroke-width: 2; }
+    .sunlight { fill: #FFD700; opacity: 0.5; }
+  </style>
+  <rect width="512" height="512" fill="#87CEEB" />
+  <!-- First Tree -->
+  <path class="trunk" d="M150,200 C130,200 110,350 110,400 C110,450 130,480 150,480 M150,480 C170,480 190,450 190,400 C190,350 170,200 150,200" />
+  <path class="leaves" d="M80,180 C60,160 60,120 80,100 C100,80 140,80 160,100 C180,120 180,160 160,180 C140,200 100,200 80,180" />
+  <path class="leaves" d="M100,140 C80,120 80,80 100,60 C120,40 160,40 180,60 C200,80 200,120 180,140 C160,160 120,160 100,140" />
+  <circle class="knot" cx="150" cy="300" r="15" />
+  <circle class="knot" cx="145" cy="295" r="3" />
+  <circle class="knot" cx="155" cy="295" r="3" />
+  <path class="knot" d="M145,310 C150,320 155,310 160,310" fill="none" stroke="#000" stroke-width="2" />
+  <path class="moss" d="M120,380 C110,370 110,350 120,340 C130,330 140,330 150,340 C160,350 160,370 150,380 C140,390 130,390 120,380" />
+  <!-- Second Tree -->
+  <path class="trunk" d="M350,180 C330,180 310,330 310,380 C310,430 330,460 350,460 M350,460 C370,460 390,430 390,380 C390,330 370,180 350,180" />
+  <path class="leaves" d="M280,160 C260,140 260,100 280,80 C300,60 340,60 360,80 C380,100 380,140 360,160 C340,180 300,180 280,160" />
+  <path class="leaves" d="M300,120 C280,100 280,60 300,40 C320,20 360,20 380,40 C400,60 400,100 380,120 C360,140 320,140 300,120" />
+  <circle class="knot" cx="350" cy="280" r="15" />
+  <circle class="knot" cx="345" cy="275" r="3" />
+  <circle class="knot" cx="355" cy="275" r="3" />
+  <path class="knot" d="M345,290 C350,300 355,290 360,290" fill="none" stroke="#000" stroke-width="2" />
+  <path class="moss" d="M320,360 C310,350 310,330 320,320 C330,310 340,310 350,320 C360,330 360,350 350,360 C340,370 330,370 320,360" />
+  <!-- Sunlight Rays -->
+  <path class="sunlight" d="M0,0 L50,50 L0,100 Z" />
+  <path class="sunlight" d="M100,0 L150,50 L100,100 Z" />
+  <path class="sunlight" d="M200,0 L250,50 L200,100 Z" />
+  <path class="sunlight" d="M300,0 L350,50 L300,100 Z" />
+  <path class="sunlight" d="M400,0 L450,50 L400,100 Z" />
+</svg>

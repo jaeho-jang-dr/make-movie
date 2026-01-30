@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <!-- Sky Background -->
+  <rect x="0" y="0" width="1920" height="1080" fill="#E8F1FF"/>
+  <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" style="stop-color:#CDE4F7;stop-opacity:1"/>
+    <stop offset="100%" style="stop-color:#A9C5E0;stop-opacity:1"/>
+  </linearGradient>
+  <rect x="0" y="0" width="1920" height="600" fill="url(#skyGradient)"/>
+
+  <!-- Background Layer: Distant Mountains -->
+  <g id="background">
+    <path d="M0,600 C200,550 400,600 600,580 C800,560 1000,600 1200,570 C1400,540 1600,580 1920,600 L1920,1080 L0,1080 Z" fill="#6BA9D1" opacity="0.6"/>
+    <path d="M0,650 C250,600 500,650 750,620 C1000,590 1250,630 1500,600 C1750,570 1920,610 1920,650 L1920,1080 L0,1080 Z" fill="#A9C5E0" opacity="0.5"/>
+  </g>
+
+  <!-- Midground Layer: Rolling Hills and Village -->
+  <g id="midground">
+    <!-- Rolling Hills -->
+    <path d="M0,700 C300,650 600,700 900,670 C1200,640 1500,680 1920,700 L1920,1080 L0,1080 Z" fill="#8ED1FC" opacity="0.8"/>
+    <path d="M0,750 C400,700 800,750 1200,720 C1600,690 1920,730 1920,750 L1920,1080 L0,1080 Z" fill="#6BA9D1" opacity="0.9"/>
+
+    <!-- Village Houses -->
+    <!-- House 1 -->
+    <g transform="translate(400, 650)">
+      <rect x="0" y="0" width="80" height="60" fill="#A9C5E0"/>
+      <polygon points="0,0 40,-30 80,0" fill="#6BA9D1"/>
+      <rect x="10" y="10" width="20" height="20" fill="#E8F1FF"/>
+      <rect x="50" y="10" width="20" height="20" fill="#E8F1FF"/>
+      <circle cx="40" cy="45" r="5" fill="#CDE4F7"/>
+      <!-- Flower Pots -->
+      <rect x="5" y="30" width="10" height="5" fill="#6BA9D1"/>
+      <ellipse cx="10" cy="28" rx="3" ry="5" fill="#8ED1FC"/>
+      <rect x="65" y="30" width="10" height="5" fill="#6BA9D1"/>
+      <ellipse cx="70" cy="28" rx="3" ry="5" fill="#8ED1FC"/>
+    </g>
+    <!-- House 2 -->
+    <g transform="translate(550, 670)">
+      <rect x="0" y="0" width="70" height="50" fill="#CDE4F7"/>
+      <polygon points="0,0 35,-25 70,0" fill="#A9C5E0"/>
+      <rect x="10" y="10" width="15" height="15" fill="#E8F1FF"/>
+      <rect x="45" y="10" width="15" height="15" fill="#E8F1FF"/>
+      <circle cx="35" cy="35" r="4" fill="#8ED1FC"/>
+      <!-- Flower Pots -->
+      <rect x="5" y="25" width="8" height="4" fill="#6BA9D1"/>
+      <ellipse cx="9" cy="23" rx="2" ry="4" fill="#8ED1FC"/>
+    </g>
+    <!-- House 3 -->
+    <g transform="translate(700, 640)">
+      <rect x="0" y="0" width="90" height="70" fill="#A9C5E0"/>
+      <polygon points="0,0 45,-35 90,0" fill="#6BA9D1"/>
+      <rect x="15" y="15" width="20" height="20" fill="#E8F1FF"/>
+      <rect x="55" y="15" width="20" height="20" fill="#E8F1FF"/>
+      <circle cx="45" cy="50" r="6" fill="#CDE4F7"/>
+      <!-- Flower Pots -->
+      <rect x="10" y="35" width="10" height="5" fill="#6BA9D1"/>
+      <ellipse cx="15" cy="33" rx="3" ry="5" fill="#8ED1FC"/>
+      <rect x="70" y="35" width="10" height="5" fill="#6BA9D1"/>
+      <ellipse cx="75" cy="33" rx="3" ry="5" fill="#8ED1FC"/>
+    </g>
+    <!-- House 4 -->
+    <g transform="translate(850, 680)">
+      <rect x="0" y="0" width="60" height="45" fill="#CDE4F7"/>
+      <polygon points="0,0 30,-20 60,0" fill="#A9C5E0"/>
+      <rect x="10" y="10" width="10" height="10" fill="#E8F1FF"/>
+      <rect x="40" y="10" width="10" height="10" fill="#E8F1FF"/>
+      <circle cx="30" cy="30" r="3" fill="#8ED1FC"/>
+    </g>
+  </g>
+
+  <!-- Foreground Layer: Lone Hill -->
+  <g id="foreground">
+    <path d="M1000,800 C1100,700 1300,700 1400,800 C1450,850 1500,900 1550,950 L1920,1080 L1000,1080 Z" fill="#8ED1FC"/>
+    <path d="M1050,750 C1150,650 1300,650 1400,750 C1425,775 1450,800 1475,825" stroke="#6BA9D1" stroke-width="3" fill="none"/>
+  </g>
+
+  <!-- Clouds with Soft Shadows -->
+  <g id="clouds">
+    <g transform="translate(200, 200)">
+      <ellipse cx="0" cy="0" rx="50" ry="30" fill="#E8F1FF" opacity="0.7"/>
+      <ellipse cx="40" cy="10" rx="60" ry="35" fill="#E8F1FF" opacity="0.7"/>
+      <ellipse cx="80" cy="0" rx="50" ry="30" fill="#E8F1FF" opacity="0.7"/>
+      <ellipse cx="40" cy="15" rx="55" ry="32" fill="#CDE4F7" opacity="0.3"/>
+    </g>
+    <g transform="translate(600, 300)">
+      <ellipse cx="0" cy="0" rx="40" ry="25" fill="#E8F1FF" opacity="0.6"/>
+      <ellipse cx="35" cy="5" rx="50" ry="30" fill="#E8F1FF" opacity="0.6"/>
+      <ellipse cx="70" cy="0" rx="40" ry="25" fill="#E8F1FF" opacity="0.6"/>
+      <ellipse cx="35" cy="10" rx="45" ry="27" fill="#CDE4F7" opacity="0.2"/>
+    </g>
+    <g transform="translate(1300, 250)">
+      <ellipse cx="0" cy="0" rx="60" ry="35" fill="#E8F1FF" opacity="0.7"/>
+      <ellipse cx="50" cy="10" rx="70" ry="40" fill="#E8F1FF" opacity="0.7"/>
+      <ellipse cx="100" cy="0" rx="60" ry="35" fill="#E8F1FF" opacity="0.7"/>
+      <ellipse cx="50" cy="15" rx="65" ry="37" fill="#CDE4F7" opacity="0.3"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,99 @@
+{
+  "title": "용기와 우정의 빛나는 모험",
+  "theme": "친구와 용기",
+  "characters": [
+    {
+      "id": "c1",
+      "name": "민수",
+      "archetype": "The Hesitant Hero",
+      "visualTraits": "Red baseball cap, freckles, small backpack",
+      "personality": "Timid but kind-hearted"
+    },
+    {
+      "id": "c2",
+      "name": "지영",
+      "archetype": "The Bold Trickster",
+      "visualTraits": "Ponytail, green sneakers, mischievous grin",
+      "personality": "Fearless and witty"
+    },
+    {
+      "id": "c3",
+      "name": "깜깜이",
+      "archetype": "The Mysterious Guide",
+      "visualTraits": "Tiny black cat with glowing yellow eyes",
+      "personality": "Wise and enigmatic"
+    }
+  ],
+  "scenes": [
+    {
+      "number": 1,
+      "narration": "민수는 작은 마을에서 늘 혼자 놀곤 했어요. 친구가 없어서 외로웠지만, 누군가와 함께하는 게 무서웠죠. 어느 날, 민수는 뒷산에서 이상한 소리를 들었어요.",
+      "visualKeyVisuals": "A shy boy in a red cap standing alone on a hill, looking curious as he hears a strange sound in a quiet village with small houses and green mountains in the background.",
+      "propKey": "Red Baseball Cap",
+      "moodColor": "#A9C5E0"
+    },
+    {
+      "number": 2,
+      "narration": "소리를 따라가던 민수는 덤불 속에서 지영이를 만났어요. 지영이는 '내 보물 지도를 훔친 도둑을 잡아야 해!'라며 민수를 끌어당겼죠. 민수는 망설였지만, 지영의 눈빛이 너무 강렬했어요.",
+      "visualKeyVisuals": "A bold girl with a ponytail dragging a hesitant boy in a red cap through bushes, holding a crumpled treasure map, with a forest in the background.",
+      "propKey": "Treasure Map",
+      "moodColor": "#78B256"
+    },
+    {
+      "number": 3,
+      "narration": "두 아이는 숲 속 깊은 곳으로 들어갔어요. 갑자기 깜깜이라는 검은 고양이가 나타나더니, '나를 따라오면 보물을 찾을 수 있어. 하지만 용기가 필요해!'라고 말했어요.",
+      "visualKeyVisuals": "Two children in a dark forest, startled as a mysterious black cat with glowing yellow eyes speaks to them from a tree branch, with misty shadows around.",
+      "propKey": "Black Cat",
+      "moodColor": "#3A2E5F"
+    },
+    {
+      "number": 4,
+      "narration": "깜깜이는 아이들을 깊은 동굴로 안내했어요. 민수는 어둠이 무서워 떨었지만, 지영이는 '걱정 마! 내가 랩스타처럼 빛나는 플래시를 켤게!'라며 장난스럽게 웃었죠.",
+      "visualKeyVisuals": "A dark cave entrance with two children, one trembling and the other holding a bright flashlight with a goofy grin, as a black cat leads the way.",
+      "propKey": "Flashlight",
+      "moodColor": "#5C5C5C"
+    },
+    {
+      "number": 5,
+      "narration": "동굴 안에서 거대한 거미줄이 길을 막고 있었어요. 민수는 도망치고 싶었지만, 지영이가 '함께 힘을 합치면 뚫을 수 있어!'라고 용기를 북돋아줬어요.",
+      "visualKeyVisuals": "Inside a cave, two children face a giant spider web blocking their path, one child looking scared while the other points confidently forward, with a black cat watching.",
+      "propKey": "Spider Web",
+      "moodColor": "#8B8B8B"
+    },
+    {
+      "number": 6,
+      "narration": "아이들은 거미줄을 뚫고 나왔지만, 갑자기 바닥이 흔들리며 함정이 발동했어요! 지영이가 민수의 손을 잡고 '점프!'라고 외쳤고, 둘은 가까스로 함정을 피했죠.",
+      "visualKeyVisuals": "Two children jumping over a collapsing cave floor with spikes below, holding hands in mid-air, with a black cat leaping beside them.",
+      "propKey": "Spiked Trap",
+      "moodColor": "#FF6B6B"
+    },
+    {
+      "number": 7,
+      "narration": "드디어 보물 상자를 발견했지만, 상자는 자물쇠로 잠겨 있었어요. 깜깜이가 말했죠. '자물쇠를 열 열쇠는 네 마음 속 용기야.' 민수는 눈을 감고 용기를 내어 손을 뻗었어요.",
+      "visualKeyVisuals": "Two children and a black cat in a dimly lit cave, standing before a glowing treasure chest with a heavy lock, the boy in the red cap reaching out nervously.",
+      "propKey": "Treasure Chest",
+      "moodColor": "#FFD700"
+    },
+    {
+      "number": 8,
+      "narration": "상자가 열리자, 안에는 반짝이는 보석이 아니라 낡은 편지 한 통이 들어 있었어요. 편지에는 '진정한 보물은 우정과 용기'라고 적혀 있었죠. 지영이가 웃으며 '이거 완전 유튜브 썰 푸는 느낌이네!'라고 말했어요.",
+      "visualKeyVisuals": "Two children looking surprised at an open treasure chest revealing an old letter instead of gold, laughing together as a black cat sits nearby in a cave.",
+      "propKey": "Old Letter",
+      "moodColor": "#F4E4BC"
+    },
+    {
+      "number": 9,
+      "narration": "동굴을 빠져나오며 민수는 더 이상 혼자가 아니라는 걸 느꼈어요. 지영이와 함께라면 어떤 무서운 것도 이겨낼 수 있을 것 같았죠. 깜깜이는 미소를 지으며 사라졌어요.",
+      "visualKeyVisuals": "Two children walking out of a cave into sunlight, smiling at each other with confidence, as a black cat mysteriously vanishes in the background.",
+      "propKey": "Sunlight",
+      "moodColor": "#FFE066"
+    },
+    {
+      "number": 10,
+      "narration": "마을로 돌아온 민수와 지영이는 매일 함께 모험을 꿈꿨어요. 민수는 이제 용기를 내어 새로운 친구들도 사귀기 시작했답니다. 진정한 보물은 바로 곁에 있었어요.",
+      "visualKeyVisuals": "Two children laughing and playing in a bright village with other kids joining them, green mountains and a blue sky in the background, full of joy.",
+      "propKey": "Village Playground",
+      "moodColor": "#87CEEB"
+    }
+  ]
+}

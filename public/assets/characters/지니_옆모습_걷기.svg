@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="background: transparent;">
+  <!-- Body Outline and Base Color -->
+  <g id="body">
+    <path d="M256,150 C306,150 346,190 346,240 C346,290 306,330 256,330 C206,330 166,290 166,240 C166,190 206,150 256,150 Z" fill="#87CEEB" stroke="#000000" stroke-width="3"/>
+    <!-- Legs -->
+    <path d="M236,310 L226,380 Q221,400 216,420" fill="none" stroke="#000000" stroke-width="3"/>
+    <path d="M276,310 L286,380 Q291,400 296,420" fill="none" stroke="#000000" stroke-width="3"/>
+  </g>
+  <!-- Clothing Details -->
+  <g id="clothing">
+    <path d="M166,200 C166,250 256,310 346,200" fill="#FF6B6B" stroke="#000000" stroke-width="3"/>
+    <path d="M206,220 L306,220" fill="none" stroke="#FFD700" stroke-width="3"/>
+    <path d="M206,250 L306,250" fill="none" stroke="#FFD700" stroke-width="3"/>
+  </g>
+  <!-- Backpack -->
+  <g id="backpack">
+    <path d="M346,180 C366,180 386,200 386,240 C386,280 366,300 346,300 C326,300 306,280 306,240 C306,200 326,180 346,180 Z" fill="#90EE90" stroke="#000000" stroke-width="3"/>
+    <path d="M306,200 L286,160" fill="none" stroke="#000000" stroke-width="3"/>
+  </g>
+  <!-- Head -->
+  <g id="head">
+    <circle cx="256" cy="100" r="80" fill="#87CEEB" stroke="#000000" stroke-width="3"/>
+    <!-- Curly Hair -->
+    <path d="M176,60 C146,60 136,100 136,120 C136,140 146,160 176,160 C206,160 216,140 216,120" fill="none" stroke="#000000" stroke-width="3"/>
+    <path d="M156,80 C126,80 116,120 116,140 C116,160 126,180 156,180 C186,180 196,160 196,140" fill="none" stroke="#000000" stroke-width="3"/>
+  </g>
+  <!-- Glasses -->
+  <g id="glasses">
+    <circle cx="216" cy="90" r="20" fill="none" stroke="#FF6B6B" stroke-width="3"/>
+    <circle cx="256" cy="90" r="20" fill="none" stroke="#FF6B6B" stroke-width="3"/>
+    <path d="M236,90 L246,90" fill="none" stroke="#FF6B6B" stroke-width="3"/>
+    <path d="M196,90 L176,90" fill="none" stroke="#FF6B6B" stroke-width="3"/>
+    <circle cx="226" cy="85" r="3" fill="#FFFFFF" stroke="none"/>
+  </g>
+  <!-- Facial Features -->
+  <g id="face">
+    <circle cx="216" cy="90" r="10" fill="#000000" stroke="none"/>
+    <circle cx="256" cy="90" r="10" fill="#000000" stroke="none"/>
+    <circle cx="224" cy="86" r="3" fill="#FFFFFF" stroke="none"/>
+    <circle cx="264" cy="86" r="3" fill="#FFFFFF" stroke="none"/>
+    <path d="M226,120 Q236,130 246,120" fill="none" stroke="#000000" stroke-width="3"/>
+  </g>
+</svg>

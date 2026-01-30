@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <style>
+    .body { fill: #1a1a1a; }
+    .eyes { fill: #ffd700; }
+    .pupils { fill: #000; }
+    .highlight { fill: #fff; opacity: 0.6; }
+  </style>
+  <g transform="translate(200, 200)">
+    <!-- Body -->
+    <path class="body" d="M-60,40 Q-80,80 0,100 Q80,80 60,40 Q80,-20 40,-60 Q20,-80 -20,-80 Q-60,-60 -60,40 Z" />
+    <!-- Head -->
+    <path class="body" d="M-40,-40 Q-60,0 0,20 Q60,0 40,-40 Q60,-80 0,-100 Q-60,-80 -40,-40 Z" />
+    <!-- Left Ear -->
+    <path class="body" d="M-40,-80 L-60,-120 Q-80,-100 -40,-80 Z" />
+    <!-- Right Ear -->
+    <path class="body" d="M40,-80 L60,-120 Q80,-100 40,-80 Z" />
+    <!-- Left Eye -->
+    <g transform="translate(-20, -30)">
+      <ellipse class="eyes" cx="0" cy="0" rx="15" ry="20" />
+      <ellipse class="pupils" cx="0" cy="0" rx="5" ry="10" />
+      <ellipse class="highlight" cx="-5" cy="-8" rx="3" ry="5" />
+    </g>
+    <!-- Right Eye -->
+    <g transform="translate(20, -30)">
+      <ellipse class="eyes" cx="0" cy="0" rx="15" ry="20" />
+      <ellipse class="pupils" cx="0" cy="0" rx="5" ry="10" />
+      <ellipse class="highlight" cx="-5" cy="-8" rx="3" ry="5" />
+    </g>
+    <!-- Nose -->
+    <path class="body" d="M-5,-10 L5,-10 L0,-5 Z" />
+    <!-- Whiskers Left -->
+    <path stroke="#333" stroke-width="1" fill="none" d="M-5,-5 Q-25,0 -35,5" />
+    <path stroke="#333" stroke-width="1" fill="none" d="M-5,-10 Q-25,-5 -35,-5" />
+    <path stroke="#333" stroke-width="1" fill="none" d="M-5,-15 Q-25,-10 -35,-15" />
+    <!-- Whiskers Right -->
+    <path stroke="#333" stroke-width="1" fill="none" d="M5,-5 Q25,0 35,5" />
+    <path stroke="#333" stroke-width="1" fill="none" d="M5,-10 Q25,-5 35,-5" />
+    <path stroke="#333" stroke-width="1" fill="none" d="M5,-15 Q25,-10 35,-15" />
+  </g>
+</svg>

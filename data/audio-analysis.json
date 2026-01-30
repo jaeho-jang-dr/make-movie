@@ -1,0 +1,66 @@
+{
+  "scenes": [
+    {
+      "scene": 1,
+      "size": 96192,
+      "estimatedDuration": 9,
+      "recommendedFrames": 330
+    },
+    {
+      "scene": 2,
+      "size": 118656,
+      "estimatedDuration": 10,
+      "recommendedFrames": 360
+    },
+    {
+      "scene": 3,
+      "size": 100800,
+      "estimatedDuration": 9,
+      "recommendedFrames": 330
+    },
+    {
+      "scene": 4,
+      "size": 100800,
+      "estimatedDuration": 9,
+      "recommendedFrames": 330
+    },
+    {
+      "scene": 5,
+      "size": 92544,
+      "estimatedDuration": 8,
+      "recommendedFrames": 300
+    },
+    {
+      "scene": 6,
+      "size": 103488,
+      "estimatedDuration": 9,
+      "recommendedFrames": 330
+    },
+    {
+      "scene": 7,
+      "size": 106368,
+      "estimatedDuration": 9,
+      "recommendedFrames": 330
+    },
+    {
+      "scene": 8,
+      "size": 129792,
+      "estimatedDuration": 11,
+      "recommendedFrames": 390
+    },
+    {
+      "scene": 9,
+      "size": 94848,
+      "estimatedDuration": 8,
+      "recommendedFrames": 300
+    },
+    {
+      "scene": 10,
+      "size": 94272,
+      "estimatedDuration": 8,
+      "recommendedFrames": 300
+    }
+  ],
+  "avgDuration": 9,
+  "recommendedSceneDuration": 360
+}

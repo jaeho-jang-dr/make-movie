@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <!-- Background Layer -->
+  <g id="background">
+    <rect width="1920" height="1080" fill="#6E6E6E" />
+    <!-- Cave walls background -->
+    <path d="M0,0 L1920,0 L1920,1080 L0,1080 Z M100,200 Q300,100 500,200 Q700,300 900,200 Q1100,100 1300,200 Q1500,300 1700,200 L1920,400 L1920,1080 L0,1080 L0,400 Q200,300 400,400 Q600,500 800,400 Q1000,300 1200,400 Q1400,500 1600,400 Q1800,300 1920,400" fill="#8B8B8B" opacity="0.7" />
+    <!-- Ancient carvings on background walls -->
+    <g fill="none" stroke="#A1A1A1" stroke-width="3" opacity="0.5">
+      <path d="M200,600 Q250,550 300,600 M250,550 L250,650" />
+      <path d="M400,700 Q450,650 500,700 M450,650 L450,750" />
+      <path d="M600,550 Q650,500 700,550 M650,500 L650,600" />
+      <path d="M1400,600 Q1450,550 1500,600 M1450,550 L1450,650" />
+      <path d="M1600,700 Q1650,650 1700,700 M1650,650 L1650,750" />
+    </g>
+  </g>
+
+  <!-- Midground Layer -->
+  <g id="midground">
+    <!-- Cave walls midground -->
+    <path d="M0,300 Q200,200 400,300 Q600,400 800,300 Q1000,200 1200,300 Q1400,400 1600,300 Q1800,200 1920,300 L1920,1080 L0,1080 Z" fill="#8B8B8B" opacity="0.85" />
+    <!-- Stalactites in midground -->
+    <g fill="#A1A1A1" opacity="0.8">
+      <path d="M300,300 L320,500 L280,500 Z" />
+      <path d="M500,300 L520,450 L480,450 Z" />
+      <path d="M700,300 L720,550 L680,550 Z" />
+      <path d="M1000,300 L1020,480 L980,480 Z" />
+      <path d="M1300,300 L1320,520 L1280,520 Z" />
+    </g>
+    <!-- Dripping water effect -->
+    <g fill="#B5B5B5" opacity="0.6">
+      <path d="M310,500 L310,530 Q315,540 310,550 Q305,540 310,530" />
+      <path d="M510,450 L510,480 Q515,490 510,500 Q505,490 510,480" />
+      <path d="M710,550 L710,580 Q715,590 710,600 Q705,590 710,580" />
+    </g>
+    <!-- Ancient carvings in midground -->
+    <g fill="none" stroke="#B5B5B5" stroke-width="4" opacity="0.7">
+      <path d="M400,600 Q450,550 500,600 M450,550 L450,650 M400,620 Q450,570 500,620" />
+      <path d="M800,700 Q850,650 900,700 M850,650 L850,750" />
+      <path d="M1200,600 Q1250,550 1300,600 M1250,550 L1250,650" />
+    </g>
+  </g>
+
+  <!-- Foreground Layer -->
+  <g id="foreground">
+    <!-- Cave walls foreground -->
+    <path d="M0,400 Q200,300 400,400 Q600,500 800,400 Q1000,300 1200,400 Q1400,500 1600,400 Q1800,300 1920,400 L1920,1080 L0,1080 Z" fill="#A1A1A1" />
+    <!-- Stalactites in foreground -->
+    <g fill="#B5B5B5">
+      <path d="M200,400 L220,600 L180,600 Z" />
+      <path d="M500,400 L520,650 L480,650 Z" />
+      <path d="M800,400 L820,580 L780,580 Z" />
+      <path d="M1100,400 L1120,620 L1080,620 Z" />
+      <path d="M1400,400 L1420,600 L1380,600 Z" />
+    </g>
+    <!-- Dripping water effect -->
+    <g fill="#C9C9C9" opacity="0.8">
+      <path d="M210,600 L210,630 Q215,640 210,650 Q205,640 210,630" />
+      <path d="M510,650 L510,680 Q515,690 510,700 Q505,690 510,680" />
+      <path d="M810,580 L810,610 Q815,620 810,630 Q805,620 810,610" />
+    </g>
+    <!-- Glowing spider webs -->
+    <g fill="none" stroke="#C9C9C9" stroke-width="2" opacity="0.9">
+      <path d="M600,500 Q700,450 800,500" />
+      <path d="M600,550 Q700,500 800,550" />
+      <path d="M600,600 Q700,550 800,600" />
+      <path d="M650,500 Q700,450 750,500" />
+      <path d="M650,550 Q700,500 750,550" />
+      <path d="M650,600 Q700,550 750,600" />
+      <path d="M600,500 L700,650 L800,500" />
+      <path d="M600,550 L700,700 L800,550" />
+      <path d="M600,600 L700,750 L800,600" />
+    </g>
+    <!-- Ancient carvings in foreground -->
+    <g fill="none" stroke="#C9C9C9" stroke-width="5">
+      <path d="M300,700 Q350,650 400,700 M350,650 L350,750 M300,720 Q350,670 400,720" />
+      <path d="M900,800 Q950,750 1000,800 M950,750 L950,850" />
+      <path d="M1300,700 Q1350,650 1400,700 M1350,650 L1350,750" />
+    </g>
+  </g>
+
+  <!-- Atmospheric Perspective (faint blue light effect) -->
+  <g id="atmosphere">
+    <rect width="1920" height="1080" fill="#B5B5B5" opacity="0.1" />
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#C9C9C9;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#6E6E6E;stop-opacity:0" />
+    </radialGradient>
+    <circle cx="960" cy="540" r="800" fill="url(#glow)" opacity="0.2" />
+  </g>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="background: transparent;">
+  <g>
+    <!-- Body Outline and Base -->
+    <path d="M256 300 C220 300 200 340 200 380 C200 420 220 440 256 440 C292 440 312 420 312 380 C312 340 292 300 256 300 Z" fill="#87CEEB" stroke="#000000" stroke-width="3"/>
+    <path d="M256 200 C216 200 196 260 196 300 C196 340 216 360 256 360 C296 360 316 340 316 300 C316 260 296 200 256 200 Z" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+
+    <!-- Backpack -->
+    <path d="M316 240 C316 200 340 180 360 180 C380 180 400 200 400 240 C400 280 380 300 360 300 C340 300 316 280 316 240 Z" fill="#90EE90" stroke="#000000" stroke-width="3"/>
+    <path d="M320 220 C320 210 330 200 340 200 C350 200 360 210 360 220 C360 230 350 240 340 240 C330 240 320 230 320 220 Z" fill="#4ECDC4" stroke="#000000" stroke-width="3"/>
+
+    <!-- Red Cap -->
+    <path d="M196 180 C196 140 220 120 256 120 C292 120 316 140 316 180 C316 200 296 220 256 220 C216 220 196 200 196 180 Z" fill="#FF6B6B" stroke="#000000" stroke-width="3"/>
+    <path d="M196 160 C196 150 206 140 226 140 C246 140 256 150 256 160 C256 170 246 180 226 180 C206 180 196 170 196 160 Z" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+
+    <!-- Legs (Cautious Steps) -->
+    <path d="M240 440 L220 480 C220 480 210 490 200 490" fill="none" stroke="#000000" stroke-width="3"/>
+    <path d="M272 440 L292 480 C292 480 302 490 312 490" fill="none" stroke="#000000" stroke-width="3"/>
+    <!-- Sneakers with Texture -->
+    <path d="M190 490 C190 490 180 500 170 500 C160 500 150 490 150 490 C150 480 160 470 170 470 C180 470 190 480 190 480 Z" fill="#4ECDC4" stroke="#000000" stroke-width="3"/>
+    <path d="M302 490 C302 490 312 500 322 500 C332 500 342 490 342 490 C342 480 332 470 322 470 C312 470 302 480 302 480 Z" fill="#4ECDC4" stroke="#000000" stroke-width="3"/>
+    <path d="M160 485 C160 485 165 490 170 490" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+    <path d="M312 485 C312 485 317 490 322 490" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+
+    <!-- Arms (Slightly Hunched) -->
+    <path d="M220 320 C200 340 180 360 160 360" fill="none" stroke="#000000" stroke-width="3"/>
+    <path d="M292 320 C312 340 332 360 352 360" fill="none" stroke="#000000" stroke-width="3"/>
+
+    <!-- Face Features (Layered on Top) -->
+    <g>
+      <!-- Eye (Large and Expressive with Sparkle) -->
+      <circle cx="236" cy="200" r="20" fill="#FFFFFF" stroke="#000000" stroke-width="3"/>
+      <circle cx="236" cy="200" r="10" fill="#000000"/>
+      <circle cx="240" cy="195" r="3" fill="#FFFFFF" opacity="0.8"/>
+      <!-- Eyebrow -->
+      <path d="M226 180 C236 170 246 180 256 180" fill="none" stroke="#000000" stroke-width="3"/>
+      <!-- Mouth (Curious Expression) -->
+      <path d="M216 220 C206 220 196 210 196 210" fill="none" stroke="#000000" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

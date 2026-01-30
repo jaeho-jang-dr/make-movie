@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <g>
+    <!-- Body Base -->
+    <path d="M256,300 C320,300 370,250 370,180 C370,110 320,60 256,60 C192,60 142,110 142,180 C142,250 192,300 256,300 Z" fill="#000000" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Glossy Fur Highlights -->
+    <path d="M300,120 C320,120 340,140 340,160 C340,180 320,200 300,200 C280,200 260,180 260,160 C260,140 280,120 300,120 Z" fill="rgba(255,255,255,0.3)" stroke="none"/>
+    
+    <!-- Left Ear -->
+    <path d="M142,120 C142,80 172,50 212,50 C252,50 282,80 282,120 C282,160 252,190 212,190 C172,190 142,160 142,120 Z" fill="#000000" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Right Ear -->
+    <path d="M370,120 C370,80 400,50 440,50 C480,50 510,80 510,120 C510,160 480,190 440,190 C400,190 370,160 370,120 Z" fill="#000000" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Eyes Base (Yellow Glow) -->
+    <ellipse cx="210" cy="140" rx="40" ry="50" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    <ellipse cx="300" cy="140" rx="40" ry="50" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Eye Pupils -->
+    <ellipse cx="210" cy="150" rx="20" ry="25" fill="#000000" stroke="none"/>
+    <ellipse cx="300" cy="150" rx="20" ry="25" fill="#000000" stroke="none"/>
+    
+    <!-- Eye Highlights -->
+    <ellipse cx="200" cy="130" rx="8" ry="10" fill="rgba(255,255,255,0.8)" stroke="none"/>
+    <ellipse cx="290" cy="130" rx="8" ry="10" fill="rgba(255,255,255,0.8)" stroke="none"/>
+    
+    <!-- Nose -->
+    <path d="M240,180 C240,190 260,190 260,180 C260,170 250,160 240,160 Z" fill="#000000" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Mouth (Subtle Smirk) -->
+    <path d="M230,200 C240,220 270,220 280,200" fill="none" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Hat (Accessory) -->
+    <path d="M180,80 C180,40 330,40 330,80 C330,100 310,120 280,120 C250,120 180,100 180,80 Z" fill="#FF6B6B" stroke="#000000" stroke-width="3"/>
+    <path d="M200,60 C200,20 310,20 310,60" fill="none" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Hat Pattern (Stripes) -->
+    <line x1="220" y1="40" x2="220" y2="80" stroke="#4ECDC4" stroke-width="5"/>
+    <line x1="240" y1="40" x2="240" y2="80" stroke="#4ECDC4" stroke-width="5"/>
+    <line x1="260" y1="40" x2="260" y2="80" stroke="#4ECDC4" stroke-width="5"/>
+    <line x1="280" y1="40" x2="280" y2="80" stroke="#4ECDC4" stroke-width="5"/>
+    
+    <!-- Backpack (Accessory) -->
+    <path d="M150,220 C150,280 200,310 256,310 C312,310 362,280 362,220 C362,200 350,180 330,180 C310,180 290,200 256,200 C222,200 150,180 150,220 Z" fill="#90EE90" stroke="#000000" stroke-width="3"/>
+    <path d="M180,240 C180,260 200,270 220,270 C240,270 260,260 260,240 C260,220 240,210 220,210 C200,210 180,220 180,240 Z" fill="#87CEEB" stroke="#000000" stroke-width="3"/>
+    
+    <!-- Legs -->
+    <ellipse cx="200" cy="300" rx="30" ry="50" fill="#000000" stroke="#000000" stroke-width="3"/>
+    <ellipse cx="310" cy="300" rx="30" ry="50" fill="#000000" stroke="#000000" stroke-width="3"/>
+  </g>
+</svg>

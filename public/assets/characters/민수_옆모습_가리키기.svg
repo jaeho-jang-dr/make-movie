@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <g>
+    <!-- Body Outline -->
+    <path d="M256,300 C220,300 200,340 200,380 C200,420 220,460 256,460 C292,460 312,420 312,380 C312,340 292,300 256,300 Z" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    <!-- Body Shading -->
+    <path d="M256,320 C230,320 220,350 220,380 C220,410 230,440 256,440 C282,440 292,410 292,380 C292,350 282,320 256,320 Z" fill="#FF6B6B" stroke="none"/>
+
+    <!-- Head Outline -->
+    <circle cx="256" cy="200" r="100" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    <!-- Head Shading -->
+    <circle cx="256" cy="200" r="90" fill="#FF6B6B" stroke="none"/>
+
+    <!-- Freckles -->
+    <circle cx="280" cy="210" r="3" fill="#4ECDC4" stroke="none"/>
+    <circle cx="290" cy="200" r="3" fill="#4ECDC4" stroke="none"/>
+    <circle cx="285" cy="190" r="3" fill="#4ECDC4" stroke="none"/>
+
+    <!-- Eye (Large and Expressive) -->
+    <circle cx="280" cy="180" r="20" fill="#FFFFFF" stroke="#000000" stroke-width="3"/>
+    <circle cx="280" cy="180" r="10" fill="#000000" stroke="none"/>
+    <circle cx="275" cy="175" r="3" fill="#FFFFFF" stroke="none"/> <!-- Highlight -->
+
+    <!-- Eyebrow (Unsure Expression) -->
+    <path d="M270,160 Q280,150 290,160" fill="none" stroke="#000000" stroke-width="3"/>
+
+    <!-- Mouth (Hesitant) -->
+    <path d="M270,230 Q280,240 290,230" fill="none" stroke="#000000" stroke-width="3"/>
+
+    <!-- Red Cap -->
+    <path d="M206,150 C206,100 306,100 306,150 C306,180 286,200 256,200 C226,200 206,180 206,150 Z" fill="#FF6B6B" stroke="#000000" stroke-width="3"/>
+    <path d="M306,120 C326,120 346,140 346,160 C346,180 326,200 306,200" fill="#FF6B6B" stroke="#000000" stroke-width="3"/>
+
+    <!-- Arm Pointing Forward Hesitantly -->
+    <path d="M312,300 C332,300 352,320 352,340 C352,360 332,380 312,380" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    <path d="M352,340 C372,340 392,360 392,380 C392,400 372,420 352,420" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    <!-- Hand -->
+    <circle cx="352" cy="400" r="15" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    <!-- Fingers (Pointing) -->
+    <path d="M352,400 L372,400" fill="none" stroke="#000000" stroke-width="3"/>
+    <path d="M352,390 L365,390" fill="none" stroke="#000000" stroke-width="3"/>
+    <path d="M352,410 L365,410" fill="none" stroke="#000000" stroke-width="3"/>
+
+    <!-- Backpack -->
+    <path d="M200,320 C180,320 160,340 160,380 C160,420 180,440 200,440 C220,440 240,420 240,380 C240,340 220,320 200,320 Z" fill="#90EE90" stroke="#000000" stroke-width="3"/>
+    <!-- Strap -->
+    <path d="M200,320 C180,300 160,300 140,320" fill="none" stroke="#000000" stroke-width="3"/>
+
+    <!-- Legs -->
+    <path d="M240,460 C220,460 200,480 200,500" fill="#87CEEB" stroke="#000000" stroke-width="3"/>
+    <path d="M272,460 C292,460 312,480 312,500" fill="#87CEEB" stroke="#000000" stroke-width="3"/>
+  </g>
+</svg>

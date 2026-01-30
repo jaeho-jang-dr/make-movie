@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <g>
+    <!-- Body Outline -->
+    <path d="M256,150 C300,150 330,200 330,250 C330,300 300,350 256,350 C212,350 182,300 182,250 C182,200 212,150 256,150 Z" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    <!-- Body Details -->
+    <path d="M256,170 C290,170 310,210 310,250 C310,290 290,330 256,330 C222,330 202,290 202,250 C202,210 222,170 256,170 Z" fill="#FF6B6B" opacity="0.3"/>
+    <!-- Head Outline -->
+    <circle cx="256" cy="120" r="90" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    <!-- Hair -->
+    <path d="M200,60 C170,60 140,90 140,120 C140,150 160,180 190,180 C220,180 250,150 280,120 C310,90 340,60 310,30 C280,0 230,0 200,60 Z" fill="#4ECDC4" stroke="#000000" stroke-width="3"/>
+    <!-- Glasses -->
+    <circle cx="230" cy="110" r="20" fill="#87CEEB" stroke="#000000" stroke-width="3"/>
+    <circle cx="280" cy="110" r="20" fill="#87CEEB" stroke="#000000" stroke-width="3"/>
+    <path d="M250,110 C255,105 260,105 265,110" fill="none" stroke="#000000" stroke-width="3"/>
+    <!-- Glasses Reflection -->
+    <path d="M225,105 C227,103 230,103 232,105" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.7"/>
+    <path d="M275,105 C277,103 280,103 282,105" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.7"/>
+    <!-- Eyes -->
+    <circle cx="230" cy="110" r="10" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
+    <circle cx="280" cy="110" r="10" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
+    <circle cx="230" cy="110" r="5" fill="#000000"/>
+    <circle cx="280" cy="110" r="5" fill="#000000"/>
+    <!-- Eye Highlights -->
+    <circle cx="227" cy="107" r="2" fill="#FFFFFF" opacity="0.8"/>
+    <circle cx="277" cy="107" r="2" fill="#FFFFFF" opacity="0.8"/>
+    <!-- Eyebrows -->
+    <path d="M220,95 C225,90 230,90 235,95" fill="none" stroke="#000000" stroke-width="3"/>
+    <path d="M270,95 C275,90 280,90 285,95" fill="none" stroke="#000000" stroke-width="3"/>
+    <!-- Mouth -->
+    <path d="M245,130 C250,135 260,135 265,130" fill="none" stroke="#000000" stroke-width="3"/>
+    <!-- Arms -->
+    <path d="M200,200 C180,220 180,260 200,280" fill="none" stroke="#FFD700" stroke-width="15" stroke-linecap="round"/>
+    <path d="M312,200 C332,220 332,260 312,280" fill="none" stroke="#FFD700" stroke-width="15" stroke-linecap="round"/>
+    <!-- Hands Holding Flashlight -->
+    <ellipse cx="205" cy="280" rx="15" ry="20" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    <ellipse cx="307" cy="280" rx="15" ry="20" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    <!-- Flashlight -->
+    <rect x="210" y="260" width="92" height="25" rx="5" fill="#90EE90" stroke="#000000" stroke-width="3"/>
+    <circle cx="302" cy="272.5" r="10" fill="#87CEEB" stroke="#000000" stroke-width="3"/>
+    <!-- Flashlight Beam -->
+    <path d="M302,272.5 L400,200 L400,345 Z" fill="#87CEEB" opacity="0.3" stroke="#000000" stroke-width="1"/>
+    <!-- Backpack -->
+    <path d="M182,200 C162,200 162,300 182,300 C202,300 202,200 182,200 Z" fill="#FF6B6B" stroke="#000000" stroke-width="3"/>
+    <path d="M172,220 C162,220 162,240 172,240 C182,240 182,220 172,220 Z" fill="#FFD700" stroke="#000000" stroke-width="3"/>
+    <!-- Hat -->
+    <path d="M220,40 C240,20 270,20 290,40 C310,60 310,100 290,100 C270,100 240,100 220,80 C200,60 200,60 220,40 Z" fill="#90EE90" stroke="#000000" stroke-width="3"/>
+  </g>
+</svg>

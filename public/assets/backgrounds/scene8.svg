@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <!-- Background Layer: Cave Depth -->
+  <g id="background">
+    <rect width="1920" height="1080" fill="#E6D4A3" opacity="0.6"/>
+    <path d="M0,540 Q480,400 960,540 Q1440,680 1920,540 L1920,1080 L0,1080 Z" fill="#E6D4A3" opacity="0.8"/>
+    <path d="M0,600 Q400,450 800,600 Q1200,750 1600,600 Q1920,400 1920,600 L1920,1080 L0,1080 Z" fill="#F4E4BC" opacity="0.5"/>
+    <path d="M200,700 Q400,550 600,700 Q800,850 1000,700 Q1200,550 1400,700 Q1600,850 1800,700 L1920,1080 L0,1080 Z" fill="#E6D4A3" opacity="0.3"/>
+  </g>
+
+  <!-- Midground Layer: Cave Walls with Warm Reflections -->
+  <g id="midground">
+    <path d="M0,0 L0,800 Q200,600 400,800 Q600,1000 800,800 Q1000,600 1200,800 Q1400,1000 1600,800 Q1800,600 1920,800 L1920,0 Z" fill="#F7EBD1" opacity="0.7"/>
+    <path d="M0,0 L0,850 Q250,650 500,850 Q750,1050 1000,850 Q1250,650 1500,850 Q1750,1050 1920,850 L1920,0 Z" fill="#F9F0E0" opacity="0.5"/>
+    <path d="M100,700 Q200,550 300,700 Q400,850 500,700 Q600,550 700,700 Q800,850 900,700 Q1000,550 1100,700 Q1200,850 1300,700 Q1400,550 1500,700 Q1600,850 1700,700 Q1800,550 1900,700 L1920,1080 L0,1080 Z" fill="#FCF8F0" opacity="0.4"/>
+    <!-- Wall Textures -->
+    <path d="M200,750 Q250,700 300,750 Q350,800 400,750" stroke="#F4E4BC" stroke-width="3" fill="none" opacity="0.3"/>
+    <path d="M500,800 Q550,750 600,800 Q650,850 700,800" stroke="#F4E4BC" stroke-width="3" fill="none" opacity="0.3"/>
+    <path d="M800,700 Q850,650 900,700 Q950,750 1000,700" stroke="#F4E4BC" stroke-width="3" fill="none" opacity="0.3"/>
+    <path d="M1100,750 Q1150,700 1200,750 Q1250,800 1300,750" stroke="#F4E4BC" stroke-width="3" fill="none" opacity="0.3"/>
+    <path d="M1400,800 Q1450,750 1500,800 Q1550,850 1600,800" stroke="#F4E4BC" stroke-width="3" fill="none" opacity="0.3"/>
+  </g>
+
+  <!-- Foreground Layer: Treasure Chest Area and Glow -->
+  <g id="foreground">
+    <!-- Cave Floor -->
+    <path d="M0,900 Q480,800 960,900 Q1440,1000 1920,900 L1920,1080 L0,1080 Z" fill="#F9F0E0" opacity="0.8"/>
+    <!-- Treasure Chest Base -->
+    <rect x="860" y="750" width="200" height="100" rx="10" fill="#F7EBD1"/>
+    <path d="M860,750 Q910,700 960,750 Q1010,700 1060,750 L1060,800 Q1010,750 960,800 Q910,750 860,800 Z" fill="#FCF8F0"/>
+    <!-- Chest Lid Open with Glow -->
+    <path d="M860,700 L1060,700 Q1050,650 1000,650 Q950,650 910,650 Q870,650 860,700" fill="#F9F0E0"/>
+    <!-- Glow from Chest -->
+    <ellipse cx="960" cy="700" rx="150" ry="100" fill="#FCF8F0" opacity="0.6"/>
+    <ellipse cx="960" cy="650" rx="200" ry="150" fill="#FCF8F0" opacity="0.4"/>
+    <ellipse cx="960" cy="600" rx="300" ry="200" fill="#FCF8F0" opacity="0.2"/>
+    <!-- Letter Glow -->
+    <rect x="930" y="720" width="60" height="30" rx="5" fill="#FCF8F0" opacity="0.8"/>
+    <ellipse cx="960" cy="735" rx="80" ry="50" fill="#FCF8F0" opacity="0.5"/>
+    <!-- Small Rocks and Details on Floor -->
+    <ellipse cx="800" cy="950" rx="20" ry="10" fill="#F4E4BC" opacity="0.7"/>
+    <ellipse cx="850" cy="980" rx="15" ry="8" fill="#F4E4BC" opacity="0.7"/>
+    <ellipse cx="1100" cy="970" rx="25" ry="12" fill="#F4E4BC" opacity="0.7"/>
+    <ellipse cx="1150" cy="940" rx="18" ry="9" fill="#F4E4BC" opacity="0.7"/>
+  </g>
+
+  <!-- Atmospheric Glow and Light Play -->
+  <g id="atmosphere">
+    <ellipse cx="960" cy="540" rx="500" ry="300" fill="#FCF8F0" opacity="0.1"/>
+    <ellipse cx="960" cy="400" rx="600" ry="400" fill="#FCF8F0" opacity="0.05"/>
+    <path d="M700,600 Q800,500 900,600 Q1000,700 1100,600 Q1200,500 1300,600" stroke="#FCF8F0" stroke-width="5" fill="none" opacity="0.2"/>
+    <path d="M600,650 Q750,550 900,650 Q1050,750 1200,650 Q1350,550 1500,650" stroke="#FCF8F0" stroke-width="5" fill="none" opacity="0.1"/>
+  </g>
+</svg>

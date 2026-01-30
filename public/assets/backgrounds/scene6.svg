@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <!-- Background Layer (Deep Cave) -->
+  <g id="background">
+    <rect width="1920" height="1080" fill="#D90404" opacity="0.6"/>
+    <path d="M0,540 Q480,400 960,540 Q1440,680 1920,540 L1920,1080 L0,1080 Z" fill="#FF6B6B" opacity="0.5"/>
+    <path d="M0,600 Q400,450 800,600 Q1200,750 1600,600 Q1920,400 1920,600 L1920,1080 L0,1080 Z" fill="#FF8787" opacity="0.3"/>
+    <path d="M200,700 Q400,550 600,700 Q800,850 1000,700 Q1200,550 1400,700 Q1600,850 1800,700 L1920,1080 L0,1080 Z" fill="#FF9E9E" opacity="0.2"/>
+  </g>
+
+  <!-- Midground Layer (Cave Walls and Cracks) -->
+  <g id="midground">
+    <path d="M0,0 L200,200 Q400,100 600,300 Q800,200 1000,400 Q1200,300 1400,500 Q1600,400 1800,600 L1920,800 L1920,1080 L0,1080 Z" fill="#FF6B6B" opacity="0.8"/>
+    <path d="M1920,0 L1720,150 Q1520,50 1320,250 Q1120,150 920,350 Q720,250 520,450 Q320,350 120,550 L0,700 L0,1080 L1920,1080 Z" fill="#FF8787" opacity="0.7"/>
+    <!-- Glowing Cracks -->
+    <path d="M400,700 L450,750 L430,800 L480,850 L460,900" stroke="#FFB5B5" stroke-width="5" fill="none" opacity="0.9"/>
+    <path d="M600,750 L650,800 L630,850 L680,900 L660,950" stroke="#FFB5B5" stroke-width="5" fill="none" opacity="0.9"/>
+    <path d="M800,800 L850,850 L830,900 L880,950 L860,1000" stroke="#FFB5B5" stroke-width="5" fill="none" opacity="0.9"/>
+    <path d="M1000,750 L1050,800 L1030,850 L1080,900 L1060,950" stroke="#FFB5B5" stroke-width="5" fill="none" opacity="0.9"/>
+    <path d="M1200,700 L1250,750 L1230,800 L1280,850 L1260,900" stroke="#FFB5B5" stroke-width="5" fill="none" opacity="0.9"/>
+  </g>
+
+  <!-- Foreground Layer (Falling Debris and Spikes) -->
+  <g id="foreground">
+    <!-- Falling Rocks and Dust -->
+    <circle cx="300" cy="200" r="20" fill="#FF9E9E" opacity="0.8"/>
+    <circle cx="350" cy="300" r="15" fill="#FF8787" opacity="0.7"/>
+    <circle cx="500" cy="250" r="25" fill="#FF6B6B" opacity="0.8"/>
+    <circle cx="700" cy="400" r="18" fill="#FF9E9E" opacity="0.7"/>
+    <circle cx="900" cy="350" r="22" fill="#FF8787" opacity="0.8"/>
+    <circle cx="1100" cy="500" r="30" fill="#FF6B6B" opacity="0.7"/>
+    <circle cx="1300" cy="450" r="16" fill="#FF9E9E" opacity="0.8"/>
+    <circle cx="1500" cy="550" r="24" fill="#FF8787" opacity="0.7"/>
+    <!-- Dust Particles -->
+    <circle cx="320" cy="220" r="5" fill="#FFB5B5" opacity="0.5"/>
+    <circle cx="370" cy="320" r="4" fill="#FFB5B5" opacity="0.4"/>
+    <circle cx="520" cy="270" r="6" fill="#FFB5B5" opacity="0.5"/>
+    <circle cx="720" cy="420" r="5" fill="#FFB5B5" opacity="0.4"/>
+    <circle cx="920" cy="370" r="7" fill="#FFB5B5" opacity="0.5"/>
+    <!-- Rounded Spikes Below -->
+    <path d="M200,1080 L220,950 Q230,930 240,950 L260,1080 Z" fill="#D90404" opacity="0.9"/>
+    <path d="M300,1080 L320,900 Q330,880 340,900 L360,1080 Z" fill="#FF6B6B" opacity="0.9"/>
+    <path d="M400,1080 L420,920 Q430,900 440,920 L460,1080 Z" fill="#D90404" opacity="0.9"/>
+    <path d="M500,1080 L520,880 Q530,860 540,880 L560,1080 Z" fill="#FF6B6B" opacity="0.9"/>
+    <path d="M600,1080 L620,900 Q630,880 640,900 L660,1080 Z" fill="#D90404" opacity="0.9"/>
+    <path d="M700,1080 L720,850 Q730,830 740,850 L760,1080 Z" fill="#FF6B6B" opacity="0.9"/>
+    <path d="M800,1080 L820,870 Q830,850 840,870 L860,1080 Z" fill="#D90404" opacity="0.9"/>
+    <path d="M900,1080 L920,900 Q930,880 940,900 L960,1080 Z" fill="#FF6B6B" opacity="0.9"/>
+    <path d="M1000,1080 L1020,850 Q1030,830 1040,850 L1060,1080 Z" fill="#D90404" opacity="0.9"/>
+    <path d="M1100,1080 L1120,880 Q1130,860 1140,880 L1160,1080 Z" fill="#FF6B6B" opacity="0.9"/>
+    <path d="M1200,1080 L1220,900 Q1230,880 1240,900 L1260,1080 Z" fill="#D90404" opacity="0.9"/>
+    <path d="M1300,1080 L1320,850 Q1330,830 1340,850 L1360,1080 Z" fill="#FF6B6B" opacity="0.9"/>
+    <path d="M1400,1080 L1420,870 Q1430,850 1440,870 L1460,1080 Z" fill="#D90404" opacity="0.9"/>
+    <path d="M1500,1080 L1520,900 Q1530,880 1540,900 L1560,1080 Z" fill="#FF6B6B" opacity="0.9"/>
+    <path d="M1600,1080 L1620,880 Q1630,860 1640,880 L1660,1080 Z" fill="#D90404" opacity="0.9"/>
+    <path d="M1700,1080 L1720,850 Q1730,830 1740,850 L1760,1080 Z" fill="#FF6B6B" opacity="0.9"/>
+  </g>
+
+  <!-- Atmospheric Overlay (Dramatic Shadows and Glow) -->
+  <g id="atmosphere">
+    <rect width="1920" height="1080" fill="#D90404" opacity="0.1"/>
+    <path d="M0,0 L1920,0 L1920,540 Q1440,680 960,540 Q480,400 0,540 Z" fill="#FF6B6B" opacity="0.2"/>
+    <path d="M0,1080 L1920,1080 L1920,600 Q1200,750 800,600 Q400,450 0,600 Z" fill="#FF8787" opacity="0.2"/>
+  </g>
+</svg>
